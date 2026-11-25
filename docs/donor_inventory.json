@@ -1,0 +1,213 @@
+[
+  {
+    "repository": "IX-AGI",
+    "archive": "IX-AGI-main (1).zip",
+    "archive_sha256": "21d3f8c59420eda7acd4ada860ba9a14aaa95129715c26151e0f75b2d49068c0",
+    "members": 78,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "8b1036e206d9bd62668b3715c73b22163c35843d9c13957bf6d7c95553651f69",
+        "bytes": 3831
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "f7c34534377fae5bfc54d69b1c87a19c9eb55e74a821cf6dd6d26d9defc644ae",
+        "bytes": 9741
+      },
+      {
+        "path": "src/callosum.jl",
+        "sha256": "f036a4f5a52cbf194c4845ca5bb9be962e7102a52d2ba214fe1767b741bc0133",
+        "bytes": 3848
+      },
+      {
+        "path": "src/hemisphere.jl",
+        "sha256": "80de54bfcb2a12f6b8370c0a95b14da30bf1c3b3d2e2b5ec9cc428b130111299",
+        "bytes": 5357
+      },
+      {
+        "path": "src/organism.jl",
+        "sha256": "a6d0ca8d73d98cb7637e80249a5293acac1b047823f4768751b6b48fb9c117b7",
+        "bytes": 8444
+      }
+    ]
+  },
+  {
+    "repository": "IX-BlackFox-AGI",
+    "archive": "IX-BlackFox-AGI-main(4).zip",
+    "archive_sha256": "05a7de48199bcd8453e012226dc28b222d59e7e1d15734593d6b49304732fd81",
+    "members": 98,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "a242070a021d8dcbf4fdbe9d3176bd4ff3c53aceee63383e3fac812c52fe6a77",
+        "bytes": 9428
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "92aa2fccde26eb02c702c351365fdfb05be2ac073545720dcb7dac0d63b7134f",
+        "bytes": 9813
+      },
+      {
+        "path": "src/programs.jl",
+        "sha256": "31ce4513d1d9bb107bc509880d354032efa723cdc65326aa938811a892d6158e",
+        "bytes": 3652
+      },
+      {
+        "path": "src/inquiry.jl",
+        "sha256": "bf95e5189e5954f1fc695d139d9cc68a5852d25864b8e692f362cac62561fe15",
+        "bytes": 3085
+      },
+      {
+        "path": "src/metacognition.jl",
+        "sha256": "a5961908457b2f241480c56875dcd59620495d12038f799b0ca24979c2a87798",
+        "bytes": 3813
+      }
+    ]
+  },
+  {
+    "repository": "IX-BlackFox",
+    "archive": "IX-BlackFox-main(20261124-163652).zip",
+    "archive_sha256": "0174de8682b3f726582644228b626170adce9bac98fb675d65519324730f4797",
+    "members": 1015,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "ab374189d798365e10f948904c718cd1f47f4e440fc7794af2caad6a97e17c84",
+        "bytes": 19962
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "c7e63d7629ff194e81f43e3dba679a85cebb67448dee280eedd8dca8cca87768",
+        "bytes": 9987
+      },
+      {
+        "path": "docs/wave19-closed-loop-verification.md",
+        "sha256": "ff7661d1fa2a4143035a7afab6236593fdf2fcd5a864dbbe7e58c09dec0e4e00",
+        "bytes": 10466
+      },
+      {
+        "path": "src/ix_blackfox/agents/authorization.py",
+        "sha256": "b6ad6338a01538f5011f050a8900d735aa8ba9ac876013db87f28cccd998e163",
+        "bytes": 19600
+      }
+    ]
+  },
+  {
+    "repository": "IX-Function",
+    "archive": "IX-Function-main(5).zip",
+    "archive_sha256": "bbf3e4d4ec3e426982542968c08e86a634bc2f5ae6ab41d821e092c8cc5232d4",
+    "members": 62,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "961078ab4ee6426537029c44a01744539a25b6680c610c88a55620c71d8a49f4",
+        "bytes": 15913
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "73ef7e8d80794236e17db34f8f14fefc544bbcb3c164fd92c2fcb17ded014f02",
+        "bytes": 11417
+      },
+      {
+        "path": "src/ix_function/source_learning.py",
+        "sha256": "3a51d00c5027e4f71207b09b3f48da65a817fa958edca12a94bab88c0ad31ef9",
+        "bytes": 5232
+      },
+      {
+        "path": "src/ix_function/falsification.py",
+        "sha256": "a1f64e3cc8b8776fe13286723bdd5ec0d55ca0886bf1c2cd9f94523fbd48e8b3",
+        "bytes": 16573
+      }
+    ]
+  },
+  {
+    "repository": "IX-IntentRealityLoop",
+    "archive": "IX-IntentRealityLoop-main(20261124-163652).zip",
+    "archive_sha256": "58bc1865ea6fd624afadae37977506961229830b6257fe6971eedfc5bdafa68d",
+    "members": 63,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "7b942bd4f480260b84f43a6401e4c32eac675d715468831277ea1ffa84f0f8ef",
+        "bytes": 14468
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "24f22f9a67bd21ffcdd47c0a0653de23e1553bd75f3307e890ded18bd7f6fe31",
+        "bytes": 14743
+      },
+      {
+        "path": "src/ix_intent_reality_loop/delta.py",
+        "sha256": "686455196a80a16558d327532084be42cab4a02ff4a4839277b0ef673b5951e6",
+        "bytes": 10058
+      },
+      {
+        "path": "src/ix_intent_reality_loop/permission.py",
+        "sha256": "75abced9697d2246ef4f87c58027c4c4ab76e485f75c238c75e5c3a0f5aeb1c9",
+        "bytes": 14615
+      }
+    ]
+  },
+  {
+    "repository": "IX-Sally",
+    "archive": "IX-Sally-main(20261124-163655).zip",
+    "archive_sha256": "a7190ca73334552a4f76a574615c4c0c89b3a23cf6f2a246bb6a9fab3fd9375f",
+    "members": 405,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "59a696ef40aa9219030e43d2f5b5d63c436e5651a08f94ebee3f5b14e91796e2",
+        "bytes": 24839
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "40eb2966b2b151a21ae2c4f37209232643976f4e6848c8bf2e65a615daaf2497",
+        "bytes": 11685
+      },
+      {
+        "path": "src/ix_sally/cognition/developmental_learning.py",
+        "sha256": "5819f356595ccb9c25389e389a86876584e6c6f0565d3093e9320f3f30f69079",
+        "bytes": 15788
+      },
+      {
+        "path": "src/ix_sally/cognition/lifetime_learning.py",
+        "sha256": "bb7293205b55cbcc8a3b9ee6c05050ade04564862282c7171eb6597a0940a95d",
+        "bytes": 9507
+      },
+      {
+        "path": "docs/V093_DEVELOPMENTAL_RESEARCH.md",
+        "sha256": "bd821e845fff741b014ea8141c94a28bb7c2771208a4ada616f8affc7a99f0ad",
+        "bytes": 7693
+      }
+    ]
+  },
+  {
+    "repository": "IX",
+    "archive": "IX-main(20261124-163653).zip",
+    "archive_sha256": "bd0628860ed8ddf68956bc637346305dff3efd390ff452321d0f362ad26b8357",
+    "members": 114,
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "sha256": "888d168327fd1856d66d7eb69467af660532368535af8ebf7ed0ca41eace6854",
+        "bytes": 18624
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "5dfadfac176e6bc26fd3865344338abeda0f83302e64439ff1330dba0d1863ae",
+        "bytes": 1074
+      },
+      {
+        "path": "ix/cognition.py",
+        "sha256": "bce04de7b28080771b8b83570d2f47fbee792956c1228534d5dd3837f533b1ec",
+        "bytes": 10219
+      },
+      {
+        "path": "ix/runtime.py",
+        "sha256": "96469289582ab729281cb5cb08571a70d98a13305e61f6c063810bcdd4138ca7",
+        "bytes": 26871
+      }
+    ]
+  }
+]

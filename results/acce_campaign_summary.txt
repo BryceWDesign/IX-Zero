@@ -1,0 +1,36 @@
+{
+  "composed": {
+    "total": 3213,
+    "correct": 3213,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "no_composition": {
+    "total": 3213,
+    "correct": 99,
+    "incorrect": 0,
+    "abstained": 3114
+  },
+  "exact_name_baseline": {
+    "total": 3213,
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 3213
+  },
+  "unsupported_total": 1755,
+  "unsupported_abstained": 1755,
+  "scalar": {
+    "total": 480,
+    "correct": 480,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "relational": {
+    "total": 264,
+    "correct": 264,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "hidden_errors": 24,
+  "quarantined": 24
+}

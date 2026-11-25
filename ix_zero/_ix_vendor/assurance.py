@@ -1,0 +1,1250 @@
+"""Static and optional runtime assurance checks for IX programs."""
+
+from __future__ import annotations
+
+import ast as py_ast
+from collections.abc import Mapping
+from dataclasses import dataclass, field
+from typing import Any, Literal
+
+from .ast import (
+    AgentBlock,
+    AssertStatement,
+    AttemptBlock,
+    ClaimBoundaryStatement,
+    EvidenceRequirementStatement,
+    FalsifyIfStatement,
+    HandoffContractStatement,
+    IfStatement,
+    NonGoalStatement,
+    ObligationBlock,
+    OnBlock,
+    PolicyStatement,
+    Program,
+    PurposeStatement,
+    RequireApprovalStatement,
+    SendStatement,
+    Statement,
+    ToolCallStatement,
+    TraceStatement,
+)
+from .cognition import cognition_obligation_ids, get_cognition_obligation
+from .runtime import IXRuntime, IXRuntimeError
+from .tools import BuiltInToolRegistry
+from .validator import validate_ix
+
+AssuranceSeverity = Literal["pass", "warn", "fail"]
+
+
+@dataclass(frozen=True)
+class AssuranceProfile:
+    """Configured assurance behavior for one named review profile."""
+
+    name: str
+    description: str
+    require_non_empty_program: bool = False
+    require_executable_path: bool = True
+    check_tool_policies: bool = True
+    check_handoff_targets: bool = True
+    check_condition_markers: bool = True
+    check_assertions: bool = True
+    check_trace_statements: bool = True
+    check_human_review: bool = True
+    check_cognition_contract: bool = False
+    allow_runtime_execution: bool = True
+
+    def to_dict(self) -> dict[str, Any]:
+        """Return a JSON-serializable profile representation."""
+
+        return {
+            "name": self.name,
+            "description": self.description,
+            "require_non_empty_program": self.require_non_empty_program,
+            "require_executable_path": self.require_executable_path,
+            "check_tool_policies": self.check_tool_policies,
+            "check_handoff_targets": self.check_handoff_targets,
+            "check_condition_markers": self.check_condition_markers,
+            "check_assertions": self.check_assertions,
+            "check_trace_statements": self.check_trace_statements,
+            "check_human_review": self.check_human_review,
+            "check_cognition_contract": self.check_cognition_contract,
+            "allow_runtime_execution": self.allow_runtime_execution,
+        }
+
+
+class AssuranceProfileRegistry:
+    """Registry of supported assurance profiles."""
+
+    def __init__(self, profiles: tuple[AssuranceProfile, ...] | None = None) -> None:
+        configured_profiles = profiles or default_assurance_profiles()
+        self._profiles = {profile.name: profile for profile in configured_profiles}
+
+    def get(self, name: str) -> AssuranceProfile | None:
+        """Return a profile by name, or None when it is not registered."""
+
+        return self._profiles.get(name)
+
+    def require(self, name: str) -> AssuranceProfile:
+        """Return a profile by name or raise a clear error for unsupported names."""
+
+        profile = self.get(name)
+        if profile is None:
+            available = ", ".join(sorted(self._profiles))
+            raise ValueError(f"Unknown assurance profile `{name}`. Available profiles: {available}")
+        return profile
+
+    def names(self) -> tuple[str, ...]:
+        """Return registered profile names in stable order."""
+
+        return tuple(sorted(self._profiles))
+
+    def profiles(self) -> tuple[AssuranceProfile, ...]:
+        """Return registered profiles in stable order."""
+
+        return tuple(self._profiles[name] for name in self.names())
+
+
+@dataclass(frozen=True)
+class AssuranceCheck:
+    """One assurance finding for an IX program."""
+
+    check_id: str
+    severity: AssuranceSeverity
+    message: str
+    data: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        """Return a JSON-serializable check representation."""
+
+        return {
+            "id": self.check_id,
+            "severity": self.severity,
+            "message": self.message,
+            "data": self.data,
+        }
+
+
+@dataclass(frozen=True)
+class AssuranceReport:
+    """Assurance report for one IX program."""
+
+    status: AssuranceSeverity
+    profile: str
+    metrics: dict[str, int]
+    checks: tuple[AssuranceCheck, ...]
+
+    def to_dict(self) -> dict[str, Any]:
+        """Return a JSON-serializable report representation."""
+
+        return {
+            "status": self.status,
+            "profile": self.profile,
+            "metrics": self.metrics,
+            "checks": [check.to_dict() for check in self.checks],
+        }
+
+
+class AssuranceAnalyzer:
+    """Analyze IX programs for bounded evidence-readiness checks."""
+
+    def __init__(
+        self,
+        *,
+        tool_registry: BuiltInToolRegistry | None = None,
+        profile_registry: AssuranceProfileRegistry | None = None,
+    ) -> None:
+        self.tool_registry = tool_registry or BuiltInToolRegistry()
+        self.profile_registry = profile_registry or AssuranceProfileRegistry()
+
+    def assess(
+        self,
+        program: Program,
+        *,
+        profile: str = "experimental-local",
+        execute: bool = False,
+        agent: str | None = None,
+        event: str | None = None,
+        inputs: Mapping[str, Any] | None = None,
+    ) -> AssuranceReport:
+        """Assess a parsed IX program and return an assurance report."""
+
+        active_profile = self.profile_registry.require(profile)
+        checks: list[AssuranceCheck] = [
+            AssuranceCheck(
+                "profile.selected",
+                "pass",
+                f"Using assurance profile `{active_profile.name}`.",
+                {"profile": active_profile.to_dict()},
+            )
+        ]
+        metrics = self._metrics(program)
+
+        diagnostics = validate_ix(program)
+        for diagnostic in diagnostics:
+            checks.append(
+                AssuranceCheck(
+                    "validation.diagnostic",
+                    "fail",
+                    diagnostic.format(),
+                    {
+                        "line": diagnostic.span.line,
+                        "column": diagnostic.span.column,
+                    },
+                )
+            )
+
+        if active_profile.require_non_empty_program:
+            if not program.statements:
+                checks.append(
+                    AssuranceCheck(
+                        "program.empty",
+                        "fail",
+                        "Assurance profile requires at least one declared IX statement.",
+                    )
+                )
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "program.non_empty",
+                        "pass",
+                        "Program contains declared IX statements for profile review.",
+                        {"top_level_statements": len(program.statements)},
+                    )
+                )
+
+        if active_profile.require_executable_path:
+            if metrics["executable_paths"] == 0:
+                checks.append(
+                    AssuranceCheck(
+                        "program.no_executable_path",
+                        "fail",
+                        "Program has no top-level statements and no agent event blocks to execute.",
+                    )
+                )
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "program.executable_path",
+                        "pass",
+                        "Program exposes at least one executable path.",
+                        {"executable_paths": metrics["executable_paths"]},
+                    )
+                )
+
+        if active_profile.check_tool_policies:
+            checks.extend(self._check_tool_policies(program))
+        if active_profile.check_handoff_targets:
+            checks.extend(self._check_handoff_targets(program))
+
+        if active_profile.check_condition_markers and metrics["conditions"] > 0:
+            checks.append(
+                AssuranceCheck(
+                    "conditions.present",
+                    "pass",
+                    "Program contains explicit conditional decision logic.",
+                    {"conditions": metrics["conditions"]},
+                )
+            )
+
+        if active_profile.check_assertions:
+            if metrics["assertions"] == 0:
+                checks.append(
+                    AssuranceCheck(
+                        "assertions.missing",
+                        "warn",
+                        "Program has no explicit IX assertions. Add assertions for "
+                        "stronger testability.",
+                    )
+                )
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "assertions.present",
+                        "pass",
+                        "Program contains explicit IX assertions.",
+                        {"assertions": metrics["assertions"]},
+                    )
+                )
+
+        if active_profile.check_trace_statements:
+            if metrics["trace_statements"] == 0:
+                checks.append(
+                    AssuranceCheck(
+                        "trace_statements.missing",
+                        "warn",
+                        "Program has no explicit trace statements. Runtime trace still exists, "
+                        "but domain trace markers improve reviewability.",
+                    )
+                )
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "trace_statements.present",
+                        "pass",
+                        "Program contains explicit trace statements.",
+                        {"trace_statements": metrics["trace_statements"]},
+                    )
+                )
+
+        if active_profile.check_human_review:
+            if metrics["approvals_required"] > 0:
+                checks.append(
+                    AssuranceCheck(
+                        "human_review.present",
+                        "pass",
+                        "Program declares human approval requirements.",
+                        {"approvals_required": metrics["approvals_required"]},
+                    )
+                )
+            elif metrics["tool_calls"] > 0 or metrics["handoffs"] > 0:
+                checks.append(
+                    AssuranceCheck(
+                        "human_review.missing_for_automation",
+                        "warn",
+                        "Program uses tools or agent handoffs without an explicit human "
+                        "approval checkpoint.",
+                    )
+                )
+
+        if active_profile.check_cognition_contract:
+            checks.extend(self._check_cognition_contracts(program))
+
+        if execute:
+            if active_profile.allow_runtime_execution:
+                checks.append(self._runtime_check(program, agent=agent, event=event, inputs=inputs))
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "runtime.execution_not_allowed_by_profile",
+                        "fail",
+                        "Assurance profile "
+                        f"`{active_profile.name}` does not allow runtime execution checks.",
+                    )
+                )
+
+        return AssuranceReport(
+            status=self._status(checks),
+            profile=active_profile.name,
+            metrics=metrics,
+            checks=tuple(checks),
+        )
+
+    def _metrics(self, program: Program) -> dict[str, int]:
+        metrics = {
+            "agents": 0,
+            "events": 0,
+            "top_level_statements": 0,
+            "top_level_executable_statements": 0,
+            "executable_paths": 0,
+            "policies": 0,
+            "tool_calls": 0,
+            "handoffs": 0,
+            "approvals_required": 0,
+            "assertions": 0,
+            "trace_statements": 0,
+            "conditions": 0,
+            "attempts": 0,
+            "obligations": 0,
+            "purposes": 0,
+            "non_goals": 0,
+            "claim_boundaries": 0,
+            "evidence_requirements": 0,
+            "falsification_gates": 0,
+            "handoff_contracts": 0,
+        }
+        self._collect_metrics(program.statements, metrics, top_level=True)
+        metrics["executable_paths"] = metrics["events"] + metrics["top_level_executable_statements"]
+        return metrics
+
+    def _collect_metrics(
+        self,
+        statements: tuple[Statement, ...],
+        metrics: dict[str, int],
+        *,
+        top_level: bool,
+    ) -> None:
+        for statement in statements:
+            if isinstance(statement, AgentBlock):
+                metrics["agents"] += 1
+                self._collect_metrics(statement.statements, metrics, top_level=False)
+                continue
+
+            if isinstance(statement, OnBlock):
+                metrics["events"] += 1
+                self._collect_metrics(statement.statements, metrics, top_level=False)
+                continue
+
+            if isinstance(statement, AttemptBlock):
+                metrics["attempts"] += 1
+                self._collect_metrics(statement.statements, metrics, top_level=False)
+                continue
+
+            if isinstance(statement, ObligationBlock):
+                metrics["obligations"] += 1
+                self._collect_metrics(statement.statements, metrics, top_level=False)
+                continue
+
+            if top_level:
+                metrics["top_level_statements"] += 1
+                metrics["top_level_executable_statements"] += 1
+
+            if isinstance(statement, PolicyStatement):
+                metrics["policies"] += 1
+            elif isinstance(statement, ToolCallStatement):
+                metrics["tool_calls"] += 1
+            elif isinstance(statement, SendStatement):
+                metrics["handoffs"] += 1
+            elif isinstance(statement, RequireApprovalStatement):
+                metrics["approvals_required"] += 1
+            elif isinstance(statement, AssertStatement):
+                metrics["assertions"] += 1
+            elif isinstance(statement, TraceStatement):
+                metrics["trace_statements"] += 1
+            elif isinstance(statement, IfStatement):
+                metrics["conditions"] += 1
+                self._collect_metrics(statement.then_statements, metrics, top_level=False)
+                self._collect_metrics(statement.else_statements, metrics, top_level=False)
+            elif isinstance(statement, PurposeStatement):
+                metrics["purposes"] += 1
+            elif isinstance(statement, NonGoalStatement):
+                metrics["non_goals"] += 1
+            elif isinstance(statement, ClaimBoundaryStatement):
+                metrics["claim_boundaries"] += 1
+            elif isinstance(statement, EvidenceRequirementStatement):
+                metrics["evidence_requirements"] += 1
+            elif isinstance(statement, FalsifyIfStatement):
+                metrics["falsification_gates"] += 1
+            elif isinstance(statement, HandoffContractStatement):
+                metrics["handoff_contracts"] += 1
+
+    def _check_cognition_contracts(self, program: Program) -> list[AssuranceCheck]:
+        checks: list[AssuranceCheck] = []
+        attempts = [statement for statement in program.statements if isinstance(statement, AttemptBlock)]
+
+        if not attempts:
+            return [
+                AssuranceCheck(
+                    "cognition_contract.attempt_missing",
+                    "fail",
+                    "Cognition profile requires at least one top-level attempt block.",
+                )
+            ]
+
+        checks.append(
+            AssuranceCheck(
+                "cognition_contract.attempt_present",
+                "pass",
+                "Program declares top-level cognition attempt contract(s).",
+                {"attempts": [attempt.name for attempt in attempts]},
+            )
+        )
+
+        for attempt in attempts:
+            checks.extend(self._check_one_cognition_attempt(attempt))
+
+        return checks
+
+    def _check_one_cognition_attempt(self, attempt: AttemptBlock) -> list[AssuranceCheck]:
+        checks: list[AssuranceCheck] = []
+        purpose_count = sum(isinstance(child, PurposeStatement) for child in attempt.statements)
+        non_goal_count = sum(isinstance(child, NonGoalStatement) for child in attempt.statements)
+        claim_boundary_count = sum(
+            isinstance(child, ClaimBoundaryStatement) for child in attempt.statements
+        )
+        approval_count = sum(isinstance(child, RequireApprovalStatement) for child in attempt.statements)
+        handoffs = [
+            child for child in attempt.statements if isinstance(child, HandoffContractStatement)
+        ]
+        obligations = [child for child in attempt.statements if isinstance(child, ObligationBlock)]
+
+        checks.append(
+            self._presence_check(
+                count=purpose_count,
+                check_id="cognition_contract.purpose",
+                label="purpose statement",
+                attempt=attempt.name,
+            )
+        )
+        checks.append(
+            self._presence_check(
+                count=non_goal_count,
+                check_id="cognition_contract.non_goal",
+                label="non-goal boundary",
+                attempt=attempt.name,
+            )
+        )
+        checks.append(
+            self._presence_check(
+                count=claim_boundary_count,
+                check_id="cognition_contract.claim_boundary",
+                label="claim boundary",
+                attempt=attempt.name,
+            )
+        )
+        checks.append(
+            self._presence_check(
+                count=approval_count,
+                check_id="cognition_contract.human_review",
+                label="human approval requirement",
+                attempt=attempt.name,
+            )
+        )
+
+        checks.extend(self._check_claim_boundary_language(attempt))
+        checks.extend(self._check_handoff_contracts(attempt.name, handoffs))
+
+        if obligations:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.obligations.present",
+                    "pass",
+                    f"Attempt `{attempt.name}` declares cognition obligations.",
+                    {
+                        "attempt": attempt.name,
+                        "obligations": [obligation.identifier for obligation in obligations],
+                    },
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.obligations.missing",
+                    "fail",
+                    f"Attempt `{attempt.name}` must declare at least one obligation.",
+                    {"attempt": attempt.name},
+                )
+            )
+
+        checks.extend(
+            self._check_required_obligation_coverage(
+                attempt_name=attempt.name,
+                obligations=obligations,
+            )
+        )
+
+        for obligation in obligations:
+            checks.extend(self._check_one_obligation(attempt.name, obligation))
+
+        return checks
+
+    def _presence_check(
+        self,
+        *,
+        count: int,
+        check_id: str,
+        label: str,
+        attempt: str,
+    ) -> AssuranceCheck:
+        if count > 0:
+            return AssuranceCheck(
+                f"{check_id}.present",
+                "pass",
+                f"Attempt `{attempt}` declares required {label}.",
+                {"attempt": attempt, "count": count},
+            )
+
+        return AssuranceCheck(
+            f"{check_id}.missing",
+            "fail",
+            f"Attempt `{attempt}` must declare at least one {label}.",
+            {"attempt": attempt},
+        )
+
+    def _check_claim_boundary_language(self, attempt: AttemptBlock) -> list[AssuranceCheck]:
+        non_goal_texts = [
+            self._contract_text(child.text)
+            for child in attempt.statements
+            if isinstance(child, NonGoalStatement)
+        ]
+        claim_boundary_texts = [
+            self._contract_text(child.text)
+            for child in attempt.statements
+            if isinstance(child, ClaimBoundaryStatement)
+        ]
+        review_texts = [
+            self._contract_text(child.reason)
+            for child in attempt.statements
+            if isinstance(child, RequireApprovalStatement)
+        ]
+        purpose_texts = [
+            self._contract_text(child.text)
+            for child in attempt.statements
+            if isinstance(child, PurposeStatement)
+        ]
+        all_boundary_texts = purpose_texts + non_goal_texts + claim_boundary_texts + review_texts
+
+        checks: list[AssuranceCheck] = []
+
+        if any(self._declares_agi_claim_restriction(text) for text in non_goal_texts):
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.agi_claim_restriction.present",
+                    "pass",
+                    f"Attempt `{attempt.name}` explicitly blocks AGI self-claiming.",
+                    {"attempt": attempt.name},
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.agi_claim_restriction.missing",
+                    "fail",
+                    f"Attempt `{attempt.name}` must include a non_goal blocking AGI claims.",
+                    {"attempt": attempt.name},
+                )
+            )
+
+        if any(self._declares_research_candidate_boundary(text) for text in claim_boundary_texts):
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.research_boundary.present",
+                    "pass",
+                    f"Attempt `{attempt.name}` is bounded as a research candidate.",
+                    {"attempt": attempt.name},
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.research_boundary.missing",
+                    "fail",
+                    f"Attempt `{attempt.name}` must declare a research-candidate claim boundary.",
+                    {"attempt": attempt.name},
+                )
+            )
+
+        prohibited = [
+            text
+            for text in all_boundary_texts
+            if self._contains_prohibited_agi_claim(text)
+        ]
+        if prohibited:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.prohibited_claim_language.present",
+                    "fail",
+                    f"Attempt `{attempt.name}` contains prohibited AGI-certification language.",
+                    {
+                        "attempt": attempt.name,
+                        "matched_text": prohibited,
+                    },
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.prohibited_claim_language.absent",
+                    "pass",
+                    f"Attempt `{attempt.name}` contains no self-certifying AGI language.",
+                    {"attempt": attempt.name},
+                )
+            )
+
+        return checks
+
+    def _contract_text(self, value: str) -> str:
+        stripped = value.strip()
+        try:
+            parsed = py_ast.literal_eval(stripped)
+        except (SyntaxError, ValueError):
+            parsed = stripped
+        if isinstance(parsed, str):
+            return " ".join(parsed.lower().split())
+        return " ".join(stripped.lower().split())
+
+    def _declares_agi_claim_restriction(self, text: str) -> bool:
+        if "agi" not in text:
+            return False
+        if not any(term in text for term in ("claim", "certif", "declare", "assert")):
+            return False
+        return self._is_denial_text(text)
+
+    def _declares_research_candidate_boundary(self, text: str) -> bool:
+        if "research candidate" in text:
+            return True
+        if "research" in text and "candidate" in text:
+            return True
+        if "research" in text and "not production" in text:
+            return True
+        if "evaluation" in text and "not deployment" in text:
+            return True
+        return "candidate only" in text
+
+    def _contains_prohibited_agi_claim(self, text: str) -> bool:
+        if self._is_denial_text(text):
+            return False
+
+        prohibited_patterns = (
+            "is agi",
+            "achieved agi",
+            "achieves agi",
+            "guarantees agi",
+            "guaranteed agi",
+            "certifies agi",
+            "certify agi",
+            "births agi",
+            "creates agi",
+            "proves agi",
+            "agi achieved",
+            "agi certified",
+            "agi guaranteed",
+        )
+        return any(pattern in text for pattern in prohibited_patterns)
+
+    def _is_denial_text(self, text: str) -> bool:
+        denial_terms = (
+            "do not",
+            "don't",
+            "must not",
+            "cannot",
+            "can't",
+            "no ",
+            "never",
+            "not ",
+            "forbid",
+            "forbidden",
+            "blocked",
+            "prohibit",
+        )
+        return any(term in text for term in denial_terms)
+
+    def _check_handoff_contracts(
+        self,
+        attempt_name: str,
+        handoffs: list[HandoffContractStatement],
+    ) -> list[AssuranceCheck]:
+        if not handoffs:
+            return [
+                AssuranceCheck(
+                    "cognition_contract.handoff_contract.missing",
+                    "fail",
+                    f"Attempt `{attempt_name}` must declare a Kernel handoff contract.",
+                    {"attempt": attempt_name},
+                )
+            ]
+
+        checks = [
+            AssuranceCheck(
+                "cognition_contract.handoff_contract.present",
+                "pass",
+                f"Attempt `{attempt_name}` declares handoff contract target(s).",
+                {"attempt": attempt_name, "targets": [handoff.target for handoff in handoffs]},
+            )
+        ]
+
+        if any(handoff.target == "IX-CognitionKernel" for handoff in handoffs):
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.kernel_handoff.present",
+                    "pass",
+                    f"Attempt `{attempt_name}` declares IX-CognitionKernel as a handoff target.",
+                    {"attempt": attempt_name},
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.kernel_handoff.missing",
+                    "fail",
+                    f"Attempt `{attempt_name}` must hand off to IX-CognitionKernel.",
+                    {"attempt": attempt_name},
+                )
+            )
+
+        return checks
+
+    def _check_required_obligation_coverage(
+        self,
+        *,
+        attempt_name: str,
+        obligations: list[ObligationBlock],
+    ) -> list[AssuranceCheck]:
+        declared = [obligation.identifier for obligation in obligations]
+        declared_set = set(declared)
+        required = cognition_obligation_ids()
+        missing = tuple(identifier for identifier in required if identifier not in declared_set)
+        unknown = tuple(
+            dict.fromkeys(
+                identifier
+                for identifier in declared
+                if get_cognition_obligation(identifier) is None
+            )
+        )
+
+        checks: list[AssuranceCheck] = []
+
+        if missing:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.required_obligations.missing",
+                    "fail",
+                    f"Attempt `{attempt_name}` is missing required cognition obligations.",
+                    {
+                        "attempt": attempt_name,
+                        "missing_obligations": list(missing),
+                        "required_obligations": list(required),
+                        "declared_obligations": declared,
+                    },
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.required_obligations.present",
+                    "pass",
+                    f"Attempt `{attempt_name}` declares all required cognition obligations.",
+                    {
+                        "attempt": attempt_name,
+                        "required_obligations": list(required),
+                    },
+                )
+            )
+
+        if unknown:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.obligations.unknown",
+                    "fail",
+                    f"Attempt `{attempt_name}` declares unknown cognition obligations.",
+                    {
+                        "attempt": attempt_name,
+                        "unknown_obligations": list(unknown),
+                    },
+                )
+            )
+        elif declared:
+            checks.append(
+                AssuranceCheck(
+                    "cognition_contract.obligations.canonical",
+                    "pass",
+                    f"Attempt `{attempt_name}` uses canonical cognition obligation identifiers.",
+                    {
+                        "attempt": attempt_name,
+                        "declared_obligations": declared,
+                    },
+                )
+            )
+
+        return checks
+
+    def _check_one_obligation(
+        self,
+        attempt_name: str,
+        obligation: ObligationBlock,
+    ) -> list[AssuranceCheck]:
+        evidence_requirements = [
+            child.artifact
+            for child in obligation.statements
+            if isinstance(child, EvidenceRequirementStatement)
+        ]
+        falsification_conditions = [
+            child.condition
+            for child in obligation.statements
+            if isinstance(child, FalsifyIfStatement)
+        ]
+
+        checks = [
+            self._obligation_presence_check(
+                count=len(evidence_requirements),
+                check_id="cognition_contract.obligation_evidence",
+                label="evidence requirement",
+                attempt=attempt_name,
+                obligation=obligation.identifier,
+            ),
+            self._obligation_presence_check(
+                count=len(falsification_conditions),
+                check_id="cognition_contract.obligation_falsification",
+                label="falsification gate",
+                attempt=attempt_name,
+                obligation=obligation.identifier,
+            ),
+        ]
+
+        checks.extend(
+            self._check_canonical_falsification_gate(
+                attempt_name=attempt_name,
+                obligation=obligation,
+                declared_conditions=falsification_conditions,
+            )
+        )
+        return checks
+
+    def _check_canonical_falsification_gate(
+        self,
+        *,
+        attempt_name: str,
+        obligation: ObligationBlock,
+        declared_conditions: list[str],
+    ) -> list[AssuranceCheck]:
+        definition = get_cognition_obligation(obligation.identifier)
+        if definition is None:
+            return []
+
+        declared_set = set(declared_conditions)
+        required_set = set(definition.falsification_conditions)
+        matched = tuple(
+            condition
+            for condition in definition.falsification_conditions
+            if condition in declared_set
+        )
+
+        if matched:
+            return [
+                AssuranceCheck(
+                    "cognition_contract.obligation_canonical_falsification.present",
+                    "pass",
+                    f"Obligation `{obligation.identifier}` declares canonical falsification gate(s).",
+                    {
+                        "attempt": attempt_name,
+                        "obligation": obligation.identifier,
+                        "matched_conditions": list(matched),
+                        "canonical_conditions": list(definition.falsification_conditions),
+                    },
+                )
+            ]
+
+        return [
+            AssuranceCheck(
+                "cognition_contract.obligation_canonical_falsification.missing",
+                "fail",
+                f"Obligation `{obligation.identifier}` must include at least one canonical falsification gate.",
+                {
+                    "attempt": attempt_name,
+                    "obligation": obligation.identifier,
+                    "declared_conditions": declared_conditions,
+                    "canonical_conditions": list(required_set),
+                },
+            )
+        ]
+
+    def _obligation_presence_check(
+        self,
+        *,
+        count: int,
+        check_id: str,
+        label: str,
+        attempt: str,
+        obligation: str,
+    ) -> AssuranceCheck:
+        if count > 0:
+            return AssuranceCheck(
+                f"{check_id}.present",
+                "pass",
+                f"Obligation `{obligation}` declares required {label}.",
+                {"attempt": attempt, "obligation": obligation, "count": count},
+            )
+
+        return AssuranceCheck(
+            f"{check_id}.missing",
+            "fail",
+            f"Obligation `{obligation}` must declare at least one {label}.",
+            {"attempt": attempt, "obligation": obligation},
+        )
+
+    def _check_tool_policies(self, program: Program) -> list[AssuranceCheck]:
+        checks: list[AssuranceCheck] = []
+        self._check_tool_policies_in_scope(
+            program.statements,
+            "top-level",
+            checks,
+            inherited_policies=(),
+        )
+
+        for statement in program.statements:
+            if isinstance(statement, AgentBlock):
+                for child in statement.statements:
+                    if isinstance(child, OnBlock):
+                        scope = f"{statement.name}.{child.event}"
+                        self._check_tool_policies_in_scope(
+                            child.statements,
+                            scope,
+                            checks,
+                            inherited_policies=(),
+                        )
+
+        if not any(check.check_id.startswith("tool_policy") for check in checks):
+            checks.append(
+                AssuranceCheck(
+                    "tool_policy.no_tool_calls",
+                    "pass",
+                    "No tool calls require policy gating in this program.",
+                )
+            )
+
+        return checks
+
+    def _check_tool_policies_in_scope(
+        self,
+        statements: tuple[Statement, ...],
+        scope: str,
+        checks: list[AssuranceCheck],
+        *,
+        inherited_policies: tuple[PolicyStatement, ...],
+    ) -> None:
+        local_policies = tuple(
+            statement for statement in statements if isinstance(statement, PolicyStatement)
+        )
+        policies = inherited_policies + local_policies
+
+        for statement in statements:
+            if isinstance(statement, ToolCallStatement):
+                self._check_one_tool_policy(statement, policies, scope, checks)
+                continue
+
+            if isinstance(statement, IfStatement):
+                self._check_tool_policies_in_scope(
+                    statement.then_statements,
+                    f"{scope}.if_then",
+                    checks,
+                    inherited_policies=policies,
+                )
+                self._check_tool_policies_in_scope(
+                    statement.else_statements,
+                    f"{scope}.if_else",
+                    checks,
+                    inherited_policies=policies,
+                )
+
+    def _check_one_tool_policy(
+        self,
+        statement: ToolCallStatement,
+        policies: tuple[PolicyStatement, ...],
+        scope: str,
+        checks: list[AssuranceCheck],
+    ) -> None:
+        if statement.tool_name not in self.tool_registry.names():
+            checks.append(
+                AssuranceCheck(
+                    "tool_policy.unknown_tool",
+                    "fail",
+                    f"Unknown tool `{statement.tool_name}` in scope `{scope}`.",
+                    {"scope": scope, "tool": statement.tool_name},
+                )
+            )
+            return
+
+        decision = self._tool_policy_decision(statement.tool_name, policies)
+        if decision["effect"] != "allow":
+            checks.append(
+                AssuranceCheck(
+                    "tool_policy.not_allowed",
+                    "fail",
+                    f"Tool `{statement.tool_name}` is not explicitly allowed in scope `{scope}`.",
+                    {"scope": scope, "tool": statement.tool_name, "decision": decision},
+                )
+            )
+        else:
+            checks.append(
+                AssuranceCheck(
+                    "tool_policy.allowed",
+                    "pass",
+                    f"Tool `{statement.tool_name}` is explicitly allowed in scope `{scope}`.",
+                    {"scope": scope, "tool": statement.tool_name, "decision": decision},
+                )
+            )
+
+    def _check_handoff_targets(self, program: Program) -> list[AssuranceCheck]:
+        checks: list[AssuranceCheck] = []
+        targets = self._agent_events(program)
+        handoffs = self._send_statements(program.statements)
+
+        if not handoffs:
+            checks.append(
+                AssuranceCheck(
+                    "handoff.no_handoffs",
+                    "pass",
+                    "No agent handoffs require target validation in this program.",
+                )
+            )
+            return checks
+
+        for handoff in handoffs:
+            target = (handoff.target_agent, handoff.target_event)
+            if target in targets:
+                checks.append(
+                    AssuranceCheck(
+                        "handoff.target_found",
+                        "pass",
+                        f"Handoff target `{handoff.target_agent}.{handoff.target_event}` exists.",
+                        {
+                            "target_agent": handoff.target_agent,
+                            "target_event": handoff.target_event,
+                        },
+                    )
+                )
+            else:
+                checks.append(
+                    AssuranceCheck(
+                        "handoff.target_missing",
+                        "fail",
+                        "Handoff target "
+                        f"`{handoff.target_agent}.{handoff.target_event}` does not exist.",
+                        {
+                            "target_agent": handoff.target_agent,
+                            "target_event": handoff.target_event,
+                        },
+                    )
+                )
+
+        return checks
+
+    def _agent_events(self, program: Program) -> set[tuple[str, str]]:
+        targets: set[tuple[str, str]] = set()
+
+        for statement in program.statements:
+            if isinstance(statement, AgentBlock):
+                for child in statement.statements:
+                    if isinstance(child, OnBlock):
+                        targets.add((statement.name, child.event))
+
+        return targets
+
+    def _send_statements(self, statements: tuple[Statement, ...]) -> list[SendStatement]:
+        found: list[SendStatement] = []
+
+        for statement in statements:
+            if isinstance(statement, SendStatement):
+                found.append(statement)
+            elif isinstance(statement, AgentBlock | OnBlock):
+                found.extend(self._send_statements(statement.statements))
+            elif isinstance(statement, IfStatement):
+                found.extend(self._send_statements(statement.then_statements))
+                found.extend(self._send_statements(statement.else_statements))
+
+        return found
+
+    def _runtime_check(
+        self,
+        program: Program,
+        *,
+        agent: str | None,
+        event: str | None,
+        inputs: Mapping[str, Any] | None,
+    ) -> AssuranceCheck:
+        try:
+            result = IXRuntime(tool_registry=self.tool_registry).run(
+                program,
+                agent=agent,
+                event=event,
+                inputs=inputs,
+            )
+        except IXRuntimeError as error:
+            return AssuranceCheck(
+                "runtime.execution_failed",
+                "fail",
+                f"Runtime execution failed: {error}",
+            )
+
+        return AssuranceCheck(
+            "runtime.execution_passed",
+            "pass",
+            "Runtime execution completed under the selected entry point.",
+            {
+                "trace_events": len(result.trace),
+                "outputs": len(result.outputs),
+                "replies": len(result.replies),
+                "handoffs": len(result.handoffs),
+                "tool_results": len(result.tool_results),
+                "branches": len(result.branches),
+            },
+        )
+
+    def _tool_policy_decision(
+        self,
+        tool_name: str,
+        policies: tuple[PolicyStatement, ...],
+    ) -> dict[str, Any]:
+        matching = [policy for policy in policies if self._policy_matches(policy.target, tool_name)]
+        denying = [policy for policy in matching if policy.effect == "deny"]
+
+        if denying:
+            return {
+                "effect": "deny",
+                "target": denying[-1].target,
+                "reason": denying[-1].reason,
+            }
+
+        allowing = [policy for policy in matching if policy.effect == "allow"]
+        if allowing:
+            return {
+                "effect": "allow",
+                "target": allowing[-1].target,
+                "reason": allowing[-1].reason,
+            }
+
+        return {
+            "effect": "deny",
+            "target": tool_name,
+            "reason": "No explicit allow policy matched this tool call.",
+        }
+
+    def _policy_matches(self, target: str, tool_name: str) -> bool:
+        if target == tool_name:
+            return True
+
+        if target.endswith(".*"):
+            return tool_name.startswith(target[:-1])
+
+        return False
+
+    def _status(self, checks: list[AssuranceCheck]) -> AssuranceSeverity:
+        if any(check.severity == "fail" for check in checks):
+            return "fail"
+
+        if any(check.severity == "warn" for check in checks):
+            return "warn"
+
+        return "pass"
+
+
+def default_assurance_profiles() -> tuple[AssuranceProfile, ...]:
+    """Return the built-in assurance profiles in stable order."""
+
+    return (
+        AssuranceProfile(
+            name="experimental-local",
+            description=(
+                "Default local IX assurance profile for deterministic, "
+                "evidence-bound development checks."
+            ),
+        ),
+        AssuranceProfile(
+            name="cognitionkernel-wave6",
+            description=(
+                "Static cognition-contract review profile for governed "
+                "IX-CognitionKernel AGI-candidate attempts. This profile "
+                "does not execute contracts and does not certify AGI status."
+            ),
+            require_non_empty_program=True,
+            require_executable_path=False,
+            check_tool_policies=False,
+            check_handoff_targets=False,
+            check_condition_markers=False,
+            check_assertions=False,
+            check_trace_statements=False,
+            check_human_review=False,
+            check_cognition_contract=True,
+            allow_runtime_execution=False,
+        ),
+    )
+
+
+def assess_ix(
+    program: Program,
+    *,
+    profile: str = "experimental-local",
+    execute: bool = False,
+    agent: str | None = None,
+    event: str | None = None,
+    inputs: Mapping[str, Any] | None = None,
+) -> AssuranceReport:
+    """Assess a parsed IX program with the default assurance analyzer."""
+
+    return AssuranceAnalyzer().assess(
+        program,
+        profile=profile,
+        execute=execute,
+        agent=agent,
+        event=event,
+        inputs=inputs,
+    )

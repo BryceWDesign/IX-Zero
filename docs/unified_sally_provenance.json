@@ -1,0 +1,57 @@
+{
+  "foundation.py": {
+    "source_sha256": "47dfb42429eade9801c28c86e61fb0304dccfcda9b2655b44812d1c9393fc9b2",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "47dfb42429eade9801c28c86e61fb0304dccfcda9b2655b44812d1c9393fc9b2"
+  },
+  "digest.py": {
+    "source_sha256": "cd4a66ca7e19d90dce3bc59f26277db102fce4cfd6ab5fd18bf6dcb5b410bfd8",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "12c1ac0e6aa488252bce15f62bdf2c8b7ac32c18d55146ef527c0153d2c8f80c"
+  },
+  "cognition/open_goals.py": {
+    "source_sha256": "c8c2a5cd76a99ad86f4ef808b5ca24c47ee85367dd9f9437fe3d27a848bee6d5",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "9c60a4f4da0b1d907e12856868506c6fcd1a236bc2685884e76287f5bcfe4db6"
+  },
+  "cognition/open_choice.py": {
+    "source_sha256": "a9030382c9fa57b4e374300f1473c6570161810da8e707365db4d084ee045703",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "f101fd93f706751bbb18bb9a0b37a05647d58fe6647860a9afeae808b7fab382"
+  },
+  "cognition/goals.py": {
+    "source_sha256": "2beaed9e5a7987b21ddc38735719fcad7bc16cc297e6325d12b2db19b52cf861",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "2088e186b96ad8ac0523807ed3883fa980e00e58cf637b5fc423460724f88327"
+  },
+  "cognition/world_model.py": {
+    "source_sha256": "b0a374f045a89141a20cae1d793a2337a5af7f13ab94e85eab5c18e860324927",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "b96f3eaac6ffbefab88d419d859608c6b3966ab6d665415609666bac0e858427"
+  },
+  "cognition/values.py": {
+    "source_sha256": "e0377d4a80fa5fe95e1e2915dc8d194c96bd7d6fcd046840847918f1e6f42f96",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "ebd6d64f3f76b1739a5df5ad0deaabb50b79761aebda21d868b038cdd1a5a35b"
+  },
+  "cognition/relational_transfer.py": {
+    "source_sha256": "8f349cdc3218c88153255a2bf235833f8c4c9fc5a2066de876cbe23c018a10ce",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "b506b8e832d65b8dd44e463b323d485ada2f3ef0e4c4cc31f4699005d362948e"
+  },
+  "cognition/meta_learning.py": {
+    "source_sha256": "f7a22880ef88b48f6574615f2151981d356c1659f4c897b8967a62e3657de2a3",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "a4140755206191c3a285adfbb81917bba228bce015b997e99ff84745e85ed380"
+  },
+  "cognition/metacognition.py": {
+    "source_sha256": "72af1a505d66f0a797f083c5357b560ca9ffac562d04d66946b64daeec10f026",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "fc7ff3cd9606a6f7d1bfaa98b098eb5e5905240095f802a11a5bdc7bbdbf12b0"
+  },
+  "cognition/goal_reasoning.py": {
+    "source_sha256": "a6068f8eb73aeeec8cc9cafde139bc19a781bb1f9f3e504cbe6d9a5721cd47fd",
+    "adaptation": "namespace imports only",
+    "adapted_sha256": "8b3e60f293758b618e0d8998f97d3618589e2f6d0b1a51cffa8e14cff42ff9a0"
+  }
+}

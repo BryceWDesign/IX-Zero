@@ -1,0 +1,31 @@
+# Structural transfer with independent target evidence.
+agent Analogy {
+    on advance {
+        trace "Relational correspondence and target validation"
+        if blocked {
+            reply "revise"
+        } else {
+            if audits >= 3 {
+                if unique and promotable {
+                    reply "abstract"
+                } else {
+                    reply "complete"
+                }
+            } else {
+                if has_models {
+                    if training > 0 and agreed > 0 and (unique or audits > 0) {
+                        reply "audit"
+                    } else {
+                        if audits == 0 and available > 3 {
+                            reply "inquire"
+                        } else {
+                            reply "exhausted"
+                        }
+                    }
+                } else {
+                    reply "exhausted"
+                }
+            }
+        }
+    }
+}

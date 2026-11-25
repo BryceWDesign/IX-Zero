@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ix-zero"
+version = "0.1.0"
+description = "Experimental bounded developmental cognition and skill transfer"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ix-zero = "ix_zero.cli:main"
+
+[tool.setuptools]
+packages = ["ix_zero", "ix_zero._ix_vendor", "ix_zero._sally_vendor", "ix_zero._sally_vendor.cognition"]
+
+[tool.setuptools.package-data]
+ix_zero = ["policies/*.ix"]
+"ix_zero._ix_vendor" = ["LICENSE"]
+"ix_zero._sally_vendor" = ["LICENSE"]

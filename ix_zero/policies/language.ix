@@ -1,0 +1,27 @@
+# Grounded lexical acquisition and frozen evaluation.
+agent Language {
+    on advance {
+        trace "Grounded language acquisition"
+        if blocked {
+            reply "revise"
+        } else {
+            if complete {
+                reply "complete"
+            } else {
+                if has_query and not frozen and (not resolved or unknown) {
+                    reply "inquire"
+                } else {
+                    if has_audit {
+                        reply "audit"
+                    } else {
+                        if has_query and not frozen {
+                            reply "inquire"
+                        } else {
+                            reply "exhausted"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

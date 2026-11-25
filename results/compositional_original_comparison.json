@@ -1,0 +1,181 @@
+[
+  {
+    "text": "compare red sphere green cube",
+    "stage1": {
+      "intent": [
+        "compare",
+        "C",
+        "B"
+      ],
+      "value": 1,
+      "evidence": {
+        "training": 2,
+        "audits": 3,
+        "blocked": false,
+        "programs": [
+          {
+            "name": "ordering(value,value)",
+            "origins": [
+              "host primitive:ordering",
+              "host primitive:value",
+              "host primitive:value"
+            ]
+          }
+        ]
+      }
+    },
+    "stage2": {
+      "meaning": [
+        "compare",
+        "C",
+        "B"
+      ],
+      "value": 1,
+      "trace": [
+        {
+          "intent": "compare",
+          "value": 1,
+          "evidence": {
+            "training": 2,
+            "audits": 3,
+            "blocked": false,
+            "programs": [
+              {
+                "name": "ordering(value,value)",
+                "origins": [
+                  "host primitive:ordering",
+                  "host primitive:value",
+                  "host primitive:value"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "text": "please compare the red sphere with the green cube",
+    "stage1": {
+      "abstained": true,
+      "reason": "expected three or five lexical tokens"
+    },
+    "stage2": {
+      "meaning": [
+        "compare",
+        "C",
+        "B"
+      ],
+      "value": 1,
+      "trace": [
+        {
+          "intent": "compare",
+          "value": 1,
+          "evidence": {
+            "training": 2,
+            "audits": 3,
+            "blocked": false,
+            "programs": [
+              {
+                "name": "ordering(value,value)",
+                "origins": [
+                  "host primitive:ordering",
+                  "host primitive:value",
+                  "host primitive:value"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "text": "compare inspect red sphere rule green cube blue cone",
+    "stage1": {
+      "abstained": true,
+      "reason": "expected three or five lexical tokens"
+    },
+    "stage2": {
+      "meaning": [
+        "compare",
+        [
+          "inspect",
+          "C"
+        ],
+        [
+          "rule",
+          "B",
+          "D"
+        ]
+      ],
+      "value": 0,
+      "trace": [
+        {
+          "intent": "inspect",
+          "value": 2,
+          "evidence": {
+            "training": 2,
+            "audits": 3,
+            "blocked": false,
+            "programs": [
+              {
+                "name": "value(identity)",
+                "origins": [
+                  "host primitive:value"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "intent": "rule",
+          "value": 2,
+          "evidence": {
+            "training": 2,
+            "audits": 3,
+            "blocked": false,
+            "programs": [
+              {
+                "name": "op_word7(value,value)",
+                "origins": [
+                  "operator:word7",
+                  "host primitive:value",
+                  "host primitive:value"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "intent": "compare",
+          "value": 0,
+          "evidence": {
+            "training": 2,
+            "audits": 3,
+            "blocked": false,
+            "programs": [
+              {
+                "name": "ordering(identity,identity)",
+                "origins": [
+                  "host primitive:ordering"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "text": "what would you ask me about the world",
+    "stage1": {
+      "abstained": true,
+      "reason": "expected three or five lexical tokens"
+    },
+    "stage2": {
+      "abstained": true,
+      "reason": "unresolved or unaudited construction"
+    }
+  }
+]

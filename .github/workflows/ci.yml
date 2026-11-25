@@ -1,0 +1,44 @@
+name: IX-Zero engineering checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python -m ix_zero.experiment --trials 2
+      - run: python -m ix_zero.validation --trials 2
+      - run: python -m ix_zero.challenges
+      - run: python -m ix_zero.discovery_experiment --trials 2
+      - run: python -m ix_zero.discovery_experiment --strict --seed 200 --trials 2
+      - run: python -m ix_zero.discovery_planning --trials 2
+      - run: python -m ix_zero.unified_experiment --trials 2
+      - run: python -m ix_zero.superiority_experiment --trials 2 --check
+      - run: python -m ix_zero.operator_experiment --trials 2 --seed 9400 --check
+      - run: python -m ix_zero.strategy_experiment --trials 1 --seed 67000 --mode exact --check
+      - run: python -m ix_zero.analogy_experiment --trials 2 --check
+      - run: python -m ix_zero.language_experiment --trials 2 --check
+      - run: python -m ix_zero.language_demo --check
+
+      - run: python -m ix_zero.acce_experiment --trials 2 --check
+      - run: python -m ix_zero.acce_demo --check
+      - run: python -m ix_zero.compositional_experiment --trials 2 --check
+      - run: python -m ix_zero.compositional_demo --check
+      - run: python -m ix_zero.representation_experiment --trials 2 --seed 185000 --novel --check
+      - run: python -m ix_zero.representation_demo --check
+      - run: python -m ix_zero.contextual_experiment --trials 2 --check
+      - run: python -m ix_zero.contextual_demo --check
+      - run: python -m ix_zero.developmental_experiment --trials 2 --check
+      - run: python -m ix_zero.developmental_cli --check
+      - run: python -m ix_zero.developmental_challenge --trials 2 --check
+
+      - run: python -m ix_zero.epistemic_experiment --trials 2 --check

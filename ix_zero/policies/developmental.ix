@@ -1,0 +1,15 @@
+# Schedule only ready, bounded learning objectives.
+agent Development {
+    on advance {
+        trace "Developmental curriculum selection"
+        if ready {
+            reply "learn"
+        } else {
+            if unfinished {
+                reply "wait"
+            } else {
+                reply "complete"
+            }
+        }
+    }
+}

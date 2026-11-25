@@ -1,0 +1,20 @@
+[
+  {
+    "source": "src/ix_sally/cognition/representation.py",
+    "sha256": "25cbf6608f8c3695c92ebb2ab435d3810a3c8ffdb2d695b5632f607f1b151a88",
+    "adapted": "ix_zero/_sally_vendor/cognition/representation.py",
+    "adapted_sha256": "2a7d54fbb5f28efd0477b4da57bf788dce6f71ea8828eb730717a067057d8ff1"
+  },
+  {
+    "source": "src/ix_sally/cognition/representation_programs.py",
+    "sha256": "6f7330eaebd63eaeb691f228797732128b232a67c21d44ff36e4db9c6c2b220d",
+    "adapted": "ix_zero/_sally_vendor/cognition/representation_programs.py",
+    "adapted_sha256": "0185799be7c0437d8b8f6c72c4b1073fdbc420299264e92be6ed18a58af84b44"
+  },
+  {
+    "source": "src/ix_sally/cognition/developmental_learning.py",
+    "sha256": "5819f356595ccb9c25389e389a86876584e6c6f0565d3093e9320f3f30f69079",
+    "adapted": "ix_zero/_sally_vendor/cognition/developmental_learning.py",
+    "adapted_sha256": "9a44d429f6a528dc9e272dc3c505637c50666c48108dd769cb8a05cad35c458f"
+  }
+]

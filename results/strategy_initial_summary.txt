@@ -1,0 +1,270 @@
+{
+  "incumbent": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high"
+  },
+  "selected": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high"
+  },
+  "challenger": null,
+  "decision": "retain",
+  "confirmation_verdict": null
+}
+[
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "all",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "all",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 94
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 94
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 94
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "candidate": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 94
+      },
+      "incumbent": {
+        "correct": 1401,
+        "incorrect": 0,
+        "abstained": 49,
+        "labels": 93
+      }
+    }
+  }
+]

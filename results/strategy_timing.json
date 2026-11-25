@@ -1,0 +1,42 @@
+{
+  "seed": 77000,
+  "repeats": 7,
+  "fixtures": 24,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "process_cpu_ns": [
+    {
+      "checked": 137228808,
+      "packed": 35924620
+    },
+    {
+      "packed": 35635060,
+      "checked": 130105000
+    },
+    {
+      "checked": 126909192,
+      "packed": 29891485
+    },
+    {
+      "packed": 30477702,
+      "checked": 128690181
+    },
+    {
+      "checked": 124298254,
+      "packed": 29612632
+    },
+    {
+      "packed": 29551991,
+      "checked": 127074407
+    },
+    {
+      "checked": 126318236,
+      "packed": 30380258
+    }
+  ],
+  "median_ns": {
+    "checked": 127074407,
+    "packed": 30380258
+  },
+  "speedup": 4.182795518063079
+}

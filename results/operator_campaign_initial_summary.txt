@@ -1,0 +1,276 @@
+{
+  "trials": 12,
+  "seed": 8400,
+  "totals": {
+    "discovery/and/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/or/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/xor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/xnor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/nor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/implication/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/shifted_intersection/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/addition/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 528,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/minimum/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 528,
+      "training": 168,
+      "audits": 2,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/random_mapping/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 528,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/and/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/or/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/xor/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/xnor/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/nor/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/implication/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/shifted_intersection/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/addition/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2832,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/minimum/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2832,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "discovery/random_mapping/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2832,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "source/xor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "cold/shifted_xor/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 528,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "reuse/shifted_xor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "cold/nested_xor/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 528,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "reuse/nested_xor/3": {
+      "correct": 528,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "cold/shifted_xor/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2832,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "reuse/shifted_xor/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "cold/nested_xor/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2832,
+      "training": 168,
+      "audits": 0,
+      "episodes": 12,
+      "truncated": 0
+    },
+    "reuse/nested_xor/4": {
+      "correct": 2832,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 168,
+      "audits": 72,
+      "episodes": 12,
+      "truncated": 0
+    }
+  },
+  "active_totals": {
+    "episodes": 12,
+    "promoted": 11,
+    "correct": 484,
+    "incorrect": 0,
+    "abstained": 44,
+    "training": 72,
+    "audits": 34
+  }
+}

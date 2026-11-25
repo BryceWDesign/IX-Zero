@@ -1,0 +1,23 @@
+# Select the next evidence-bounded action; the host enforces validity.
+agent Contextual {
+    on advance {
+        trace "Contextual hypothesis evaluation"
+        if blocked {
+            reply "revise"
+        } else {
+            if validated {
+                reply "complete"
+            } else {
+                if has_query and not frozen and (not enough or informative) {
+                    reply "inquire"
+                } else {
+                    if enough {
+                        reply "audit"
+                    } else {
+                        reply "exhausted"
+                    }
+                }
+            }
+        }
+    }
+}

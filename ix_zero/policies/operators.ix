@@ -1,0 +1,35 @@
+# Evidence-gated operator acquisition.
+agent Operators {
+    on advance {
+        trace "Bounded operator acquisition"
+        if blocked {
+            reply "revise"
+        } else {
+            if resolved {
+                if audits >= audit_target {
+                    if promotable {
+                        reply "abstract"
+                    } else {
+                        reply "complete"
+                    }
+                } else {
+                    if disagreement {
+                        reply "inquire"
+                    } else {
+                        if unused > 0 {
+                            reply "audit"
+                        } else {
+                            reply "exhausted"
+                        }
+                    }
+                }
+            } else {
+                if has_models and train_unused > 0 {
+                    reply "inquire"
+                } else {
+                    reply "exhausted"
+                }
+            }
+        }
+    }
+}

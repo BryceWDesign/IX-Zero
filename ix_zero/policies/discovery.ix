@@ -1,0 +1,39 @@
+# Evidence-driven bounded representation acquisition.
+agent Discovery {
+    on advance {
+        trace "Representation acquisition from observed evidence"
+        if blocked {
+            reply "revise"
+        } else {
+            if passes >= 3 {
+                if promotable {
+                    reply "abstract"
+                } else {
+                    reply "complete"
+                }
+            } else {
+                if audits > 0 {
+                    if unused > 0 {
+                        reply "audit"
+                    } else {
+                        reply "exhausted"
+                    }
+                } else {
+                    if observations > 0 and expandable and missing {
+                        reply "discover"
+                    } else {
+                        if observations >= 6 and available >= 3 {
+                            reply "audit"
+                        } else {
+                            if unused > 0 {
+                                reply "inquire"
+                            } else {
+                                reply "exhausted"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

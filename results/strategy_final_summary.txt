@@ -1,0 +1,97 @@
+{
+  "incumbent": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "checked"
+  },
+  "selected": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "packed"
+  },
+  "challenger": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "packed"
+  },
+  "decision": "adopt",
+  "confirmation_verdict": {
+    "eligible": true,
+    "nonregression": true,
+    "pareto": true,
+    "efficiency_tradeoff": false,
+    "candidate": {
+      "correct": 3480,
+      "incorrect": 0,
+      "abstained": 870,
+      "labels": 242,
+      "query_work": 1764424,
+      "redundant_validation_work": 0
+    },
+    "incumbent": {
+      "correct": 3480,
+      "incorrect": 0,
+      "abstained": 870,
+      "labels": 242,
+      "query_work": 1764424,
+      "redundant_validation_work": 1764424
+    }
+  },
+  "challenge_verdict": {
+    "eligible": true,
+    "nonregression": true,
+    "pareto": true,
+    "efficiency_tradeoff": false,
+    "candidate": {
+      "correct": 956,
+      "incorrect": 12,
+      "abstained": 3382,
+      "labels": 192,
+      "query_work": 1734815,
+      "redundant_validation_work": 0
+    },
+    "incumbent": {
+      "correct": 956,
+      "incorrect": 12,
+      "abstained": 3382,
+      "labels": 192,
+      "query_work": 1734815,
+      "redundant_validation_work": 1734815
+    }
+  }
+}
+[
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "all",
+      "tie": "high",
+      "kernel": "packed"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": true,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4109,
+        "incorrect": 0,
+        "abstained": 241,
+        "labels": 277,
+        "query_work": 1702005,
+        "redundant_validation_work": 0
+      },
+      "incumbent": {
+        "correct": 4109,
+        "incorrect": 0,
+        "abstained": 241,
+        "labels": 277,
+        "query_work": 1702005,
+        "redundant_validation_work": 1702005
+      }
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "archive": "IX-main(20261124-163653).zip",
+  "archive_sha256": "bd0628860ed8ddf68956bc637346305dff3efd390ff452321d0f362ad26b8357",
+  "commit": "3a629832f6b3057aa4656be4314080dd20bac491",
+  "files": [
+    {
+      "source": "ix/__init__.py",
+      "destination": "ix_zero/_ix_vendor/__init__.py",
+      "sha256": "24c769de127810dc8602c50881e3847c7aac43c400fd8cb605b0868bddce11e3"
+    },
+    {
+      "source": "ix/__main__.py",
+      "destination": "ix_zero/_ix_vendor/__main__.py",
+      "sha256": "02f6c87995e5161af31a8b59c698ff3f98b424a78ebec67aee9f44e1525977eb"
+    },
+    {
+      "source": "ix/assurance.py",
+      "destination": "ix_zero/_ix_vendor/assurance.py",
+      "sha256": "9ee04e71037c222539f450fe33e4ad6969e73f7f200b070b87ae4e187336b5b7"
+    },
+    {
+      "source": "ix/ast.py",
+      "destination": "ix_zero/_ix_vendor/ast.py",
+      "sha256": "42cbe770d1d2b8fd75dddaee89b8ff450751e3a431638620144ca8f63f50df75"
+    },
+    {
+      "source": "ix/cli.py",
+      "destination": "ix_zero/_ix_vendor/cli.py",
+      "sha256": "65869cf2b3b34de5087523ed64dbc96bf09022a34cd2741c770df13f188c66ec"
+    },
+    {
+      "source": "ix/cognition.py",
+      "destination": "ix_zero/_ix_vendor/cognition.py",
+      "sha256": "bce04de7b28080771b8b83570d2f47fbee792956c1228534d5dd3837f533b1ec"
+    },
+    {
+      "source": "ix/errors.py",
+      "destination": "ix_zero/_ix_vendor/errors.py",
+      "sha256": "218b0bf55230829f4914d110d0262ee2349b1c7f03ef291898bb1406743f12c3"
+    },
+    {
+      "source": "ix/evidence.py",
+      "destination": "ix_zero/_ix_vendor/evidence.py",
+      "sha256": "63b6480eec5a50d336e860dd20900b8a449baca06df3bbec0e71e6cc33aed0e6"
+    },
+    {
+      "source": "ix/formatting.py",
+      "destination": "ix_zero/_ix_vendor/formatting.py",
+      "sha256": "672d96bd9252fb3f44f1a156debc59cf5a2c50476340df8f10959cc8e9f66f12"
+    },
+    {
+      "source": "ix/parser.py",
+      "destination": "ix_zero/_ix_vendor/parser.py",
+      "sha256": "d493534d70e57b43b8175fa3cdb7be866c6ceb95644bd77182d5ea5fa67dac82"
+    },
+    {
+      "source": "ix/runtime.py",
+      "destination": "ix_zero/_ix_vendor/runtime.py",
+      "sha256": "96469289582ab729281cb5cb08571a70d98a13305e61f6c063810bcdd4138ca7"
+    },
+    {
+      "source": "ix/tools.py",
+      "destination": "ix_zero/_ix_vendor/tools.py",
+      "sha256": "80b05868e3d4bf715ac01989e41f4c8b09daa0422a8c50d942c3b4ec42797275"
+    },
+    {
+      "source": "ix/tracing.py",
+      "destination": "ix_zero/_ix_vendor/tracing.py",
+      "sha256": "c02f6f962013556bf490e06be7b31e2dc419cb1be6dc60effbc24adca507df3d"
+    },
+    {
+      "source": "ix/validator.py",
+      "destination": "ix_zero/_ix_vendor/validator.py",
+      "sha256": "34b21d06b0319297772fc3db3e1e26df41ade84a0d4ad572b915e1f67946dfb5"
+    },
+    {
+      "source": "ix/version.py",
+      "destination": "ix_zero/_ix_vendor/version.py",
+      "sha256": "55df529beaf451c1de4026ad97ef3f1012c4c055c0e1cfcacbb1ea6a1d1d168f"
+    }
+  ]
+}

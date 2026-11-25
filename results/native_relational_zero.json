@@ -1,0 +1,146 @@
+[
+  {
+    "case": "900-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "900-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "901-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "901-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "902-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "902-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "903-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "903-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "904-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "904-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "905-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "905-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "906-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "906-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "907-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "907-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "908-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "908-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "909-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "909-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "910-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "910-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "911-local",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  {
+    "case": "911-nonlocal",
+    "correct": 24,
+    "incorrect": 0,
+    "abstained": 0
+  }
+]

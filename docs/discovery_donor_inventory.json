@@ -1,0 +1,179 @@
+[
+  {
+    "archive": "Adaptive-Sense-Act-Runtime-main.zip",
+    "sha256": "322a5cb61aa73fbaea0f414050cbe6d3b50c2f0e04a7007bbfcc85f29fb8da01",
+    "archive_entries": 61,
+    "selected_files": [
+      {
+        "path": "Adaptive-Sense-Act-Runtime-main/README.md",
+        "sha256": "8f329f3d60287ef42c7cac4cfa8cab5332fa8cd553fa788a1a6c7bd9d2ebe00c",
+        "bytes": 11304
+      },
+      {
+        "path": "Adaptive-Sense-Act-Runtime-main/src/asar/fusion.py",
+        "sha256": "e8be95aed2179f6514e2b2486f8c53aad4dfc49af3fddcdbc9cc368b7de48e7d",
+        "bytes": 1954
+      },
+      {
+        "path": "Adaptive-Sense-Act-Runtime-main/src/asar/runtime.py",
+        "sha256": "52ee255300bac047413e70ec04e03c93c95511386dd2c749703db42f608d37a0",
+        "bytes": 3967
+      }
+    ],
+    "adaptation": "Separated evidence, hypothesis and outcome; active inquiry and audit gate.",
+    "source_vendored": false
+  },
+  {
+    "archive": "ContraryLive-main.zip",
+    "sha256": "128fe9e9dc654c6bcbb3c3da5197001abde955691797165e9b9a57b6960c2c49",
+    "archive_entries": 5,
+    "selected_files": [
+      {
+        "path": "ContraryLive-main/README.md",
+        "sha256": "313fe46374f0e036047c6599f4884a21f3c843c2fe662e123ac7c94c55073f70",
+        "bytes": 7862
+      },
+      {
+        "path": "ContraryLive-main/index.html",
+        "sha256": "27fcc45155424a7f02b467b68461cd0b2d058a029679c304c7a40050af7e04ec",
+        "bytes": 15509
+      }
+    ],
+    "adaptation": "Different symbolic and projected-table model families, not shared-model persona roleplay.",
+    "source_vendored": false
+  },
+  {
+    "archive": "CypherSyntax-main(20261124-182139).zip",
+    "sha256": "277f3edc943fd1f5b1a88b2a76d24e59c05f69739074b23c61ccba78abb79b7d",
+    "archive_entries": 39,
+    "selected_files": [
+      {
+        "path": "CypherSyntax-main/README.md",
+        "sha256": "e0ef359262697ddc1c0bd9312d73e8d5e349d80da80c5f88d4bdc78f74d03be8",
+        "bytes": 6792
+      },
+      {
+        "path": "CypherSyntax-main/src/cyphersyntax/session.py",
+        "sha256": "d2a9c3963aa5f4a7914ca3ba7f0508ef7910debdc1adc52f9170b2d9fc919803",
+        "bytes": 15718
+      },
+      {
+        "path": "CypherSyntax-main/src/cyphersyntax/replay.py",
+        "sha256": "d6530663fc6c97af5dcfe7ccab2192b933b82d404867267a5da01face9d58563",
+        "bytes": 2362
+      }
+    ],
+    "adaptation": "Reject duplicate audit inputs and replay event journal; digest is not cryptographic authentication.",
+    "source_vendored": false
+  },
+  {
+    "archive": "IX-Autonomy-Assurance-Case-Runtime-main(20261124-182139).zip",
+    "sha256": "cf1b3aa6f0486e77f90c0161d0cca95d9b5c7dd422ce1a551b1f1f10475df8c7",
+    "archive_entries": 151,
+    "selected_files": [
+      {
+        "path": "IX-Autonomy-Assurance-Case-Runtime-main/README.md",
+        "sha256": "712221667fc04de5ff96f1480fb557c41138ff2fcce17b4edfd1d659ef724cae",
+        "bytes": 14624
+      },
+      {
+        "path": "IX-Autonomy-Assurance-Case-Runtime-main/src/ix_autonomy_assurance_case_runtime/claim_guardrails.py",
+        "sha256": "d0e82a0fee4126da2b618b4604d6a6b3b16bc45bc6268468f5596c86ff6dc365",
+        "bytes": 17002
+      },
+      {
+        "path": "IX-Autonomy-Assurance-Case-Runtime-main/src/ix_autonomy_assurance_case_runtime/evidence.py",
+        "sha256": "eab1fbfed092b7d3ebe266ed605aee83f0c5d4d41afb69bc60c75bfc94eae134",
+        "bytes": 12710
+      }
+    ],
+    "adaptation": "Evidence-backed claim boundaries and documented negative controls; no certification.",
+    "source_vendored": false
+  },
+  {
+    "archive": "IX-Decriel-main(20261124-182139).zip",
+    "sha256": "9b95d50c2467d2840cc70f4c47df946aefafaf84f413bc01428a7131928ca022",
+    "archive_entries": 52,
+    "selected_files": [
+      {
+        "path": "IX-Decriel-main/README.md",
+        "sha256": "61cf9105dffc8fbaca89686b9e66c61af41478650fb452d344d875c0624e0862",
+        "bytes": 4090
+      },
+      {
+        "path": "IX-Decriel-main/crates/decriel-core/src/authority.rs",
+        "sha256": "7bc7e2c830c16756f168b08af3081ebd33104f496c4abec9f7aebea76e3e9ad4",
+        "bytes": 15633
+      }
+    ],
+    "adaptation": "IX action names select host-checked operations; no shell, network or host code generation.",
+    "source_vendored": false
+  },
+  {
+    "archive": "IX-HapticSight-main(20261124-182140).zip",
+    "sha256": "4423e55c5837bca07e225fc14be9e0b785770d86e9ec9cf8a642c18495e2dbea",
+    "archive_entries": 192,
+    "selected_files": [
+      {
+        "path": "IX-HapticSight-main/README.md",
+        "sha256": "5278cf571fef1d5a6d5110b29931d5b16fe348fc1101a821186b328e422397d4",
+        "bytes": 12409
+      },
+      {
+        "path": "IX-HapticSight-main/src/ohip_perception/fusion.py",
+        "sha256": "e27f8e2dd81e110d9c46b65c690b56932a7edacb05ed9503a284f327dff5f5eb",
+        "bytes": 2774
+      }
+    ],
+    "adaptation": "Disagreement between differently structured models can veto a prediction; no sensor integration.",
+    "source_vendored": false
+  },
+  {
+    "archive": "IX-StellaratorForge-main(10).zip",
+    "sha256": "9e6c60cec1c4623859876649ebc2b392f83eb052777ea3ba4aa27e50e2f5690d",
+    "archive_entries": 365,
+    "selected_files": [
+      {
+        "path": "IX-StellaratorForge-main/README.md",
+        "sha256": "833807f32bfda5d776a6dbfe95a85db5115c48a250f2b98dc8af0d3129944ede",
+        "bytes": 29756
+      },
+      {
+        "path": "IX-StellaratorForge-main/src/ix_stellaratorforge/architecture_search.py",
+        "sha256": "8fc742eef2bb1abc6f7fda9d00ef5c1d5b71095614dcd31f1de1a7e46c423e99",
+        "bytes": 4602
+      },
+      {
+        "path": "IX-StellaratorForge-main/scripts/run_sfr5_reality_gradient.py",
+        "sha256": "417672a7af9f78a2bc3564f1e89cef3868b31aac5a41d3eea9e1cbc5bba0e46f",
+        "bytes": 1876
+      }
+    ],
+    "adaptation": "Failure-driven search expansion and a separate factorized representation; no fusion physics imported.",
+    "source_vendored": false
+  },
+  {
+    "archive": "SynapDrive-AI-main(20261124-182141).zip",
+    "sha256": "0dd059e0ad4bc5cb1c6ce9f6bc610f4796913f4e32cc44cc052d5c05a1946c33",
+    "archive_entries": 254,
+    "selected_files": [
+      {
+        "path": "SynapDrive-AI-main/README.md",
+        "sha256": "d868a5940e6c1db39afc4af00cf24af7765dc45f61afb87b1bdb88b2b190476c",
+        "bytes": 7577
+      },
+      {
+        "path": "SynapDrive-AI-main/synapdrive_ai/memory/evidence_memory.py",
+        "sha256": "f95806d444564bdc38e145dc5017a9e33b160c12f5f4dadd54df0b6f3a77725d",
+        "bytes": 2196
+      },
+      {
+        "path": "SynapDrive-AI-main/synapdrive_ai/adaptation/decoder_updates.py",
+        "sha256": "6d4a1ac70a41880da0a3a90c57313d3964e38a1166329d3f719f05f440112b27",
+        "bytes": 4060
+      }
+    ],
+    "adaptation": "Freeze fitting before evaluator audit; source dependency tracking and quarantine cascade.",
+    "source_vendored": false
+  }
+]

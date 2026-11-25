@@ -1,0 +1,290 @@
+{
+  "seeds": [
+    900
+  ],
+  "coupled": [
+    {
+      "seed": 900,
+      "kind": "gate",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "threshold",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 4,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "reset",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    }
+  ],
+  "sparse": [
+    {
+      "seed": 900,
+      "kind": "gate",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "threshold",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "reset",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    }
+  ],
+  "recovery": [
+    {
+      "seed": 900,
+      "wrong_before": true,
+      "blocked_before_recovery": true,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0
+    }
+  ],
+  "scalar": [
+    {
+      "seed": 900,
+      "world": "product",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "difference",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "composition",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "absolute",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "offset",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "scaled",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "remainder",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "division",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "unstructured",
+      "arm": "IX-Zero",
+      "probes": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 32
+    }
+  ],
+  "native_sally": false,
+  "native_julia": "not executed by this harness"
+}

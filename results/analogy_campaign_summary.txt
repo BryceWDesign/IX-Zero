@@ -1,0 +1,180 @@
+{
+  "seed": 88000,
+  "trials": 24,
+  "totals": {
+    "rotation_phase/structural": {
+      "correct": 1056,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 168,
+      "mappings": 168
+    },
+    "rotation_phase/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 20160,
+      "mappings": 120960
+    },
+    "rotation_phase/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 312,
+      "mappings": 0
+    },
+    "resource_signal/structural": {
+      "correct": 713,
+      "incorrect": 0,
+      "abstained": 31,
+      "initial_models": 48,
+      "mappings": 48
+    },
+    "resource_signal/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 744,
+      "initial_models": 17280,
+      "mappings": 17280
+    },
+    "resource_signal/local": {
+      "correct": 32,
+      "incorrect": 30,
+      "abstained": 682,
+      "initial_models": 288,
+      "mappings": 0
+    },
+    "switch_membership/structural": {
+      "correct": 264,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 96,
+      "mappings": 192
+    },
+    "switch_membership/unstructured": {
+      "correct": 264,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 96,
+      "mappings": 576
+    },
+    "switch_membership/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 264,
+      "initial_models": 240,
+      "mappings": 0
+    },
+    "permutation_tiles/structural": {
+      "correct": 744,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 144,
+      "mappings": 144
+    },
+    "permutation_tiles/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 744,
+      "initial_models": 2880,
+      "mappings": 17280
+    },
+    "permutation_tiles/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 744,
+      "initial_models": 288,
+      "mappings": 0
+    },
+    "wrong_operation/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 168,
+      "mappings": 168
+    },
+    "wrong_operation/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 20160,
+      "mappings": 120960
+    },
+    "wrong_operation/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 312,
+      "mappings": 0
+    },
+    "wrong_graph/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 0,
+      "mappings": 0
+    },
+    "wrong_graph/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 20160,
+      "mappings": 120960
+    },
+    "wrong_graph/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 264,
+      "mappings": 0
+    },
+    "random_target/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 168,
+      "mappings": 168
+    },
+    "random_target/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 20160,
+      "mappings": 120960
+    },
+    "random_target/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 312,
+      "mappings": 0
+    },
+    "hidden_exception/structural": {
+      "correct": 817,
+      "incorrect": 19,
+      "abstained": 220,
+      "initial_models": 168,
+      "mappings": 168
+    },
+    "hidden_exception/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 20160,
+      "mappings": 120960
+    },
+    "hidden_exception/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1056,
+      "initial_models": 312,
+      "mappings": 0
+    }
+  },
+  "autonomous_promotions": 96,
+  "autonomous_trials": 96,
+  "chain_promotions": 24,
+  "chain_quarantined": 24,
+  "chain_correct": 528,
+  "chain_predictions": 528
+}

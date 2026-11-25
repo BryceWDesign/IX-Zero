@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "nested": {
+      "correct": 2304
+    },
+    "shallow": {
+      "correct": 1152
+    }
+  },
+  "depths": {
+    "1:correct": 1152,
+    "2:correct": 576,
+    "3:correct": 576,
+    "4:correct": 576,
+    "5:correct": 576
+  },
+  "flat_grammar_ablation": {
+    "abstained": 2304,
+    "correct": 1152
+  },
+  "negative": {
+    "abstained": 72,
+    "quarantined": 24,
+    "shift_wrong_before": 24
+  },
+  "original_fixed_vocabulary": {
+    "abstained": 3456
+  },
+  "seed": 180000,
+  "trials": 24
+}

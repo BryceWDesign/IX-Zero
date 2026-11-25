@@ -1,0 +1,23 @@
+# Evidence-bounded capability selection.
+agent Composition {
+    on advance {
+        trace "Typed cognitive dispatch"
+        if blocked {
+            reply "revise"
+        } else {
+            if validated {
+                reply "complete"
+            } else {
+                if has_query and not frozen and (not enough or not resolved) {
+                    reply "inquire"
+                } else {
+                    if enough {
+                        reply "audit"
+                    } else {
+                        reply "exhausted"
+                    }
+                }
+            }
+        }
+    }
+}

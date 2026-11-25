@@ -1,0 +1,119 @@
+{
+  "seeds": [
+    100
+  ],
+  "symbolic": {
+    "local": {
+      "local": {
+        "correct": 24,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 6,
+        "audits": 6
+      },
+      "counter": {
+        "correct": 12,
+        "incorrect": 0,
+        "abstained": 12,
+        "audit_passes": 6,
+        "audits": 6
+      },
+      "combined": {
+        "correct": 24,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 6,
+        "audits": 6
+      }
+    },
+    "nonlocal": {
+      "local": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstained": 24,
+        "audit_passes": 0,
+        "audits": 6
+      },
+      "counter": {
+        "correct": 24,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 6,
+        "audits": 6
+      },
+      "combined": {
+        "correct": 24,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 6,
+        "audits": 6
+      }
+    }
+  },
+  "joint": {
+    "cases": 8,
+    "arms": {
+      "joint": {
+        "success": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 210
+      },
+      "joint_no_macros": {
+        "success": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 226
+      },
+      "relational_only": {
+        "success": 0,
+        "wrong": 8,
+        "abstained": 0,
+        "expansions": 16
+      },
+      "numeric_only": {
+        "success": 5,
+        "wrong": 3,
+        "abstained": 0,
+        "expansions": 0
+      }
+    },
+    "generated_goals": {
+      "generated": 8,
+      "replayed_success": 8,
+      "wrong": 0,
+      "abstained": 0
+    }
+  },
+  "analogy": {
+    "cases": 1,
+    "correct_role": 1,
+    "replayed_goal": 1,
+    "ambiguous_rejected": 1
+  },
+  "falsification": {
+    "hidden_symbolic_context": {
+      "cases": 1,
+      "wrong_before_feedback": 1,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 1,
+      "abstained_after_feedback": 1
+    },
+    "cross_modal_interaction": {
+      "cases": 1,
+      "wrong_before_feedback": 1,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 1,
+      "abstained_after_feedback": 1
+    }
+  },
+  "recovery": {
+    "epochs": 1,
+    "recovered": 1,
+    "correct": 8,
+    "incorrect": 0,
+    "abstained": 0,
+    "heldout": 8,
+    "fresh_audit_passes": 4
+  }
+}

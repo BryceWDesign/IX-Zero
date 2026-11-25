@@ -1,0 +1,11 @@
+# Strategy adoption; host evidence gates are fixed.
+agent Strategy {
+    on select {
+        trace "Independent strategy confirmation"
+        if has_candidate and confirmed and challenge_passed {
+            reply "adopt"
+        } else {
+            reply "retain"
+        }
+    }
+}

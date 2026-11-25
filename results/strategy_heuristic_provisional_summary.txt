@@ -1,0 +1,499 @@
+{
+  "incumbent": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high"
+  },
+  "selected": {
+    "metric": "distinct",
+    "weighting": "frontier",
+    "tie": "low"
+  },
+  "challenger": {
+    "metric": "distinct",
+    "weighting": "frontier",
+    "tie": "low"
+  },
+  "decision": "adopt",
+  "confirmation_verdict": {
+    "eligible": true,
+    "nonregression": true,
+    "pareto": false,
+    "efficiency_tradeoff": true,
+    "candidate": {
+      "correct": 3480,
+      "incorrect": 0,
+      "abstained": 870,
+      "labels": 242,
+      "query_work": 49271
+    },
+    "incumbent": {
+      "correct": 3480,
+      "incorrect": 0,
+      "abstained": 870,
+      "labels": 241,
+      "query_work": 1752435
+    }
+  }
+}
+[
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": true,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 274,
+        "query_work": 1716290
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 273,
+        "query_work": 1720995
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 274,
+        "query_work": 1718383
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "frontier",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 277,
+        "query_work": 36013
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "frontier",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 277,
+        "query_work": 33823
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "all",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 276,
+        "query_work": 1718401
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 276,
+        "query_work": 1716886
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1721578
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 276,
+        "query_work": 1718968
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "frontier",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 278,
+        "query_work": 43128
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "minimax",
+      "weighting": "frontier",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 280,
+        "query_work": 42317
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "all",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 273,
+        "query_work": 1718161
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "all",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": true,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 273,
+        "query_work": 1715315
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "cheap",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": false,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 274,
+        "query_work": 1717922
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "cheap",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": true,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 274,
+        "query_work": 1717365
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "frontier",
+      "tie": "high"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 277,
+        "query_work": 34909
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  },
+  {
+    "strategy": {
+      "metric": "collision",
+      "weighting": "frontier",
+      "tie": "low"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": false,
+      "efficiency_tradeoff": true,
+      "candidate": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 281,
+        "query_work": 34540
+      },
+      "incumbent": {
+        "correct": 4350,
+        "incorrect": 0,
+        "abstained": 0,
+        "labels": 275,
+        "query_work": 1717860
+      }
+    }
+  }
+]

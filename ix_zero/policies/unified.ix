@@ -1,0 +1,23 @@
+# Bounded developmental workspace. The host checks each requested operation.
+agent Unified {
+    on advance {
+        trace "Evaluate shared relational and computational learning workspace"
+        if has_goal {
+            reply "plan"
+        } else {
+            if has_query {
+                reply "inquire"
+            } else {
+                if has_move {
+                    reply "generate"
+                } else {
+                    if has_recovery {
+                        reply "revise"
+                    } else {
+                        reply "exhausted"
+                    }
+                }
+            }
+        }
+    }
+}

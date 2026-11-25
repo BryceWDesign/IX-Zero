@@ -1,0 +1,32 @@
+# Executable IX cognitive decision policy; evidence comes from Python.
+# Each invocation chooses one action. No generated evidence or code execution.
+agent Zero {
+    on advance {
+        trace "Choose next cognitive action from measured evidence"
+        if blocked {
+            reply "revise"
+        } else {
+            if resolved {
+                if audits < 3 {
+                    if unused >= 3 - audits {
+                        reply "audit"
+                    } else {
+                        reply "exhausted"
+                    }
+                } else {
+                    if promotable {
+                        reply "promote"
+                    } else {
+                        reply "complete"
+                    }
+                }
+            } else {
+                if audits > 0 or unused <= 3 {
+                    reply "exhausted"
+                } else {
+                    reply "inquire"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "eligible": false,
+  "nonregression": false,
+  "pareto": false,
+  "efficiency_tradeoff": false,
+  "candidate": {
+    "correct": 3133,
+    "incorrect": 57,
+    "abstained": 4930,
+    "labels": 372,
+    "query_work": 91827
+  },
+  "incumbent": {
+    "correct": 3001,
+    "incorrect": 42,
+    "abstained": 5077,
+    "labels": 342,
+    "query_work": 3222993
+  }
+}

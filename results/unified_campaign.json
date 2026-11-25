@@ -1,0 +1,130 @@
+{
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111
+  ],
+  "symbolic": {
+    "local": {
+      "local": {
+        "correct": 288,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 72,
+        "audits": 72
+      },
+      "counter": {
+        "correct": 144,
+        "incorrect": 0,
+        "abstained": 144,
+        "audit_passes": 72,
+        "audits": 72
+      },
+      "combined": {
+        "correct": 288,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 72,
+        "audits": 72
+      }
+    },
+    "nonlocal": {
+      "local": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstained": 288,
+        "audit_passes": 0,
+        "audits": 72
+      },
+      "counter": {
+        "correct": 288,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 72,
+        "audits": 72
+      },
+      "combined": {
+        "correct": 288,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 72,
+        "audits": 72
+      }
+    }
+  },
+  "joint": {
+    "cases": 96,
+    "arms": {
+      "joint": {
+        "success": 96,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 2520
+      },
+      "joint_no_macros": {
+        "success": 96,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 2712
+      },
+      "relational_only": {
+        "success": 0,
+        "wrong": 96,
+        "abstained": 0,
+        "expansions": 192
+      },
+      "numeric_only": {
+        "success": 60,
+        "wrong": 36,
+        "abstained": 0,
+        "expansions": 0
+      }
+    },
+    "generated_goals": {
+      "generated": 96,
+      "replayed_success": 96,
+      "wrong": 0,
+      "abstained": 0
+    }
+  },
+  "analogy": {
+    "cases": 12,
+    "correct_role": 12,
+    "replayed_goal": 12,
+    "ambiguous_rejected": 12
+  },
+  "falsification": {
+    "hidden_symbolic_context": {
+      "cases": 12,
+      "wrong_before_feedback": 12,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 12,
+      "abstained_after_feedback": 12
+    },
+    "cross_modal_interaction": {
+      "cases": 12,
+      "wrong_before_feedback": 12,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 12,
+      "abstained_after_feedback": 12
+    }
+  },
+  "recovery": {
+    "epochs": 12,
+    "recovered": 12,
+    "correct": 96,
+    "incorrect": 0,
+    "abstained": 0,
+    "heldout": 96,
+    "fresh_audit_passes": 48
+  }
+}

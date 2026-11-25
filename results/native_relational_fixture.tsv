@@ -1,0 +1,1009 @@
+case	phase	before	action	after
+900-local	train		step/p900_0	
+900-local	train	ready/p900_0	step/p900_0	done/p900_0
+900-local	train		step/p900_1	
+900-local	train	ready/p900_1	step/p900_1	done/p900_1
+900-local	train		step/p900_2	
+900-local	train	ready/p900_2	step/p900_2	done/p900_2
+900-local	train		step/p900_3	
+900-local	train	ready/p900_3	step/p900_3	done/p900_3
+900-local	train		step/p900_4	
+900-local	train	ready/p900_4	step/p900_4	done/p900_4
+900-local	train		step/p900_5	
+900-local	train	ready/p900_5	step/p900_5	done/p900_5
+900-local	audit		step/p900_6	
+900-local	audit	ready/p900_7	step/p900_7	done/p900_7
+900-local	audit		step/p900_8	
+900-local	audit	ready/p900_9	step/p900_9	done/p900_9
+900-local	audit		step/p900_10	
+900-local	audit	ready/p900_11	step/p900_11	done/p900_11
+900-local	test	external/outside12	step/p900_12	external/outside12
+900-local	test	ready/p900_13	step/p900_13	done/p900_13
+900-local	test	external/outside14	step/p900_14	external/outside14
+900-local	test		step/p900_15	
+900-local	test	external/outside16	step/p900_16	external/outside16
+900-local	test	ready/p900_17	step/p900_17	done/p900_17
+900-local	test	external/outside18	step/p900_18	external/outside18
+900-local	test		step/p900_19	
+900-local	test	external/outside20;ready/p900_20	step/p900_20	done/p900_20;external/outside20
+900-local	test		step/p900_21	
+900-local	test	external/outside22;ready/p900_22	step/p900_22	done/p900_22;external/outside22
+900-local	test	ready/p900_23	step/p900_23	done/p900_23
+900-local	test	external/outside24;ready/p900_24	step/p900_24	done/p900_24;external/outside24
+900-local	test		step/p900_25	
+900-local	test	external/outside26	step/p900_26	external/outside26
+900-local	test	ready/p900_27	step/p900_27	done/p900_27
+900-local	test	external/outside28;ready/p900_28	step/p900_28	done/p900_28;external/outside28
+900-local	test	ready/p900_29	step/p900_29	done/p900_29
+900-local	test	external/outside30	step/p900_30	external/outside30
+900-local	test		step/p900_31	
+900-local	test	external/outside32	step/p900_32	external/outside32
+900-local	test	ready/p900_33	step/p900_33	done/p900_33
+900-local	test	external/outside34	step/p900_34	external/outside34
+900-local	test		step/p900_35	
+900-nonlocal	train		step/p900_0	
+900-nonlocal	train	ready/p900_0	step/p900_0	done/p900_0;lit/hub
+900-nonlocal	train		step/p900_1	
+900-nonlocal	train	ready/p900_1	step/p900_1	done/p900_1;lit/hub
+900-nonlocal	train		step/p900_2	
+900-nonlocal	train	ready/p900_2	step/p900_2	done/p900_2;lit/hub
+900-nonlocal	train		step/p900_3	
+900-nonlocal	train	ready/p900_3	step/p900_3	done/p900_3;lit/hub
+900-nonlocal	train		step/p900_4	
+900-nonlocal	train	ready/p900_4	step/p900_4	done/p900_4;lit/hub
+900-nonlocal	train		step/p900_5	
+900-nonlocal	train	ready/p900_5	step/p900_5	done/p900_5;lit/hub
+900-nonlocal	audit		step/p900_6	
+900-nonlocal	audit	ready/p900_7	step/p900_7	done/p900_7;lit/hub
+900-nonlocal	audit		step/p900_8	
+900-nonlocal	audit	ready/p900_9	step/p900_9	done/p900_9;lit/hub
+900-nonlocal	audit		step/p900_10	
+900-nonlocal	audit	ready/p900_11	step/p900_11	done/p900_11;lit/hub
+900-nonlocal	test		step/p900_12	
+900-nonlocal	test	ready/p900_13	step/p900_13	done/p900_13;lit/hub
+900-nonlocal	test		step/p900_14	
+900-nonlocal	test		step/p900_15	
+900-nonlocal	test		step/p900_16	
+900-nonlocal	test	ready/p900_17	step/p900_17	done/p900_17;lit/hub
+900-nonlocal	test		step/p900_18	
+900-nonlocal	test		step/p900_19	
+900-nonlocal	test	ready/p900_20	step/p900_20	done/p900_20;lit/hub
+900-nonlocal	test		step/p900_21	
+900-nonlocal	test	ready/p900_22	step/p900_22	done/p900_22;lit/hub
+900-nonlocal	test	ready/p900_23	step/p900_23	done/p900_23;lit/hub
+900-nonlocal	test	ready/p900_24	step/p900_24	done/p900_24;lit/hub
+900-nonlocal	test		step/p900_25	
+900-nonlocal	test		step/p900_26	
+900-nonlocal	test	ready/p900_27	step/p900_27	done/p900_27;lit/hub
+900-nonlocal	test	ready/p900_28	step/p900_28	done/p900_28;lit/hub
+900-nonlocal	test	ready/p900_29	step/p900_29	done/p900_29;lit/hub
+900-nonlocal	test		step/p900_30	
+900-nonlocal	test		step/p900_31	
+900-nonlocal	test		step/p900_32	
+900-nonlocal	test	ready/p900_33	step/p900_33	done/p900_33;lit/hub
+900-nonlocal	test		step/p900_34	
+900-nonlocal	test		step/p900_35	
+901-local	train		step/p901_0	
+901-local	train	ready/p901_0	step/p901_0	done/p901_0
+901-local	train		step/p901_1	
+901-local	train	ready/p901_1	step/p901_1	done/p901_1
+901-local	train		step/p901_2	
+901-local	train	ready/p901_2	step/p901_2	done/p901_2
+901-local	train		step/p901_3	
+901-local	train	ready/p901_3	step/p901_3	done/p901_3
+901-local	train		step/p901_4	
+901-local	train	ready/p901_4	step/p901_4	done/p901_4
+901-local	train		step/p901_5	
+901-local	train	ready/p901_5	step/p901_5	done/p901_5
+901-local	audit		step/p901_6	
+901-local	audit	ready/p901_7	step/p901_7	done/p901_7
+901-local	audit		step/p901_8	
+901-local	audit	ready/p901_9	step/p901_9	done/p901_9
+901-local	audit		step/p901_10	
+901-local	audit	ready/p901_11	step/p901_11	done/p901_11
+901-local	test	external/outside12;ready/p901_12	step/p901_12	done/p901_12;external/outside12
+901-local	test	ready/p901_13	step/p901_13	done/p901_13
+901-local	test	external/outside14	step/p901_14	external/outside14
+901-local	test		step/p901_15	
+901-local	test	external/outside16;ready/p901_16	step/p901_16	done/p901_16;external/outside16
+901-local	test	ready/p901_17	step/p901_17	done/p901_17
+901-local	test	external/outside18;ready/p901_18	step/p901_18	done/p901_18;external/outside18
+901-local	test	ready/p901_19	step/p901_19	done/p901_19
+901-local	test	external/outside20;ready/p901_20	step/p901_20	done/p901_20;external/outside20
+901-local	test	ready/p901_21	step/p901_21	done/p901_21
+901-local	test	external/outside22;ready/p901_22	step/p901_22	done/p901_22;external/outside22
+901-local	test	ready/p901_23	step/p901_23	done/p901_23
+901-local	test	external/outside24	step/p901_24	external/outside24
+901-local	test		step/p901_25	
+901-local	test	external/outside26;ready/p901_26	step/p901_26	done/p901_26;external/outside26
+901-local	test	ready/p901_27	step/p901_27	done/p901_27
+901-local	test	external/outside28	step/p901_28	external/outside28
+901-local	test	ready/p901_29	step/p901_29	done/p901_29
+901-local	test	external/outside30	step/p901_30	external/outside30
+901-local	test		step/p901_31	
+901-local	test	external/outside32;ready/p901_32	step/p901_32	done/p901_32;external/outside32
+901-local	test	ready/p901_33	step/p901_33	done/p901_33
+901-local	test	external/outside34;ready/p901_34	step/p901_34	done/p901_34;external/outside34
+901-local	test	ready/p901_35	step/p901_35	done/p901_35
+901-nonlocal	train		step/p901_0	
+901-nonlocal	train	ready/p901_0	step/p901_0	done/p901_0;lit/hub
+901-nonlocal	train		step/p901_1	
+901-nonlocal	train	ready/p901_1	step/p901_1	done/p901_1;lit/hub
+901-nonlocal	train		step/p901_2	
+901-nonlocal	train	ready/p901_2	step/p901_2	done/p901_2;lit/hub
+901-nonlocal	train		step/p901_3	
+901-nonlocal	train	ready/p901_3	step/p901_3	done/p901_3;lit/hub
+901-nonlocal	train		step/p901_4	
+901-nonlocal	train	ready/p901_4	step/p901_4	done/p901_4;lit/hub
+901-nonlocal	train		step/p901_5	
+901-nonlocal	train	ready/p901_5	step/p901_5	done/p901_5;lit/hub
+901-nonlocal	audit		step/p901_6	
+901-nonlocal	audit	ready/p901_7	step/p901_7	done/p901_7;lit/hub
+901-nonlocal	audit		step/p901_8	
+901-nonlocal	audit	ready/p901_9	step/p901_9	done/p901_9;lit/hub
+901-nonlocal	audit		step/p901_10	
+901-nonlocal	audit	ready/p901_11	step/p901_11	done/p901_11;lit/hub
+901-nonlocal	test	ready/p901_12	step/p901_12	done/p901_12;lit/hub
+901-nonlocal	test	ready/p901_13	step/p901_13	done/p901_13;lit/hub
+901-nonlocal	test		step/p901_14	
+901-nonlocal	test		step/p901_15	
+901-nonlocal	test	ready/p901_16	step/p901_16	done/p901_16;lit/hub
+901-nonlocal	test	ready/p901_17	step/p901_17	done/p901_17;lit/hub
+901-nonlocal	test	ready/p901_18	step/p901_18	done/p901_18;lit/hub
+901-nonlocal	test	ready/p901_19	step/p901_19	done/p901_19;lit/hub
+901-nonlocal	test	ready/p901_20	step/p901_20	done/p901_20;lit/hub
+901-nonlocal	test	ready/p901_21	step/p901_21	done/p901_21;lit/hub
+901-nonlocal	test	ready/p901_22	step/p901_22	done/p901_22;lit/hub
+901-nonlocal	test	ready/p901_23	step/p901_23	done/p901_23;lit/hub
+901-nonlocal	test		step/p901_24	
+901-nonlocal	test		step/p901_25	
+901-nonlocal	test	ready/p901_26	step/p901_26	done/p901_26;lit/hub
+901-nonlocal	test	ready/p901_27	step/p901_27	done/p901_27;lit/hub
+901-nonlocal	test		step/p901_28	
+901-nonlocal	test	ready/p901_29	step/p901_29	done/p901_29;lit/hub
+901-nonlocal	test		step/p901_30	
+901-nonlocal	test		step/p901_31	
+901-nonlocal	test	ready/p901_32	step/p901_32	done/p901_32;lit/hub
+901-nonlocal	test	ready/p901_33	step/p901_33	done/p901_33;lit/hub
+901-nonlocal	test	ready/p901_34	step/p901_34	done/p901_34;lit/hub
+901-nonlocal	test	ready/p901_35	step/p901_35	done/p901_35;lit/hub
+902-local	train		step/p902_0	
+902-local	train	ready/p902_0	step/p902_0	done/p902_0
+902-local	train		step/p902_1	
+902-local	train	ready/p902_1	step/p902_1	done/p902_1
+902-local	train		step/p902_2	
+902-local	train	ready/p902_2	step/p902_2	done/p902_2
+902-local	train		step/p902_3	
+902-local	train	ready/p902_3	step/p902_3	done/p902_3
+902-local	train		step/p902_4	
+902-local	train	ready/p902_4	step/p902_4	done/p902_4
+902-local	train		step/p902_5	
+902-local	train	ready/p902_5	step/p902_5	done/p902_5
+902-local	audit		step/p902_6	
+902-local	audit	ready/p902_7	step/p902_7	done/p902_7
+902-local	audit		step/p902_8	
+902-local	audit	ready/p902_9	step/p902_9	done/p902_9
+902-local	audit		step/p902_10	
+902-local	audit	ready/p902_11	step/p902_11	done/p902_11
+902-local	test	external/outside12;ready/p902_12	step/p902_12	done/p902_12;external/outside12
+902-local	test	ready/p902_13	step/p902_13	done/p902_13
+902-local	test	external/outside14;ready/p902_14	step/p902_14	done/p902_14;external/outside14
+902-local	test		step/p902_15	
+902-local	test	external/outside16	step/p902_16	external/outside16
+902-local	test		step/p902_17	
+902-local	test	external/outside18	step/p902_18	external/outside18
+902-local	test	ready/p902_19	step/p902_19	done/p902_19
+902-local	test	external/outside20;ready/p902_20	step/p902_20	done/p902_20;external/outside20
+902-local	test	ready/p902_21	step/p902_21	done/p902_21
+902-local	test	external/outside22;ready/p902_22	step/p902_22	done/p902_22;external/outside22
+902-local	test		step/p902_23	
+902-local	test	external/outside24	step/p902_24	external/outside24
+902-local	test	ready/p902_25	step/p902_25	done/p902_25
+902-local	test	external/outside26;ready/p902_26	step/p902_26	done/p902_26;external/outside26
+902-local	test	ready/p902_27	step/p902_27	done/p902_27
+902-local	test	external/outside28;ready/p902_28	step/p902_28	done/p902_28;external/outside28
+902-local	test		step/p902_29	
+902-local	test	external/outside30;ready/p902_30	step/p902_30	done/p902_30;external/outside30
+902-local	test	ready/p902_31	step/p902_31	done/p902_31
+902-local	test	external/outside32	step/p902_32	external/outside32
+902-local	test		step/p902_33	
+902-local	test	external/outside34	step/p902_34	external/outside34
+902-local	test	ready/p902_35	step/p902_35	done/p902_35
+902-nonlocal	train		step/p902_0	
+902-nonlocal	train	ready/p902_0	step/p902_0	done/p902_0;lit/hub
+902-nonlocal	train		step/p902_1	
+902-nonlocal	train	ready/p902_1	step/p902_1	done/p902_1;lit/hub
+902-nonlocal	train		step/p902_2	
+902-nonlocal	train	ready/p902_2	step/p902_2	done/p902_2;lit/hub
+902-nonlocal	train		step/p902_3	
+902-nonlocal	train	ready/p902_3	step/p902_3	done/p902_3;lit/hub
+902-nonlocal	train		step/p902_4	
+902-nonlocal	train	ready/p902_4	step/p902_4	done/p902_4;lit/hub
+902-nonlocal	train		step/p902_5	
+902-nonlocal	train	ready/p902_5	step/p902_5	done/p902_5;lit/hub
+902-nonlocal	audit		step/p902_6	
+902-nonlocal	audit	ready/p902_7	step/p902_7	done/p902_7;lit/hub
+902-nonlocal	audit		step/p902_8	
+902-nonlocal	audit	ready/p902_9	step/p902_9	done/p902_9;lit/hub
+902-nonlocal	audit		step/p902_10	
+902-nonlocal	audit	ready/p902_11	step/p902_11	done/p902_11;lit/hub
+902-nonlocal	test	ready/p902_12	step/p902_12	done/p902_12;lit/hub
+902-nonlocal	test	ready/p902_13	step/p902_13	done/p902_13;lit/hub
+902-nonlocal	test	ready/p902_14	step/p902_14	done/p902_14;lit/hub
+902-nonlocal	test		step/p902_15	
+902-nonlocal	test		step/p902_16	
+902-nonlocal	test		step/p902_17	
+902-nonlocal	test		step/p902_18	
+902-nonlocal	test	ready/p902_19	step/p902_19	done/p902_19;lit/hub
+902-nonlocal	test	ready/p902_20	step/p902_20	done/p902_20;lit/hub
+902-nonlocal	test	ready/p902_21	step/p902_21	done/p902_21;lit/hub
+902-nonlocal	test	ready/p902_22	step/p902_22	done/p902_22;lit/hub
+902-nonlocal	test		step/p902_23	
+902-nonlocal	test		step/p902_24	
+902-nonlocal	test	ready/p902_25	step/p902_25	done/p902_25;lit/hub
+902-nonlocal	test	ready/p902_26	step/p902_26	done/p902_26;lit/hub
+902-nonlocal	test	ready/p902_27	step/p902_27	done/p902_27;lit/hub
+902-nonlocal	test	ready/p902_28	step/p902_28	done/p902_28;lit/hub
+902-nonlocal	test		step/p902_29	
+902-nonlocal	test	ready/p902_30	step/p902_30	done/p902_30;lit/hub
+902-nonlocal	test	ready/p902_31	step/p902_31	done/p902_31;lit/hub
+902-nonlocal	test		step/p902_32	
+902-nonlocal	test		step/p902_33	
+902-nonlocal	test		step/p902_34	
+902-nonlocal	test	ready/p902_35	step/p902_35	done/p902_35;lit/hub
+903-local	train		step/p903_0	
+903-local	train	ready/p903_0	step/p903_0	done/p903_0
+903-local	train		step/p903_1	
+903-local	train	ready/p903_1	step/p903_1	done/p903_1
+903-local	train		step/p903_2	
+903-local	train	ready/p903_2	step/p903_2	done/p903_2
+903-local	train		step/p903_3	
+903-local	train	ready/p903_3	step/p903_3	done/p903_3
+903-local	train		step/p903_4	
+903-local	train	ready/p903_4	step/p903_4	done/p903_4
+903-local	train		step/p903_5	
+903-local	train	ready/p903_5	step/p903_5	done/p903_5
+903-local	audit		step/p903_6	
+903-local	audit	ready/p903_7	step/p903_7	done/p903_7
+903-local	audit		step/p903_8	
+903-local	audit	ready/p903_9	step/p903_9	done/p903_9
+903-local	audit		step/p903_10	
+903-local	audit	ready/p903_11	step/p903_11	done/p903_11
+903-local	test	external/outside12	step/p903_12	external/outside12
+903-local	test		step/p903_13	
+903-local	test	external/outside14;ready/p903_14	step/p903_14	done/p903_14;external/outside14
+903-local	test	ready/p903_15	step/p903_15	done/p903_15
+903-local	test	external/outside16	step/p903_16	external/outside16
+903-local	test		step/p903_17	
+903-local	test	external/outside18	step/p903_18	external/outside18
+903-local	test	ready/p903_19	step/p903_19	done/p903_19
+903-local	test	external/outside20;ready/p903_20	step/p903_20	done/p903_20;external/outside20
+903-local	test		step/p903_21	
+903-local	test	external/outside22	step/p903_22	external/outside22
+903-local	test	ready/p903_23	step/p903_23	done/p903_23
+903-local	test	external/outside24;ready/p903_24	step/p903_24	done/p903_24;external/outside24
+903-local	test	ready/p903_25	step/p903_25	done/p903_25
+903-local	test	external/outside26	step/p903_26	external/outside26
+903-local	test		step/p903_27	
+903-local	test	external/outside28;ready/p903_28	step/p903_28	done/p903_28;external/outside28
+903-local	test	ready/p903_29	step/p903_29	done/p903_29
+903-local	test	external/outside30;ready/p903_30	step/p903_30	done/p903_30;external/outside30
+903-local	test	ready/p903_31	step/p903_31	done/p903_31
+903-local	test	external/outside32	step/p903_32	external/outside32
+903-local	test	ready/p903_33	step/p903_33	done/p903_33
+903-local	test	external/outside34	step/p903_34	external/outside34
+903-local	test	ready/p903_35	step/p903_35	done/p903_35
+903-nonlocal	train		step/p903_0	
+903-nonlocal	train	ready/p903_0	step/p903_0	done/p903_0;lit/hub
+903-nonlocal	train		step/p903_1	
+903-nonlocal	train	ready/p903_1	step/p903_1	done/p903_1;lit/hub
+903-nonlocal	train		step/p903_2	
+903-nonlocal	train	ready/p903_2	step/p903_2	done/p903_2;lit/hub
+903-nonlocal	train		step/p903_3	
+903-nonlocal	train	ready/p903_3	step/p903_3	done/p903_3;lit/hub
+903-nonlocal	train		step/p903_4	
+903-nonlocal	train	ready/p903_4	step/p903_4	done/p903_4;lit/hub
+903-nonlocal	train		step/p903_5	
+903-nonlocal	train	ready/p903_5	step/p903_5	done/p903_5;lit/hub
+903-nonlocal	audit		step/p903_6	
+903-nonlocal	audit	ready/p903_7	step/p903_7	done/p903_7;lit/hub
+903-nonlocal	audit		step/p903_8	
+903-nonlocal	audit	ready/p903_9	step/p903_9	done/p903_9;lit/hub
+903-nonlocal	audit		step/p903_10	
+903-nonlocal	audit	ready/p903_11	step/p903_11	done/p903_11;lit/hub
+903-nonlocal	test		step/p903_12	
+903-nonlocal	test		step/p903_13	
+903-nonlocal	test	ready/p903_14	step/p903_14	done/p903_14;lit/hub
+903-nonlocal	test	ready/p903_15	step/p903_15	done/p903_15;lit/hub
+903-nonlocal	test		step/p903_16	
+903-nonlocal	test		step/p903_17	
+903-nonlocal	test		step/p903_18	
+903-nonlocal	test	ready/p903_19	step/p903_19	done/p903_19;lit/hub
+903-nonlocal	test	ready/p903_20	step/p903_20	done/p903_20;lit/hub
+903-nonlocal	test		step/p903_21	
+903-nonlocal	test		step/p903_22	
+903-nonlocal	test	ready/p903_23	step/p903_23	done/p903_23;lit/hub
+903-nonlocal	test	ready/p903_24	step/p903_24	done/p903_24;lit/hub
+903-nonlocal	test	ready/p903_25	step/p903_25	done/p903_25;lit/hub
+903-nonlocal	test		step/p903_26	
+903-nonlocal	test		step/p903_27	
+903-nonlocal	test	ready/p903_28	step/p903_28	done/p903_28;lit/hub
+903-nonlocal	test	ready/p903_29	step/p903_29	done/p903_29;lit/hub
+903-nonlocal	test	ready/p903_30	step/p903_30	done/p903_30;lit/hub
+903-nonlocal	test	ready/p903_31	step/p903_31	done/p903_31;lit/hub
+903-nonlocal	test		step/p903_32	
+903-nonlocal	test	ready/p903_33	step/p903_33	done/p903_33;lit/hub
+903-nonlocal	test		step/p903_34	
+903-nonlocal	test	ready/p903_35	step/p903_35	done/p903_35;lit/hub
+904-local	train		step/p904_0	
+904-local	train	ready/p904_0	step/p904_0	done/p904_0
+904-local	train		step/p904_1	
+904-local	train	ready/p904_1	step/p904_1	done/p904_1
+904-local	train		step/p904_2	
+904-local	train	ready/p904_2	step/p904_2	done/p904_2
+904-local	train		step/p904_3	
+904-local	train	ready/p904_3	step/p904_3	done/p904_3
+904-local	train		step/p904_4	
+904-local	train	ready/p904_4	step/p904_4	done/p904_4
+904-local	train		step/p904_5	
+904-local	train	ready/p904_5	step/p904_5	done/p904_5
+904-local	audit		step/p904_6	
+904-local	audit	ready/p904_7	step/p904_7	done/p904_7
+904-local	audit		step/p904_8	
+904-local	audit	ready/p904_9	step/p904_9	done/p904_9
+904-local	audit		step/p904_10	
+904-local	audit	ready/p904_11	step/p904_11	done/p904_11
+904-local	test	external/outside12;ready/p904_12	step/p904_12	done/p904_12;external/outside12
+904-local	test	ready/p904_13	step/p904_13	done/p904_13
+904-local	test	external/outside14	step/p904_14	external/outside14
+904-local	test	ready/p904_15	step/p904_15	done/p904_15
+904-local	test	external/outside16;ready/p904_16	step/p904_16	done/p904_16;external/outside16
+904-local	test		step/p904_17	
+904-local	test	external/outside18;ready/p904_18	step/p904_18	done/p904_18;external/outside18
+904-local	test		step/p904_19	
+904-local	test	external/outside20;ready/p904_20	step/p904_20	done/p904_20;external/outside20
+904-local	test		step/p904_21	
+904-local	test	external/outside22;ready/p904_22	step/p904_22	done/p904_22;external/outside22
+904-local	test		step/p904_23	
+904-local	test	external/outside24;ready/p904_24	step/p904_24	done/p904_24;external/outside24
+904-local	test	ready/p904_25	step/p904_25	done/p904_25
+904-local	test	external/outside26;ready/p904_26	step/p904_26	done/p904_26;external/outside26
+904-local	test	ready/p904_27	step/p904_27	done/p904_27
+904-local	test	external/outside28;ready/p904_28	step/p904_28	done/p904_28;external/outside28
+904-local	test		step/p904_29	
+904-local	test	external/outside30;ready/p904_30	step/p904_30	done/p904_30;external/outside30
+904-local	test	ready/p904_31	step/p904_31	done/p904_31
+904-local	test	external/outside32	step/p904_32	external/outside32
+904-local	test		step/p904_33	
+904-local	test	external/outside34	step/p904_34	external/outside34
+904-local	test		step/p904_35	
+904-nonlocal	train		step/p904_0	
+904-nonlocal	train	ready/p904_0	step/p904_0	done/p904_0;lit/hub
+904-nonlocal	train		step/p904_1	
+904-nonlocal	train	ready/p904_1	step/p904_1	done/p904_1;lit/hub
+904-nonlocal	train		step/p904_2	
+904-nonlocal	train	ready/p904_2	step/p904_2	done/p904_2;lit/hub
+904-nonlocal	train		step/p904_3	
+904-nonlocal	train	ready/p904_3	step/p904_3	done/p904_3;lit/hub
+904-nonlocal	train		step/p904_4	
+904-nonlocal	train	ready/p904_4	step/p904_4	done/p904_4;lit/hub
+904-nonlocal	train		step/p904_5	
+904-nonlocal	train	ready/p904_5	step/p904_5	done/p904_5;lit/hub
+904-nonlocal	audit		step/p904_6	
+904-nonlocal	audit	ready/p904_7	step/p904_7	done/p904_7;lit/hub
+904-nonlocal	audit		step/p904_8	
+904-nonlocal	audit	ready/p904_9	step/p904_9	done/p904_9;lit/hub
+904-nonlocal	audit		step/p904_10	
+904-nonlocal	audit	ready/p904_11	step/p904_11	done/p904_11;lit/hub
+904-nonlocal	test	ready/p904_12	step/p904_12	done/p904_12;lit/hub
+904-nonlocal	test	ready/p904_13	step/p904_13	done/p904_13;lit/hub
+904-nonlocal	test		step/p904_14	
+904-nonlocal	test	ready/p904_15	step/p904_15	done/p904_15;lit/hub
+904-nonlocal	test	ready/p904_16	step/p904_16	done/p904_16;lit/hub
+904-nonlocal	test		step/p904_17	
+904-nonlocal	test	ready/p904_18	step/p904_18	done/p904_18;lit/hub
+904-nonlocal	test		step/p904_19	
+904-nonlocal	test	ready/p904_20	step/p904_20	done/p904_20;lit/hub
+904-nonlocal	test		step/p904_21	
+904-nonlocal	test	ready/p904_22	step/p904_22	done/p904_22;lit/hub
+904-nonlocal	test		step/p904_23	
+904-nonlocal	test	ready/p904_24	step/p904_24	done/p904_24;lit/hub
+904-nonlocal	test	ready/p904_25	step/p904_25	done/p904_25;lit/hub
+904-nonlocal	test	ready/p904_26	step/p904_26	done/p904_26;lit/hub
+904-nonlocal	test	ready/p904_27	step/p904_27	done/p904_27;lit/hub
+904-nonlocal	test	ready/p904_28	step/p904_28	done/p904_28;lit/hub
+904-nonlocal	test		step/p904_29	
+904-nonlocal	test	ready/p904_30	step/p904_30	done/p904_30;lit/hub
+904-nonlocal	test	ready/p904_31	step/p904_31	done/p904_31;lit/hub
+904-nonlocal	test		step/p904_32	
+904-nonlocal	test		step/p904_33	
+904-nonlocal	test		step/p904_34	
+904-nonlocal	test		step/p904_35	
+905-local	train		step/p905_0	
+905-local	train	ready/p905_0	step/p905_0	done/p905_0
+905-local	train		step/p905_1	
+905-local	train	ready/p905_1	step/p905_1	done/p905_1
+905-local	train		step/p905_2	
+905-local	train	ready/p905_2	step/p905_2	done/p905_2
+905-local	train		step/p905_3	
+905-local	train	ready/p905_3	step/p905_3	done/p905_3
+905-local	train		step/p905_4	
+905-local	train	ready/p905_4	step/p905_4	done/p905_4
+905-local	train		step/p905_5	
+905-local	train	ready/p905_5	step/p905_5	done/p905_5
+905-local	audit		step/p905_6	
+905-local	audit	ready/p905_7	step/p905_7	done/p905_7
+905-local	audit		step/p905_8	
+905-local	audit	ready/p905_9	step/p905_9	done/p905_9
+905-local	audit		step/p905_10	
+905-local	audit	ready/p905_11	step/p905_11	done/p905_11
+905-local	test	external/outside12;ready/p905_12	step/p905_12	done/p905_12;external/outside12
+905-local	test	ready/p905_13	step/p905_13	done/p905_13
+905-local	test	external/outside14;ready/p905_14	step/p905_14	done/p905_14;external/outside14
+905-local	test		step/p905_15	
+905-local	test	external/outside16	step/p905_16	external/outside16
+905-local	test	ready/p905_17	step/p905_17	done/p905_17
+905-local	test	external/outside18	step/p905_18	external/outside18
+905-local	test		step/p905_19	
+905-local	test	external/outside20;ready/p905_20	step/p905_20	done/p905_20;external/outside20
+905-local	test	ready/p905_21	step/p905_21	done/p905_21
+905-local	test	external/outside22;ready/p905_22	step/p905_22	done/p905_22;external/outside22
+905-local	test		step/p905_23	
+905-local	test	external/outside24	step/p905_24	external/outside24
+905-local	test	ready/p905_25	step/p905_25	done/p905_25
+905-local	test	external/outside26	step/p905_26	external/outside26
+905-local	test		step/p905_27	
+905-local	test	external/outside28	step/p905_28	external/outside28
+905-local	test		step/p905_29	
+905-local	test	external/outside30	step/p905_30	external/outside30
+905-local	test		step/p905_31	
+905-local	test	external/outside32	step/p905_32	external/outside32
+905-local	test	ready/p905_33	step/p905_33	done/p905_33
+905-local	test	external/outside34;ready/p905_34	step/p905_34	done/p905_34;external/outside34
+905-local	test	ready/p905_35	step/p905_35	done/p905_35
+905-nonlocal	train		step/p905_0	
+905-nonlocal	train	ready/p905_0	step/p905_0	done/p905_0;lit/hub
+905-nonlocal	train		step/p905_1	
+905-nonlocal	train	ready/p905_1	step/p905_1	done/p905_1;lit/hub
+905-nonlocal	train		step/p905_2	
+905-nonlocal	train	ready/p905_2	step/p905_2	done/p905_2;lit/hub
+905-nonlocal	train		step/p905_3	
+905-nonlocal	train	ready/p905_3	step/p905_3	done/p905_3;lit/hub
+905-nonlocal	train		step/p905_4	
+905-nonlocal	train	ready/p905_4	step/p905_4	done/p905_4;lit/hub
+905-nonlocal	train		step/p905_5	
+905-nonlocal	train	ready/p905_5	step/p905_5	done/p905_5;lit/hub
+905-nonlocal	audit		step/p905_6	
+905-nonlocal	audit	ready/p905_7	step/p905_7	done/p905_7;lit/hub
+905-nonlocal	audit		step/p905_8	
+905-nonlocal	audit	ready/p905_9	step/p905_9	done/p905_9;lit/hub
+905-nonlocal	audit		step/p905_10	
+905-nonlocal	audit	ready/p905_11	step/p905_11	done/p905_11;lit/hub
+905-nonlocal	test	ready/p905_12	step/p905_12	done/p905_12;lit/hub
+905-nonlocal	test	ready/p905_13	step/p905_13	done/p905_13;lit/hub
+905-nonlocal	test	ready/p905_14	step/p905_14	done/p905_14;lit/hub
+905-nonlocal	test		step/p905_15	
+905-nonlocal	test		step/p905_16	
+905-nonlocal	test	ready/p905_17	step/p905_17	done/p905_17;lit/hub
+905-nonlocal	test		step/p905_18	
+905-nonlocal	test		step/p905_19	
+905-nonlocal	test	ready/p905_20	step/p905_20	done/p905_20;lit/hub
+905-nonlocal	test	ready/p905_21	step/p905_21	done/p905_21;lit/hub
+905-nonlocal	test	ready/p905_22	step/p905_22	done/p905_22;lit/hub
+905-nonlocal	test		step/p905_23	
+905-nonlocal	test		step/p905_24	
+905-nonlocal	test	ready/p905_25	step/p905_25	done/p905_25;lit/hub
+905-nonlocal	test		step/p905_26	
+905-nonlocal	test		step/p905_27	
+905-nonlocal	test		step/p905_28	
+905-nonlocal	test		step/p905_29	
+905-nonlocal	test		step/p905_30	
+905-nonlocal	test		step/p905_31	
+905-nonlocal	test		step/p905_32	
+905-nonlocal	test	ready/p905_33	step/p905_33	done/p905_33;lit/hub
+905-nonlocal	test	ready/p905_34	step/p905_34	done/p905_34;lit/hub
+905-nonlocal	test	ready/p905_35	step/p905_35	done/p905_35;lit/hub
+906-local	train		step/p906_0	
+906-local	train	ready/p906_0	step/p906_0	done/p906_0
+906-local	train		step/p906_1	
+906-local	train	ready/p906_1	step/p906_1	done/p906_1
+906-local	train		step/p906_2	
+906-local	train	ready/p906_2	step/p906_2	done/p906_2
+906-local	train		step/p906_3	
+906-local	train	ready/p906_3	step/p906_3	done/p906_3
+906-local	train		step/p906_4	
+906-local	train	ready/p906_4	step/p906_4	done/p906_4
+906-local	train		step/p906_5	
+906-local	train	ready/p906_5	step/p906_5	done/p906_5
+906-local	audit		step/p906_6	
+906-local	audit	ready/p906_7	step/p906_7	done/p906_7
+906-local	audit		step/p906_8	
+906-local	audit	ready/p906_9	step/p906_9	done/p906_9
+906-local	audit		step/p906_10	
+906-local	audit	ready/p906_11	step/p906_11	done/p906_11
+906-local	test	external/outside12	step/p906_12	external/outside12
+906-local	test	ready/p906_13	step/p906_13	done/p906_13
+906-local	test	external/outside14;ready/p906_14	step/p906_14	done/p906_14;external/outside14
+906-local	test		step/p906_15	
+906-local	test	external/outside16;ready/p906_16	step/p906_16	done/p906_16;external/outside16
+906-local	test	ready/p906_17	step/p906_17	done/p906_17
+906-local	test	external/outside18;ready/p906_18	step/p906_18	done/p906_18;external/outside18
+906-local	test	ready/p906_19	step/p906_19	done/p906_19
+906-local	test	external/outside20;ready/p906_20	step/p906_20	done/p906_20;external/outside20
+906-local	test	ready/p906_21	step/p906_21	done/p906_21
+906-local	test	external/outside22;ready/p906_22	step/p906_22	done/p906_22;external/outside22
+906-local	test		step/p906_23	
+906-local	test	external/outside24;ready/p906_24	step/p906_24	done/p906_24;external/outside24
+906-local	test		step/p906_25	
+906-local	test	external/outside26	step/p906_26	external/outside26
+906-local	test		step/p906_27	
+906-local	test	external/outside28	step/p906_28	external/outside28
+906-local	test	ready/p906_29	step/p906_29	done/p906_29
+906-local	test	external/outside30;ready/p906_30	step/p906_30	done/p906_30;external/outside30
+906-local	test	ready/p906_31	step/p906_31	done/p906_31
+906-local	test	external/outside32;ready/p906_32	step/p906_32	done/p906_32;external/outside32
+906-local	test	ready/p906_33	step/p906_33	done/p906_33
+906-local	test	external/outside34	step/p906_34	external/outside34
+906-local	test		step/p906_35	
+906-nonlocal	train		step/p906_0	
+906-nonlocal	train	ready/p906_0	step/p906_0	done/p906_0;lit/hub
+906-nonlocal	train		step/p906_1	
+906-nonlocal	train	ready/p906_1	step/p906_1	done/p906_1;lit/hub
+906-nonlocal	train		step/p906_2	
+906-nonlocal	train	ready/p906_2	step/p906_2	done/p906_2;lit/hub
+906-nonlocal	train		step/p906_3	
+906-nonlocal	train	ready/p906_3	step/p906_3	done/p906_3;lit/hub
+906-nonlocal	train		step/p906_4	
+906-nonlocal	train	ready/p906_4	step/p906_4	done/p906_4;lit/hub
+906-nonlocal	train		step/p906_5	
+906-nonlocal	train	ready/p906_5	step/p906_5	done/p906_5;lit/hub
+906-nonlocal	audit		step/p906_6	
+906-nonlocal	audit	ready/p906_7	step/p906_7	done/p906_7;lit/hub
+906-nonlocal	audit		step/p906_8	
+906-nonlocal	audit	ready/p906_9	step/p906_9	done/p906_9;lit/hub
+906-nonlocal	audit		step/p906_10	
+906-nonlocal	audit	ready/p906_11	step/p906_11	done/p906_11;lit/hub
+906-nonlocal	test		step/p906_12	
+906-nonlocal	test	ready/p906_13	step/p906_13	done/p906_13;lit/hub
+906-nonlocal	test	ready/p906_14	step/p906_14	done/p906_14;lit/hub
+906-nonlocal	test		step/p906_15	
+906-nonlocal	test	ready/p906_16	step/p906_16	done/p906_16;lit/hub
+906-nonlocal	test	ready/p906_17	step/p906_17	done/p906_17;lit/hub
+906-nonlocal	test	ready/p906_18	step/p906_18	done/p906_18;lit/hub
+906-nonlocal	test	ready/p906_19	step/p906_19	done/p906_19;lit/hub
+906-nonlocal	test	ready/p906_20	step/p906_20	done/p906_20;lit/hub
+906-nonlocal	test	ready/p906_21	step/p906_21	done/p906_21;lit/hub
+906-nonlocal	test	ready/p906_22	step/p906_22	done/p906_22;lit/hub
+906-nonlocal	test		step/p906_23	
+906-nonlocal	test	ready/p906_24	step/p906_24	done/p906_24;lit/hub
+906-nonlocal	test		step/p906_25	
+906-nonlocal	test		step/p906_26	
+906-nonlocal	test		step/p906_27	
+906-nonlocal	test		step/p906_28	
+906-nonlocal	test	ready/p906_29	step/p906_29	done/p906_29;lit/hub
+906-nonlocal	test	ready/p906_30	step/p906_30	done/p906_30;lit/hub
+906-nonlocal	test	ready/p906_31	step/p906_31	done/p906_31;lit/hub
+906-nonlocal	test	ready/p906_32	step/p906_32	done/p906_32;lit/hub
+906-nonlocal	test	ready/p906_33	step/p906_33	done/p906_33;lit/hub
+906-nonlocal	test		step/p906_34	
+906-nonlocal	test		step/p906_35	
+907-local	train		step/p907_0	
+907-local	train	ready/p907_0	step/p907_0	done/p907_0
+907-local	train		step/p907_1	
+907-local	train	ready/p907_1	step/p907_1	done/p907_1
+907-local	train		step/p907_2	
+907-local	train	ready/p907_2	step/p907_2	done/p907_2
+907-local	train		step/p907_3	
+907-local	train	ready/p907_3	step/p907_3	done/p907_3
+907-local	train		step/p907_4	
+907-local	train	ready/p907_4	step/p907_4	done/p907_4
+907-local	train		step/p907_5	
+907-local	train	ready/p907_5	step/p907_5	done/p907_5
+907-local	audit		step/p907_6	
+907-local	audit	ready/p907_7	step/p907_7	done/p907_7
+907-local	audit		step/p907_8	
+907-local	audit	ready/p907_9	step/p907_9	done/p907_9
+907-local	audit		step/p907_10	
+907-local	audit	ready/p907_11	step/p907_11	done/p907_11
+907-local	test	external/outside12;ready/p907_12	step/p907_12	done/p907_12;external/outside12
+907-local	test		step/p907_13	
+907-local	test	external/outside14	step/p907_14	external/outside14
+907-local	test	ready/p907_15	step/p907_15	done/p907_15
+907-local	test	external/outside16;ready/p907_16	step/p907_16	done/p907_16;external/outside16
+907-local	test	ready/p907_17	step/p907_17	done/p907_17
+907-local	test	external/outside18	step/p907_18	external/outside18
+907-local	test		step/p907_19	
+907-local	test	external/outside20	step/p907_20	external/outside20
+907-local	test	ready/p907_21	step/p907_21	done/p907_21
+907-local	test	external/outside22	step/p907_22	external/outside22
+907-local	test		step/p907_23	
+907-local	test	external/outside24	step/p907_24	external/outside24
+907-local	test		step/p907_25	
+907-local	test	external/outside26	step/p907_26	external/outside26
+907-local	test	ready/p907_27	step/p907_27	done/p907_27
+907-local	test	external/outside28	step/p907_28	external/outside28
+907-local	test		step/p907_29	
+907-local	test	external/outside30;ready/p907_30	step/p907_30	done/p907_30;external/outside30
+907-local	test		step/p907_31	
+907-local	test	external/outside32	step/p907_32	external/outside32
+907-local	test	ready/p907_33	step/p907_33	done/p907_33
+907-local	test	external/outside34;ready/p907_34	step/p907_34	done/p907_34;external/outside34
+907-local	test		step/p907_35	
+907-nonlocal	train		step/p907_0	
+907-nonlocal	train	ready/p907_0	step/p907_0	done/p907_0;lit/hub
+907-nonlocal	train		step/p907_1	
+907-nonlocal	train	ready/p907_1	step/p907_1	done/p907_1;lit/hub
+907-nonlocal	train		step/p907_2	
+907-nonlocal	train	ready/p907_2	step/p907_2	done/p907_2;lit/hub
+907-nonlocal	train		step/p907_3	
+907-nonlocal	train	ready/p907_3	step/p907_3	done/p907_3;lit/hub
+907-nonlocal	train		step/p907_4	
+907-nonlocal	train	ready/p907_4	step/p907_4	done/p907_4;lit/hub
+907-nonlocal	train		step/p907_5	
+907-nonlocal	train	ready/p907_5	step/p907_5	done/p907_5;lit/hub
+907-nonlocal	audit		step/p907_6	
+907-nonlocal	audit	ready/p907_7	step/p907_7	done/p907_7;lit/hub
+907-nonlocal	audit		step/p907_8	
+907-nonlocal	audit	ready/p907_9	step/p907_9	done/p907_9;lit/hub
+907-nonlocal	audit		step/p907_10	
+907-nonlocal	audit	ready/p907_11	step/p907_11	done/p907_11;lit/hub
+907-nonlocal	test	ready/p907_12	step/p907_12	done/p907_12;lit/hub
+907-nonlocal	test		step/p907_13	
+907-nonlocal	test		step/p907_14	
+907-nonlocal	test	ready/p907_15	step/p907_15	done/p907_15;lit/hub
+907-nonlocal	test	ready/p907_16	step/p907_16	done/p907_16;lit/hub
+907-nonlocal	test	ready/p907_17	step/p907_17	done/p907_17;lit/hub
+907-nonlocal	test		step/p907_18	
+907-nonlocal	test		step/p907_19	
+907-nonlocal	test		step/p907_20	
+907-nonlocal	test	ready/p907_21	step/p907_21	done/p907_21;lit/hub
+907-nonlocal	test		step/p907_22	
+907-nonlocal	test		step/p907_23	
+907-nonlocal	test		step/p907_24	
+907-nonlocal	test		step/p907_25	
+907-nonlocal	test		step/p907_26	
+907-nonlocal	test	ready/p907_27	step/p907_27	done/p907_27;lit/hub
+907-nonlocal	test		step/p907_28	
+907-nonlocal	test		step/p907_29	
+907-nonlocal	test	ready/p907_30	step/p907_30	done/p907_30;lit/hub
+907-nonlocal	test		step/p907_31	
+907-nonlocal	test		step/p907_32	
+907-nonlocal	test	ready/p907_33	step/p907_33	done/p907_33;lit/hub
+907-nonlocal	test	ready/p907_34	step/p907_34	done/p907_34;lit/hub
+907-nonlocal	test		step/p907_35	
+908-local	train		step/p908_0	
+908-local	train	ready/p908_0	step/p908_0	done/p908_0
+908-local	train		step/p908_1	
+908-local	train	ready/p908_1	step/p908_1	done/p908_1
+908-local	train		step/p908_2	
+908-local	train	ready/p908_2	step/p908_2	done/p908_2
+908-local	train		step/p908_3	
+908-local	train	ready/p908_3	step/p908_3	done/p908_3
+908-local	train		step/p908_4	
+908-local	train	ready/p908_4	step/p908_4	done/p908_4
+908-local	train		step/p908_5	
+908-local	train	ready/p908_5	step/p908_5	done/p908_5
+908-local	audit		step/p908_6	
+908-local	audit	ready/p908_7	step/p908_7	done/p908_7
+908-local	audit		step/p908_8	
+908-local	audit	ready/p908_9	step/p908_9	done/p908_9
+908-local	audit		step/p908_10	
+908-local	audit	ready/p908_11	step/p908_11	done/p908_11
+908-local	test	external/outside12	step/p908_12	external/outside12
+908-local	test	ready/p908_13	step/p908_13	done/p908_13
+908-local	test	external/outside14	step/p908_14	external/outside14
+908-local	test		step/p908_15	
+908-local	test	external/outside16;ready/p908_16	step/p908_16	done/p908_16;external/outside16
+908-local	test	ready/p908_17	step/p908_17	done/p908_17
+908-local	test	external/outside18;ready/p908_18	step/p908_18	done/p908_18;external/outside18
+908-local	test	ready/p908_19	step/p908_19	done/p908_19
+908-local	test	external/outside20	step/p908_20	external/outside20
+908-local	test	ready/p908_21	step/p908_21	done/p908_21
+908-local	test	external/outside22	step/p908_22	external/outside22
+908-local	test		step/p908_23	
+908-local	test	external/outside24	step/p908_24	external/outside24
+908-local	test	ready/p908_25	step/p908_25	done/p908_25
+908-local	test	external/outside26;ready/p908_26	step/p908_26	done/p908_26;external/outside26
+908-local	test	ready/p908_27	step/p908_27	done/p908_27
+908-local	test	external/outside28	step/p908_28	external/outside28
+908-local	test		step/p908_29	
+908-local	test	external/outside30	step/p908_30	external/outside30
+908-local	test		step/p908_31	
+908-local	test	external/outside32;ready/p908_32	step/p908_32	done/p908_32;external/outside32
+908-local	test	ready/p908_33	step/p908_33	done/p908_33
+908-local	test	external/outside34;ready/p908_34	step/p908_34	done/p908_34;external/outside34
+908-local	test		step/p908_35	
+908-nonlocal	train		step/p908_0	
+908-nonlocal	train	ready/p908_0	step/p908_0	done/p908_0;lit/hub
+908-nonlocal	train		step/p908_1	
+908-nonlocal	train	ready/p908_1	step/p908_1	done/p908_1;lit/hub
+908-nonlocal	train		step/p908_2	
+908-nonlocal	train	ready/p908_2	step/p908_2	done/p908_2;lit/hub
+908-nonlocal	train		step/p908_3	
+908-nonlocal	train	ready/p908_3	step/p908_3	done/p908_3;lit/hub
+908-nonlocal	train		step/p908_4	
+908-nonlocal	train	ready/p908_4	step/p908_4	done/p908_4;lit/hub
+908-nonlocal	train		step/p908_5	
+908-nonlocal	train	ready/p908_5	step/p908_5	done/p908_5;lit/hub
+908-nonlocal	audit		step/p908_6	
+908-nonlocal	audit	ready/p908_7	step/p908_7	done/p908_7;lit/hub
+908-nonlocal	audit		step/p908_8	
+908-nonlocal	audit	ready/p908_9	step/p908_9	done/p908_9;lit/hub
+908-nonlocal	audit		step/p908_10	
+908-nonlocal	audit	ready/p908_11	step/p908_11	done/p908_11;lit/hub
+908-nonlocal	test		step/p908_12	
+908-nonlocal	test	ready/p908_13	step/p908_13	done/p908_13;lit/hub
+908-nonlocal	test		step/p908_14	
+908-nonlocal	test		step/p908_15	
+908-nonlocal	test	ready/p908_16	step/p908_16	done/p908_16;lit/hub
+908-nonlocal	test	ready/p908_17	step/p908_17	done/p908_17;lit/hub
+908-nonlocal	test	ready/p908_18	step/p908_18	done/p908_18;lit/hub
+908-nonlocal	test	ready/p908_19	step/p908_19	done/p908_19;lit/hub
+908-nonlocal	test		step/p908_20	
+908-nonlocal	test	ready/p908_21	step/p908_21	done/p908_21;lit/hub
+908-nonlocal	test		step/p908_22	
+908-nonlocal	test		step/p908_23	
+908-nonlocal	test		step/p908_24	
+908-nonlocal	test	ready/p908_25	step/p908_25	done/p908_25;lit/hub
+908-nonlocal	test	ready/p908_26	step/p908_26	done/p908_26;lit/hub
+908-nonlocal	test	ready/p908_27	step/p908_27	done/p908_27;lit/hub
+908-nonlocal	test		step/p908_28	
+908-nonlocal	test		step/p908_29	
+908-nonlocal	test		step/p908_30	
+908-nonlocal	test		step/p908_31	
+908-nonlocal	test	ready/p908_32	step/p908_32	done/p908_32;lit/hub
+908-nonlocal	test	ready/p908_33	step/p908_33	done/p908_33;lit/hub
+908-nonlocal	test	ready/p908_34	step/p908_34	done/p908_34;lit/hub
+908-nonlocal	test		step/p908_35	
+909-local	train		step/p909_0	
+909-local	train	ready/p909_0	step/p909_0	done/p909_0
+909-local	train		step/p909_1	
+909-local	train	ready/p909_1	step/p909_1	done/p909_1
+909-local	train		step/p909_2	
+909-local	train	ready/p909_2	step/p909_2	done/p909_2
+909-local	train		step/p909_3	
+909-local	train	ready/p909_3	step/p909_3	done/p909_3
+909-local	train		step/p909_4	
+909-local	train	ready/p909_4	step/p909_4	done/p909_4
+909-local	train		step/p909_5	
+909-local	train	ready/p909_5	step/p909_5	done/p909_5
+909-local	audit		step/p909_6	
+909-local	audit	ready/p909_7	step/p909_7	done/p909_7
+909-local	audit		step/p909_8	
+909-local	audit	ready/p909_9	step/p909_9	done/p909_9
+909-local	audit		step/p909_10	
+909-local	audit	ready/p909_11	step/p909_11	done/p909_11
+909-local	test	external/outside12	step/p909_12	external/outside12
+909-local	test	ready/p909_13	step/p909_13	done/p909_13
+909-local	test	external/outside14	step/p909_14	external/outside14
+909-local	test		step/p909_15	
+909-local	test	external/outside16	step/p909_16	external/outside16
+909-local	test	ready/p909_17	step/p909_17	done/p909_17
+909-local	test	external/outside18;ready/p909_18	step/p909_18	done/p909_18;external/outside18
+909-local	test	ready/p909_19	step/p909_19	done/p909_19
+909-local	test	external/outside20;ready/p909_20	step/p909_20	done/p909_20;external/outside20
+909-local	test		step/p909_21	
+909-local	test	external/outside22;ready/p909_22	step/p909_22	done/p909_22;external/outside22
+909-local	test	ready/p909_23	step/p909_23	done/p909_23
+909-local	test	external/outside24	step/p909_24	external/outside24
+909-local	test	ready/p909_25	step/p909_25	done/p909_25
+909-local	test	external/outside26	step/p909_26	external/outside26
+909-local	test		step/p909_27	
+909-local	test	external/outside28	step/p909_28	external/outside28
+909-local	test		step/p909_29	
+909-local	test	external/outside30	step/p909_30	external/outside30
+909-local	test		step/p909_31	
+909-local	test	external/outside32;ready/p909_32	step/p909_32	done/p909_32;external/outside32
+909-local	test		step/p909_33	
+909-local	test	external/outside34	step/p909_34	external/outside34
+909-local	test	ready/p909_35	step/p909_35	done/p909_35
+909-nonlocal	train		step/p909_0	
+909-nonlocal	train	ready/p909_0	step/p909_0	done/p909_0;lit/hub
+909-nonlocal	train		step/p909_1	
+909-nonlocal	train	ready/p909_1	step/p909_1	done/p909_1;lit/hub
+909-nonlocal	train		step/p909_2	
+909-nonlocal	train	ready/p909_2	step/p909_2	done/p909_2;lit/hub
+909-nonlocal	train		step/p909_3	
+909-nonlocal	train	ready/p909_3	step/p909_3	done/p909_3;lit/hub
+909-nonlocal	train		step/p909_4	
+909-nonlocal	train	ready/p909_4	step/p909_4	done/p909_4;lit/hub
+909-nonlocal	train		step/p909_5	
+909-nonlocal	train	ready/p909_5	step/p909_5	done/p909_5;lit/hub
+909-nonlocal	audit		step/p909_6	
+909-nonlocal	audit	ready/p909_7	step/p909_7	done/p909_7;lit/hub
+909-nonlocal	audit		step/p909_8	
+909-nonlocal	audit	ready/p909_9	step/p909_9	done/p909_9;lit/hub
+909-nonlocal	audit		step/p909_10	
+909-nonlocal	audit	ready/p909_11	step/p909_11	done/p909_11;lit/hub
+909-nonlocal	test		step/p909_12	
+909-nonlocal	test	ready/p909_13	step/p909_13	done/p909_13;lit/hub
+909-nonlocal	test		step/p909_14	
+909-nonlocal	test		step/p909_15	
+909-nonlocal	test		step/p909_16	
+909-nonlocal	test	ready/p909_17	step/p909_17	done/p909_17;lit/hub
+909-nonlocal	test	ready/p909_18	step/p909_18	done/p909_18;lit/hub
+909-nonlocal	test	ready/p909_19	step/p909_19	done/p909_19;lit/hub
+909-nonlocal	test	ready/p909_20	step/p909_20	done/p909_20;lit/hub
+909-nonlocal	test		step/p909_21	
+909-nonlocal	test	ready/p909_22	step/p909_22	done/p909_22;lit/hub
+909-nonlocal	test	ready/p909_23	step/p909_23	done/p909_23;lit/hub
+909-nonlocal	test		step/p909_24	
+909-nonlocal	test	ready/p909_25	step/p909_25	done/p909_25;lit/hub
+909-nonlocal	test		step/p909_26	
+909-nonlocal	test		step/p909_27	
+909-nonlocal	test		step/p909_28	
+909-nonlocal	test		step/p909_29	
+909-nonlocal	test		step/p909_30	
+909-nonlocal	test		step/p909_31	
+909-nonlocal	test	ready/p909_32	step/p909_32	done/p909_32;lit/hub
+909-nonlocal	test		step/p909_33	
+909-nonlocal	test		step/p909_34	
+909-nonlocal	test	ready/p909_35	step/p909_35	done/p909_35;lit/hub
+910-local	train		step/p910_0	
+910-local	train	ready/p910_0	step/p910_0	done/p910_0
+910-local	train		step/p910_1	
+910-local	train	ready/p910_1	step/p910_1	done/p910_1
+910-local	train		step/p910_2	
+910-local	train	ready/p910_2	step/p910_2	done/p910_2
+910-local	train		step/p910_3	
+910-local	train	ready/p910_3	step/p910_3	done/p910_3
+910-local	train		step/p910_4	
+910-local	train	ready/p910_4	step/p910_4	done/p910_4
+910-local	train		step/p910_5	
+910-local	train	ready/p910_5	step/p910_5	done/p910_5
+910-local	audit		step/p910_6	
+910-local	audit	ready/p910_7	step/p910_7	done/p910_7
+910-local	audit		step/p910_8	
+910-local	audit	ready/p910_9	step/p910_9	done/p910_9
+910-local	audit		step/p910_10	
+910-local	audit	ready/p910_11	step/p910_11	done/p910_11
+910-local	test	external/outside12;ready/p910_12	step/p910_12	done/p910_12;external/outside12
+910-local	test		step/p910_13	
+910-local	test	external/outside14;ready/p910_14	step/p910_14	done/p910_14;external/outside14
+910-local	test	ready/p910_15	step/p910_15	done/p910_15
+910-local	test	external/outside16	step/p910_16	external/outside16
+910-local	test	ready/p910_17	step/p910_17	done/p910_17
+910-local	test	external/outside18	step/p910_18	external/outside18
+910-local	test		step/p910_19	
+910-local	test	external/outside20	step/p910_20	external/outside20
+910-local	test		step/p910_21	
+910-local	test	external/outside22	step/p910_22	external/outside22
+910-local	test	ready/p910_23	step/p910_23	done/p910_23
+910-local	test	external/outside24	step/p910_24	external/outside24
+910-local	test	ready/p910_25	step/p910_25	done/p910_25
+910-local	test	external/outside26;ready/p910_26	step/p910_26	done/p910_26;external/outside26
+910-local	test		step/p910_27	
+910-local	test	external/outside28;ready/p910_28	step/p910_28	done/p910_28;external/outside28
+910-local	test		step/p910_29	
+910-local	test	external/outside30;ready/p910_30	step/p910_30	done/p910_30;external/outside30
+910-local	test	ready/p910_31	step/p910_31	done/p910_31
+910-local	test	external/outside32;ready/p910_32	step/p910_32	done/p910_32;external/outside32
+910-local	test		step/p910_33	
+910-local	test	external/outside34	step/p910_34	external/outside34
+910-local	test	ready/p910_35	step/p910_35	done/p910_35
+910-nonlocal	train		step/p910_0	
+910-nonlocal	train	ready/p910_0	step/p910_0	done/p910_0;lit/hub
+910-nonlocal	train		step/p910_1	
+910-nonlocal	train	ready/p910_1	step/p910_1	done/p910_1;lit/hub
+910-nonlocal	train		step/p910_2	
+910-nonlocal	train	ready/p910_2	step/p910_2	done/p910_2;lit/hub
+910-nonlocal	train		step/p910_3	
+910-nonlocal	train	ready/p910_3	step/p910_3	done/p910_3;lit/hub
+910-nonlocal	train		step/p910_4	
+910-nonlocal	train	ready/p910_4	step/p910_4	done/p910_4;lit/hub
+910-nonlocal	train		step/p910_5	
+910-nonlocal	train	ready/p910_5	step/p910_5	done/p910_5;lit/hub
+910-nonlocal	audit		step/p910_6	
+910-nonlocal	audit	ready/p910_7	step/p910_7	done/p910_7;lit/hub
+910-nonlocal	audit		step/p910_8	
+910-nonlocal	audit	ready/p910_9	step/p910_9	done/p910_9;lit/hub
+910-nonlocal	audit		step/p910_10	
+910-nonlocal	audit	ready/p910_11	step/p910_11	done/p910_11;lit/hub
+910-nonlocal	test	ready/p910_12	step/p910_12	done/p910_12;lit/hub
+910-nonlocal	test		step/p910_13	
+910-nonlocal	test	ready/p910_14	step/p910_14	done/p910_14;lit/hub
+910-nonlocal	test	ready/p910_15	step/p910_15	done/p910_15;lit/hub
+910-nonlocal	test		step/p910_16	
+910-nonlocal	test	ready/p910_17	step/p910_17	done/p910_17;lit/hub
+910-nonlocal	test		step/p910_18	
+910-nonlocal	test		step/p910_19	
+910-nonlocal	test		step/p910_20	
+910-nonlocal	test		step/p910_21	
+910-nonlocal	test		step/p910_22	
+910-nonlocal	test	ready/p910_23	step/p910_23	done/p910_23;lit/hub
+910-nonlocal	test		step/p910_24	
+910-nonlocal	test	ready/p910_25	step/p910_25	done/p910_25;lit/hub
+910-nonlocal	test	ready/p910_26	step/p910_26	done/p910_26;lit/hub
+910-nonlocal	test		step/p910_27	
+910-nonlocal	test	ready/p910_28	step/p910_28	done/p910_28;lit/hub
+910-nonlocal	test		step/p910_29	
+910-nonlocal	test	ready/p910_30	step/p910_30	done/p910_30;lit/hub
+910-nonlocal	test	ready/p910_31	step/p910_31	done/p910_31;lit/hub
+910-nonlocal	test	ready/p910_32	step/p910_32	done/p910_32;lit/hub
+910-nonlocal	test		step/p910_33	
+910-nonlocal	test		step/p910_34	
+910-nonlocal	test	ready/p910_35	step/p910_35	done/p910_35;lit/hub
+911-local	train		step/p911_0	
+911-local	train	ready/p911_0	step/p911_0	done/p911_0
+911-local	train		step/p911_1	
+911-local	train	ready/p911_1	step/p911_1	done/p911_1
+911-local	train		step/p911_2	
+911-local	train	ready/p911_2	step/p911_2	done/p911_2
+911-local	train		step/p911_3	
+911-local	train	ready/p911_3	step/p911_3	done/p911_3
+911-local	train		step/p911_4	
+911-local	train	ready/p911_4	step/p911_4	done/p911_4
+911-local	train		step/p911_5	
+911-local	train	ready/p911_5	step/p911_5	done/p911_5
+911-local	audit		step/p911_6	
+911-local	audit	ready/p911_7	step/p911_7	done/p911_7
+911-local	audit		step/p911_8	
+911-local	audit	ready/p911_9	step/p911_9	done/p911_9
+911-local	audit		step/p911_10	
+911-local	audit	ready/p911_11	step/p911_11	done/p911_11
+911-local	test	external/outside12;ready/p911_12	step/p911_12	done/p911_12;external/outside12
+911-local	test	ready/p911_13	step/p911_13	done/p911_13
+911-local	test	external/outside14;ready/p911_14	step/p911_14	done/p911_14;external/outside14
+911-local	test		step/p911_15	
+911-local	test	external/outside16	step/p911_16	external/outside16
+911-local	test		step/p911_17	
+911-local	test	external/outside18;ready/p911_18	step/p911_18	done/p911_18;external/outside18
+911-local	test		step/p911_19	
+911-local	test	external/outside20	step/p911_20	external/outside20
+911-local	test	ready/p911_21	step/p911_21	done/p911_21
+911-local	test	external/outside22	step/p911_22	external/outside22
+911-local	test		step/p911_23	
+911-local	test	external/outside24	step/p911_24	external/outside24
+911-local	test	ready/p911_25	step/p911_25	done/p911_25
+911-local	test	external/outside26	step/p911_26	external/outside26
+911-local	test		step/p911_27	
+911-local	test	external/outside28;ready/p911_28	step/p911_28	done/p911_28;external/outside28
+911-local	test	ready/p911_29	step/p911_29	done/p911_29
+911-local	test	external/outside30;ready/p911_30	step/p911_30	done/p911_30;external/outside30
+911-local	test		step/p911_31	
+911-local	test	external/outside32;ready/p911_32	step/p911_32	done/p911_32;external/outside32
+911-local	test		step/p911_33	
+911-local	test	external/outside34;ready/p911_34	step/p911_34	done/p911_34;external/outside34
+911-local	test		step/p911_35	
+911-nonlocal	train		step/p911_0	
+911-nonlocal	train	ready/p911_0	step/p911_0	done/p911_0;lit/hub
+911-nonlocal	train		step/p911_1	
+911-nonlocal	train	ready/p911_1	step/p911_1	done/p911_1;lit/hub
+911-nonlocal	train		step/p911_2	
+911-nonlocal	train	ready/p911_2	step/p911_2	done/p911_2;lit/hub
+911-nonlocal	train		step/p911_3	
+911-nonlocal	train	ready/p911_3	step/p911_3	done/p911_3;lit/hub
+911-nonlocal	train		step/p911_4	
+911-nonlocal	train	ready/p911_4	step/p911_4	done/p911_4;lit/hub
+911-nonlocal	train		step/p911_5	
+911-nonlocal	train	ready/p911_5	step/p911_5	done/p911_5;lit/hub
+911-nonlocal	audit		step/p911_6	
+911-nonlocal	audit	ready/p911_7	step/p911_7	done/p911_7;lit/hub
+911-nonlocal	audit		step/p911_8	
+911-nonlocal	audit	ready/p911_9	step/p911_9	done/p911_9;lit/hub
+911-nonlocal	audit		step/p911_10	
+911-nonlocal	audit	ready/p911_11	step/p911_11	done/p911_11;lit/hub
+911-nonlocal	test	ready/p911_12	step/p911_12	done/p911_12;lit/hub
+911-nonlocal	test	ready/p911_13	step/p911_13	done/p911_13;lit/hub
+911-nonlocal	test	ready/p911_14	step/p911_14	done/p911_14;lit/hub
+911-nonlocal	test		step/p911_15	
+911-nonlocal	test		step/p911_16	
+911-nonlocal	test		step/p911_17	
+911-nonlocal	test	ready/p911_18	step/p911_18	done/p911_18;lit/hub
+911-nonlocal	test		step/p911_19	
+911-nonlocal	test		step/p911_20	
+911-nonlocal	test	ready/p911_21	step/p911_21	done/p911_21;lit/hub
+911-nonlocal	test		step/p911_22	
+911-nonlocal	test		step/p911_23	
+911-nonlocal	test		step/p911_24	
+911-nonlocal	test	ready/p911_25	step/p911_25	done/p911_25;lit/hub
+911-nonlocal	test		step/p911_26	
+911-nonlocal	test		step/p911_27	
+911-nonlocal	test	ready/p911_28	step/p911_28	done/p911_28;lit/hub
+911-nonlocal	test	ready/p911_29	step/p911_29	done/p911_29;lit/hub
+911-nonlocal	test	ready/p911_30	step/p911_30	done/p911_30;lit/hub
+911-nonlocal	test		step/p911_31	
+911-nonlocal	test	ready/p911_32	step/p911_32	done/p911_32;lit/hub
+911-nonlocal	test		step/p911_33	
+911-nonlocal	test	ready/p911_34	step/p911_34	done/p911_34;lit/hub
+911-nonlocal	test		step/p911_35	

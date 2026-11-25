@@ -1,0 +1,105 @@
+{
+  "full": {
+    "correct": 4920,
+    "incorrect": 0,
+    "abstained": 0,
+    "candidate_programs": 23040
+  },
+  "abstract": {
+    "correct": 1968,
+    "incorrect": 0,
+    "abstained": 2952,
+    "candidate_programs": 960
+  },
+  "raw": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 4920,
+    "candidate_programs": 0
+  },
+  "adaptive": {
+    "correct": 4920,
+    "incorrect": 0,
+    "abstained": 0,
+    "candidate_programs": 14784
+  },
+  "scalar": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 4920,
+    "candidate_programs": null
+  },
+  "negative": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 984
+  },
+  "hidden_exception": {
+    "errors": 24,
+    "quarantined": 24
+  },
+  "matched": {
+    "full": {
+      "correct": 1968,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 9216
+    },
+    "abstract": {
+      "correct": 1968,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 384
+    },
+    "raw": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1968,
+      "candidate_programs": 0
+    },
+    "adaptive": {
+      "correct": 1968,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 384
+    },
+    "scalar": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 1968,
+      "candidate_programs": null
+    }
+  },
+  "other": {
+    "full": {
+      "correct": 2952,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 13824
+    },
+    "abstract": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2952,
+      "candidate_programs": 576
+    },
+    "raw": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2952,
+      "candidate_programs": 0
+    },
+    "adaptive": {
+      "correct": 2952,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 14400
+    },
+    "scalar": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2952,
+      "candidate_programs": null
+    }
+  }
+}

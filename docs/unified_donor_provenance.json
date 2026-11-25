@@ -1,0 +1,41 @@
+[
+  {
+    "donor": "IX-Sally",
+    "archive": "IX-Sally-main(20261124-163655).zip",
+    "archive_sha256": "a7190ca73334552a4f76a574615c4c0c89b3a23cf6f2a246bb6a9fab3fd9375f",
+    "selected_source_sha256": {
+      "LICENSE": "40eb2966b2b151a21ae2c4f37209232643976f4e6848c8bf2e65a615daaf2497",
+      "README.md": "59a696ef40aa9219030e43d2f5b5d63c436e5651a08f94ebee3f5b14e91796e2",
+      "src/ix_sally/cognition/open_goals.py": "c8c2a5cd76a99ad86f4ef808b5ca24c47ee85367dd9f9437fe3d27a848bee6d5",
+      "src/ix_sally/cognition/open_choice.py": "a9030382c9fa57b4e374300f1473c6570161810da8e707365db4d084ee045703",
+      "src/ix_sally/cognition/relational_transfer.py": "8f349cdc3218c88153255a2bf235833f8c4c9fc5a2066de876cbe23c018a10ce",
+      "src/ix_sally/cognition/meta_learning.py": "f7a22880ef88b48f6574615f2151981d356c1659f4c897b8967a62e3657de2a3",
+      "src/ix_sally/cognition/goal_reasoning.py": "a6068f8eb73aeeec8cc9cafde139bc19a781bb1f9f3e504cbe6d9a5721cd47fd"
+    }
+  },
+  {
+    "donor": "IX-BlackFox-AGI",
+    "archive": "IX-BlackFox-AGI-main(4).zip",
+    "archive_sha256": "05a7de48199bcd8453e012226dc28b222d59e7e1d15734593d6b49304732fd81",
+    "selected_source_sha256": {
+      "LICENSE": "92aa2fccde26eb02c702c351365fdfb05be2ac073545720dcb7dac0d63b7134f",
+      "NOTICE.md": "378185e63d9b93184556810296f72515d937fd448c05463a9edae55f8fa3fc1a",
+      "src/relational.jl": "2c0b84fa385cfcfcb04be48a925910edef87233a97b84922e87bb06c383234c5",
+      "src/procedures.jl": "514b3bf3598d52dc821c36e32bfc895577713723125fa0ddb8ab7468cf76b9ee",
+      "src/inquiry.jl": "bf95e5189e5954f1fc695d139d9cc68a5852d25864b8e692f362cac62561fe15",
+      "src/metacognition.jl": "a5961908457b2f241480c56875dcd59620495d12038f799b0ca24979c2a87798"
+    }
+  },
+  {
+    "donor": "IX-AGI",
+    "archive": "IX-AGI-main (1).zip",
+    "archive_sha256": "21d3f8c59420eda7acd4ada860ba9a14aaa95129715c26151e0f75b2d49068c0",
+    "selected_source_sha256": {
+      "LICENSE": "f7c34534377fae5bfc54d69b1c87a19c9eb55e74a821cf6dd6d26d9defc644ae",
+      "NOTICE.md": "6c0d067a8657fd0beb5afff9b9efce021b739ec55f50b7d63e3c1cc424fbed65",
+      "src/hemisphere.jl": "80de54bfcb2a12f6b8370c0a95b14da30bf1c3b3d2e2b5ec9cc428b130111299",
+      "src/callosum.jl": "f036a4f5a52cbf194c4845ca5bb9be962e7102a52d2ba214fe1767b741bc0133",
+      "src/organism.jl": "a6d0ca8d73d98cb7637e80249a5293acac1b047823f4768751b6b48fb9c117b7"
+    }
+  }
+]

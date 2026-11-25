@@ -1,0 +1,71 @@
+{
+  "active": {
+    "correct": 11505,
+    "incorrect": 0,
+    "abstained": 15
+  },
+  "passive": {
+    "correct": 4723,
+    "incorrect": 0,
+    "abstained": 6797
+  },
+  "families": {
+    "operation": {
+      "active": {
+        "correct": 2880,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 2640,
+        "incorrect": 0,
+        "abstained": 240
+      }
+    },
+    "ordering": {
+      "active": {
+        "correct": 2880,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 462,
+        "incorrect": 0,
+        "abstained": 2418
+      }
+    },
+    "coordinate": {
+      "active": {
+        "correct": 2880,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 582,
+        "incorrect": 0,
+        "abstained": 2298
+      }
+    },
+    "isolated": {
+      "active": {
+        "correct": 2865,
+        "incorrect": 0,
+        "abstained": 15
+      },
+      "passive": {
+        "correct": 1039,
+        "incorrect": 0,
+        "abstained": 1841
+      }
+    }
+  },
+  "initial_errors": 96,
+  "quarantined": 96,
+  "questions": 238,
+  "informative_questions": 238,
+  "negative": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 2712
+  }
+}
