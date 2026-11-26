@@ -4,6 +4,9 @@ The files in this directory are retained research records, including unsuccessfu
 
 | Research area | Records | Protocol |
 |---|---|---|
+| Three-level composition and bounded goal search | `stack_campaign.json` | [Continual](../docs/CONTINUAL.md#three-level-skill-composition-and-goal-search) |
+| Continual learning and cumulative skill acquisition | `continual_primary.json`, `continual_confirmation.json` | [Continual](../docs/CONTINUAL.md) |
+| Historical hybrid stress evaluation | `historical/hybrid_stress.json` | [Evaluator](../tools/hybrid_stress.py), [Continual](../docs/CONTINUAL.md) |
 | Integrated neural-symbolic inquiry | `hybrid_primary.json`, `hybrid_confirmation.json` | [Hybrid](../docs/HYBRID.md) |
 | Adaptive Epistemic Inquiry | `aei_epistemic_campaign.json`, `aei_epistemic_confirmation.json`, `aei_stage5_historical.json` | [AEI](../docs/EPISTEMIC.md) |
 | Developmental curriculum | `developmental_*.json` (including pilot, pre-broad and negative controls) | [Developmental](../docs/DEVELOPMENTAL.md) |

@@ -1,16 +1,47 @@
 # IX-Zero
 
-Experimental neural-symbolic cognitive architecture for calibrated observation, evidence-gated skill acquisition, compositional reasoning, and adaptive epistemic inquiry.
+Experimental continual neural-symbolic cognitive architecture for cumulative executable skill acquisition, progressive neural representations, bounded recovery, and adaptive epistemic inquiry.
 
-**Version 2.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
+**Version 3.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
 
 IX-Zero investigates how a neural-symbolic learner can acquire executable knowledge from observations, reuse that knowledge across tasks, recognize the limits of its current evidence, and request more informative experiments. The implementation operates over bounded, evaluator-defined domains. It is not demonstrated artificial general intelligence (AGI), a general-purpose language model, or a production decision system.
 
+## Continual cognitive development
+
+The continual coordinator maintains a flat, replay-verified learning history across successive inquiries. It preserves verified executable skills, composes them into new candidate programs, retains frozen neural experts, trains new recognition heads on prior hidden features, selects extra boundary measurements, and requests fresh evidence after contradictions. All acquired rules remain subject to independent validation and scoped prediction. The learner proposes experiments; the host supplies measurements and grants access.
+
+Across two authored campaigns, the following bounded results were observed:
+
+| Evaluation | Result |
+|---|---:|
+| Cumulative five-law sequences, full reuse | 30/30 acquisitions |
+| Matched control with executable-skill reuse disabled | 12/30 acquisitions |
+| Common held-out predictions, full reuse vs. skill-disabled | 24,775/24,775 vs. 11,088/24,775 (13,687 abstentions) |
+| Successive inquiries | 200/200 across two 100-inquiry runs |
+| Held-out predictions in successive inquiries | 101,600/101,600 correct |
+| Retention after checkpoint replay | 129,600/129,600 finite-domain predictions |
+| Changed environment and sensor recovery | 6/6 |
+| Additional probes detecting hidden corner exceptions | 6/6 |
+| Adaptive two-gate vs. fixed one-gate acquisition | 6/6 vs. 0/6 |
+| Flat journal replays | 32/32 |
+
+The lateral-feature-disabled arm also acquired 30/30 laws; no lateral neural performance advantage was established. Modular addition outside the tested grammar was not acquired in any of six trials. The 100-inquiry runs reuse authored task families and compatible representations, not independent open-world challenges. The evidence does not establish AGI. See [continual architecture, methods and controls](docs/CONTINUAL.md) and the [raw evidence index](results/README.md).
+
+A separate six-seed composition experiment acquired a third-level program by combining two second-level learned skills under a two-gate budget. All six dependency chains passed; the skill-disabled control acquired none of the six final laws. The full arm was correct on 24,576 common held-out inputs and passed 6,144 finite planning checks. One earlier control law was incorrectly promoted, producing 382 wrong common-holdout predictions. The failure is included in the [stack evaluation](docs/CONTINUAL.md#three-level-skill-composition-and-goal-search) and raw evidence.
+
+Run the complete local experiment or host interface:
+
+```sh
+python -m ix_zero.continual_experiment --trials 3 --episodes 100 --check --output continual.json
+python -m ix_zero.continual_cli
+python -m ix_zero.stack_experiment --trials 6 --check --output stack.json
+```
+
 ## Integrated neural-symbolic inquiry
 
-Three small, locally trained neural networks learn observation decoding, outcome prediction, and inquiry guidance. Their outputs assist a symbolic learner over finite word operations and spatial transition rules. The learner selects discriminating experiments, requests additional environments, verifies candidate programs with separate measurements, and abstains when verification fails. Neural predictions cannot authorize executable knowledge. No pretrained model, external API, GPU, or remote inference service is required.
+The retained single-inquiry runtime uses three small, locally trained neural networks that learn observation decoding, outcome prediction, and inquiry guidance. Their outputs assist a symbolic learner over finite word operations and spatial transition rules. The learner selects discriminating experiments, requests additional environments, verifies candidate programs with separate measurements, and abstains when verification fails. Neural predictions cannot authorize executable knowledge. No pretrained model, external API, GPU, or remote inference service is required.
 
-Across two authored six-seed campaigns, the hybrid configuration produced the following results:
+In the retained v2.0.0 reference experiments, across two authored six-seed campaigns, the hybrid configuration produced the following results:
 
 | Measure | Observed result |
 |---|---:|
@@ -130,6 +161,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 | Topic | Reference |
 |---|---|
+| Continual cognition and progressive learning | [Continual architecture](docs/CONTINUAL.md) |
 | Integrated neural-symbolic inquiry | [Hybrid architecture](docs/HYBRID.md) |
 | Epistemic inquiry and cross-environment learning | [AEI](docs/EPISTEMIC.md) |
 | Developmental scheduling and learned prerequisites | [Developmental curriculum](docs/DEVELOPMENTAL.md) |
@@ -146,7 +178,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 ## Limitations
 
-The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. The hybrid runtime uses three small supervised networks and a finite symbolic grammar. It does not provide general-purpose perception, broad natural-language competence, a physical sensor driver, autonomous deployment, unrestricted continual learning, or a general neural world model. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
+The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. The hybrid runtime uses three small supervised networks and a finite symbolic grammar. The continual runtime extends this with bounded frozen neural experts, lateral feature connections, skill reuse, recovery and flat checkpoint replay; it does not establish unbounded continual learning or superior neural performance. It does not provide general-purpose perception, broad natural-language competence, a physical sensor driver, autonomous deployment, unrestricted continual learning, or a general neural world model. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
 
 ## License
 

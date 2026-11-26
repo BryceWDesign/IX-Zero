@@ -25,3 +25,6 @@ ix-zero-state-language.json
 
 .ix-hybrid-*
 ix-zero-hybrid-state.json
+
+.ix-continual-*
+ix-zero-continual-state.json

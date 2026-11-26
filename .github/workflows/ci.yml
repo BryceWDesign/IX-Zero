@@ -43,3 +43,5 @@ jobs:
 
       - run: python -m ix_zero.epistemic_experiment --trials 2 --check
       - run: python -m ix_zero.hybrid_experiment --trials 2 --check
+      - run: python -m ix_zero.continual_experiment --trials 1 --episodes 8 --check
+      - run: python -m ix_zero.stack_experiment --trials 1 --check
