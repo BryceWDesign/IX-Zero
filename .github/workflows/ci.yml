@@ -42,3 +42,4 @@ jobs:
       - run: python -m ix_zero.developmental_challenge --trials 2 --check
 
       - run: python -m ix_zero.epistemic_experiment --trials 2 --check
+      - run: python -m ix_zero.hybrid_experiment --trials 2 --check

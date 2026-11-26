@@ -1,4 +1,4 @@
-# IX-Zero v0.1.0: executable cognitive instructions (historical integration milestone)
+# IX-Zero v0.1.0: executable cognitive instructions (historical integration evaluation)
 
 ## Source and design
 
@@ -22,4 +22,4 @@ This is an instruction/control integration, not increased general intelligence. 
 
 The new tests establish workflow execution, policy-dependent behavior, traces, evidence enforcement, rejection of malformed/multiple/unknown actions and pending approvals, finite-space exhaustion and revision requests. They do not establish an improvement in transfer accuracy or AGI. The prior raw experiment files are unchanged historical results. Windows and remote GitHub CI have not been executed for this release.
 
-The subsequent representation discovery milestone adds a separate IX policy and Python runtime. See `DISCOVERY.md`; this document describes the earlier integration only.
+The subsequent representation discovery evaluation adds a separate IX policy and Python runtime. See `DISCOVERY.md`; this document describes the earlier integration only.

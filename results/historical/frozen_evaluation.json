@@ -1,5 +1,5 @@
 {
-  "protocol": "frozen milestone 4; fixed evaluation families, deterministic seeds; authored probes not blinded",
+  "protocol": "frozen evaluation 4; fixed evaluation families, deterministic seeds; authored probes not blinded",
   "seeds": [
     202611240,
     202611241,

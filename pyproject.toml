@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ix-zero"
-version = "0.1.0"
-description = "Experimental bounded developmental cognition and skill transfer"
+version = "2.0.0"
+description = "Experimental integrated neural-symbolic cognition and adaptive inquiry"
 requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
 ix-zero = "ix_zero.cli:main"
+ix-zero-hybrid = "ix_zero.hybrid_cli:main"
 
 [tool.setuptools]
 packages = ["ix_zero", "ix_zero._ix_vendor", "ix_zero._sally_vendor", "ix_zero._sally_vendor.cognition"]

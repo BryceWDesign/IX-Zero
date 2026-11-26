@@ -68,7 +68,7 @@ class Development:
     def __init__(self, *, reuse=True):
         if type(reuse) is not bool: raise ValueError('invalid reuse mode')
         self.reuse=reuse; self.words=OperatorMind(); self.analogies=AnalogicalMind(); self.jobs={}; self.events=[]; self.pending=None
-        # Exact-equivalent inquiry strategy from the earlier strategy milestone.
+        # Exact-equivalent inquiry strategy from the earlier strategy evaluation.
         self.strategy=Strategy(kernel='packed')
 
     def _record(self,event):

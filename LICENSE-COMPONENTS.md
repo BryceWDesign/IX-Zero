@@ -1,4 +1,4 @@
-# Component licensing addendum for IX-Zero v0.1.0
+# Component licensing addendum for IX-Zero v2.0.0
 
 Copyright (c) 2026 Bryce Lovell. All rights reserved except as expressly granted.
 
@@ -6,7 +6,7 @@ This release-specific addendum becomes effective only when Bryce Lovell, acting 
 
 ## IX-Sally integration
 
-For the selected IX-Sally files included in `ix_zero/_sally_vendor/`, the rights holder grants permission to incorporate and distribute those files as part of the authorized IX-Zero v0.1.0 distribution, and permits recipients to view, download, clone, locally run and evaluate that distribution for noncommercial research and technical evaluation. Unmodified copies of the complete authorized distribution may be shared for the same purpose with all notices and licenses intact. This narrow grant supersedes conflicting integration and redistribution restrictions of the preserved IX-Sally license only to the extent necessary for these specific activities. It does not grant private modification rights to the Sally components, separate redistribution of modified Sally components, commercial, government, regulated, hosted, funded, production or competing-product use, or other rights reserved in the original Sally license. Any broader grant requires separate permission from the rights holder. The original Sally license otherwise remains applicable.
+For the selected IX-Sally files included in `ix_zero/_sally_vendor/`, the rights holder grants permission to incorporate and distribute those files as part of the authorized IX-Zero v2.0.0 distribution, and permits recipients to view, download, clone, locally run and evaluate that distribution for noncommercial research and technical evaluation. Unmodified copies of the complete authorized distribution may be shared for the same purpose with all notices and licenses intact. This narrow grant supersedes conflicting integration and redistribution restrictions of the preserved IX-Sally license only to the extent necessary for these specific activities. It does not grant private modification rights to the Sally components, separate redistribution of modified Sally components, commercial, government, regulated, hosted, funded, production or competing-product use, or other rights reserved in the original Sally license. Any broader grant requires separate permission from the rights holder. The original Sally license otherwise remains applicable.
 
 ## Hosting and platform rights
 

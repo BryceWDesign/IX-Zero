@@ -13,7 +13,7 @@ from ix_zero.operators import OperatorEpisode
 from ix_zero.core import Space, Task
 from ix_zero.language_demo import build, reply
 
-OUT = Path('results/milestone5/frozen_evaluation.json')
+OUT = Path('results/historical/frozen_evaluation.json')
 SEEDS = tuple(range(202611240, 202611252))
 
 def row(x, y, p, status=None):
@@ -124,7 +124,7 @@ def language_probes():
     return rows
 
 def main():
-    result=dict(protocol='frozen milestone 4; fixed evaluation families, deterministic seeds; authored probes not blinded',seeds=SEEDS,external=external(),scalar=scalar_campaign(),operators=bit_campaign(),language=language_probes())
+    result=dict(protocol='frozen evaluation 4; fixed evaluation families, deterministic seeds; authored probes not blinded',seeds=SEEDS,external=external(),scalar=scalar_campaign(),operators=bit_campaign(),language=language_probes())
     OUT.parent.mkdir(parents=True,exist_ok=True);OUT.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print('External arithmetic',result['external']['arithmetic']['counts']);print('ARC',result['external']['arc']['result']);print('SCAN',counts(result['external']['scan']['rows']))
     for family in SCALAR:

@@ -1,6 +1,6 @@
-# Comparative development milestone — v0.1.0
+# Comparative development evaluation — v0.1.0
 
-**Objective: measurable advantages over the original donor projects. Status: partially achieved; universal superiority is not established.** This is a development milestone within v0.1.0, not an AGI claim.
+**Objective: measurable advantages over the original donor projects. Status: partially achieved; universal superiority is not established.** This is a development evaluation within v0.1.0, not an AGI claim.
 
 ## New mechanisms
 
@@ -38,7 +38,7 @@ Zero used 986 observed labels (including audits) versus Sally's 291. Both achiev
 | Planning | 612/612 replayed goals reached | Single-action outcome-defined goals in the bounded simulator, not open-world planning. |
 | Previous separable model recovery | 12/12 incorrect before feedback; 12/12 blocked after feedback; 600/600 correct after fresh coupled fitting and auditing | 50 new training cases and six new audit cases per seed. Recovered the fixture, not all cross-modal failures. |
 
-`results/superiority_campaign.json` contains row-level counts. `--check` checks these known synthetic fixtures, not AGI. Some negative tests deliberately falsify a model; failure is retained as evidence. A new valid epoch requires fresh validation and cannot recycle prior audit inputs. The earlier unified milestone documents its historical limitations and results as they existed then.
+`results/superiority_campaign.json` contains row-level counts. `--check` checks these known synthetic fixtures, not AGI. Some negative tests deliberately falsify a model; failure is retained as evidence. A new valid epoch requires fresh validation and cannot recycle prior audit inputs. The earlier unified evaluation documents its historical limitations and results as they existed then.
 
 ## Native Julia comparison: still open
 
@@ -62,7 +62,7 @@ The unexecuted adapter is not a substitute for the complete donor systems' origi
 
 ## Remaining limits
 
-This comparative milestone is a bounded research implementation. It does not implement every advanced donor mechanism, does not have unrestricted natural-language understanding, does not discover an unbounded computational grammar, and does not establish AGI. No full native Julia comparison or universal superiority claim. No remote CI, native Windows or formal proof claim. The new code remains v0.1.0, evaluation-only; see [component licensing](../LICENSE-COMPONENTS.md) for the distribution terms.
+This comparative evaluation is a bounded research implementation. It does not implement every advanced donor mechanism, does not have unrestricted natural-language understanding, does not discover an unbounded computational grammar, and does not establish AGI. No full native Julia comparison or universal superiority claim. No remote CI, native Windows or formal proof claim. The new code remains v0.1.0, evaluation-only; see [component licensing](../LICENSE-COMPONENTS.md) for the distribution terms.
 
 ## Local build verification
 

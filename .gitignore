@@ -22,3 +22,6 @@ ix-zero-state-analogy.json
 
 ix-zero-state-language.json
 .ix-language-*
+
+.ix-hybrid-*
+ix-zero-hybrid-state.json

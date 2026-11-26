@@ -1,4 +1,4 @@
-# Representation discovery development milestone (v0.1.0)
+# Representation discovery development evaluation (v0.1.0)
 
 ## Mechanism
 

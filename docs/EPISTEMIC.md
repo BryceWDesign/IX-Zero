@@ -71,7 +71,7 @@ The environment selection trace for seed 311000 double shift begins with width 2
 
 ## Unresolved research
 
-The next expansion would need an extensible representation grammar over sequences, graphs and structured state; genuinely new operation families; measured active selection between model families; recovery that proposes a fresh learning objective; larger independent challenge corpora; and evidence beyond synthetic deterministic environments. These are not implemented or claimed by this milestone. Empty curricula still return scheduler completion rather than spontaneous open-world objectives. No consciousness, autonomous scientific discovery, human-level generality or AGI is demonstrated.
+The next expansion would need an extensible representation grammar over sequences, graphs and structured state; genuinely new operation families; measured active selection between model families; recovery that proposes a fresh learning objective; larger independent challenge corpora; and evidence beyond synthetic deterministic environments. These are not implemented or claimed by this evaluation. Empty curricula still return scheduler completion rather than spontaneous open-world objectives. No consciousness, autonomous scientific discovery, human-level generality or AGI is demonstrated.
 
 ### Fresh-seed confirmation
 

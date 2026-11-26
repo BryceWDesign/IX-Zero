@@ -1,17 +1,17 @@
 # Final development evaluation
 
-Version: 0.1.0. Evaluation subject: unmodified milestone 4 cognitive engine and IX policies. This is a frozen-build engineering and capability evaluation, not an independent certification of AGI. The evaluation harness was authored after the build was frozen; its synthetic families are not externally blinded.
+Version: 0.1.0. Evaluation subject: unmodified evaluation 4 cognitive engine and IX policies. This is a frozen-build engineering and capability evaluation, not an independent certification of AGI. The evaluation harness was authored after the build was frozen; its synthetic families are not externally blinded.
 
 ## Historical evaluation protocol
 
-The following commands describe the earlier frozen milestone. Running them against the current AEI implementation is a new evaluation, not a replay of the earlier executable. Use a disposable checkout to avoid overwriting archived results. The exact earlier engine is not bundled in this release.
+The following commands describe the earlier frozen evaluation. Running them against the current AEI implementation is a new evaluation, not a replay of the earlier executable. Use a disposable checkout to avoid overwriting archived results. The exact earlier engine is not bundled in this release.
 
 ```text
 python -m unittest discover -s tests -v
 python -m tools.final_evaluation
 ```
 
-The evaluator writes `results/milestone5/frozen_evaluation.json` and prints the family counts; it can overwrite the historical record. A second local execution produced a byte-identical JSON result. The 14 workflow commands for that historical build were run locally without modification. The original experimental output is in `results/milestone5/frozen_evaluation.json`. All 152 tests passed. An offline wheel build and installation into a clean virtual environment succeeded; the installed language demonstration and two-seed language experiment passed. These results apply to the local Linux/Python environment, not the remote GitHub matrix or native Windows.
+The evaluator writes `results/historical/frozen_evaluation.json` and prints the family counts; it can overwrite the historical record. A second local execution produced a byte-identical JSON result. The 14 workflow commands for that historical build were run locally without modification. The original experimental output is in `results/historical/frozen_evaluation.json`. All 152 tests passed. An offline wheel build and installation into a clean virtual environment succeeded; the installed language demonstration and two-seed language experiment passed. These results apply to the local Linux/Python environment, not the remote GitHub matrix or native Windows.
 
 ## External task compatibility
 
@@ -49,7 +49,7 @@ Corrective feedback on the first wrong held-out input was supplied only after al
 
 Fourteen language probes against the existing demo gave six correct supported interpretations, two appropriate abstentions for unknown/ambiguous references, three abstentions on unsupported meanings or word orders, and three input-format rejections. Articles, politeness, negation, reordered language and sequential clauses were not generally understood. This is not open-world language acquisition.
 
-## Milestone disposition
+## Evaluation disposition
 
 1. Operator discovery: implemented in a bounded finite-word grammar; no unrestricted discovery of arbitrary operators.
 2. Strategy improvement: bounded strategy selection and verified exact scoring optimization; no autonomous arbitrary source rewriting.

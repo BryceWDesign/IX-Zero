@@ -390,7 +390,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__); parser.add_argument('--state',default='ix-zero-state.json'); a=parser.parse_args()
     try: s=Session(a.state)
     except (ValueError,OSError,KeyError,TypeError) as e: parser.exit(2,f'Checkpoint refused: {e}\n')
-    print('IX-Zero 0.1.0 | local experimental learner | type help')
+    print('IX-Zero 2.0.0 | local experimental learner | type help')
     while True:
         try:
             line=input('You > ')

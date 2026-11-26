@@ -1,6 +1,6 @@
 # Operator synthesis and acquisition
 
-IX-Zero v0.1.0, development milestone 1.
+IX-Zero v0.1.0, development evaluation 1.
 
 ## Scope
 

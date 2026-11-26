@@ -1,8 +1,8 @@
-> Historical milestone record. The subsequent [comparative development milestone](SUPERIORITY.md) addresses the specific cross-modal failure family described below; its independent evidence and remaining limitations are documented separately.
+> Historical evaluation record. The subsequent [comparative development evaluation](SUPERIORITY.md) addresses the specific cross-modal failure family described below; its independent evidence and remaining limitations are documented separately.
 
 # Unified developmental workspace — v0.1.0
 
-This milestone integrates selected mechanisms rather than concatenating repositories. It retains the original learner, expression-discovery learner, IX interpreter, and their tests. The Python unified workspace operates on finite, closed-world symbolic fact sets and optional bounded integer vectors. It is not general intelligence, a language model, a self-modifying agent, or an external actuator.
+This evaluation integrates selected mechanisms rather than concatenating repositories. It retains the original learner, expression-discovery learner, IX interpreter, and their tests. The Python unified workspace operates on finite, closed-world symbolic fact sets and optional bounded integer vectors. It is not general intelligence, a language model, a self-modifying agent, or an external actuator.
 
 ## Architecture and provenance
 
@@ -11,7 +11,7 @@ This milestone integrates selected mechanisms rather than concatenating reposito
 - **IX-AGI:** `hemisphere.jl`, `callosum.jl`, and `organism.jl` informed the separate full-context evidence lane and disagreement checks. This is not a copy of the full organism, a neural hemisphere implementation, or a claim of independent observations.
 - **IX-Zero / IX-Main:** the existing discovery engine provides learned vector transformations; the original IX interpreter executes `policies/unified.ix` for planning, inquiry, goal generation, recovery proposal, or exhaustion. The Python host checks the policy response. This policy cannot execute external actions, approve itself, or synthesize host code.
 
-`unified_sally_provenance.json` records source and adapted file hashes; `unified_donor_provenance.json` records supplied archive and selected source hashes. The Sally license is preserved verbatim; see [component licensing](../LICENSE-COMPONENTS.md) for the release-specific grant. The previous donor reviews describe earlier milestones, not the current vendor inventory.
+`unified_sally_provenance.json` records source and adapted file hashes; `unified_donor_provenance.json` records supplied archive and selected source hashes. The Sally license is preserved verbatim; see [component licensing](../LICENSE-COMPONENTS.md) for the release-specific grant. The previous donor reviews describe earlier evaluations, not the current vendor inventory.
 
 ### Learning and evidence
 

@@ -1,10 +1,29 @@
 # IX-Zero
 
-Experimental cognitive architecture for evidence-gated skill acquisition, compositional reasoning, and adaptive epistemic inquiry.
+Experimental neural-symbolic cognitive architecture for calibrated observation, evidence-gated skill acquisition, compositional reasoning, and adaptive epistemic inquiry.
 
-**Version 0.1.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
+**Version 2.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
 
-IX-Zero investigates how a symbolic learner can acquire executable knowledge from observations, reuse that knowledge across tasks, recognize the limits of its current evidence, and request more informative experiments. The implementation operates over bounded, evaluator-defined domains. It is not demonstrated artificial general intelligence (AGI), a general-purpose language model, or a production decision system.
+IX-Zero investigates how a neural-symbolic learner can acquire executable knowledge from observations, reuse that knowledge across tasks, recognize the limits of its current evidence, and request more informative experiments. The implementation operates over bounded, evaluator-defined domains. It is not demonstrated artificial general intelligence (AGI), a general-purpose language model, or a production decision system.
+
+## Integrated neural-symbolic inquiry
+
+Three small, locally trained neural networks learn observation decoding, outcome prediction, and inquiry guidance. Their outputs assist a symbolic learner over finite word operations and spatial transition rules. The learner selects discriminating experiments, requests additional environments, verifies candidate programs with separate measurements, and abstains when verification fails. Neural predictions cannot authorize executable knowledge. No pretrained model, external API, GPU, or remote inference service is required.
+
+Across two authored six-seed campaigns, the hybrid configuration produced the following results:
+
+| Measure | Observed result |
+|---|---:|
+| Validated word and grid acquisitions | 24/24 |
+| Held-out symbolic word predictions | 13,032/13,032 correct |
+| Held-out symbolic spatial predictions | 1,056/1,056 correct |
+| Spatial planning checks | 144/144 correct (133 paths, 11 unreachable goals) |
+| Cross-family weight transfers | 24/24 validated, no new calibration labels |
+| Held-out predictions after transfer | 14,088/14,088 correct |
+| Final checkpoint replays across evaluated arms | 184/184 |
+| Negative controls | 16/16 blocked or invalidated |
+
+A calibrated non-neural centroid decoder and an unguided hybrid control also acquired all tested laws. Guided inquiry used 509 requests versus 507 for unguided inquiry; no sample-efficiency advantage was established. Raw neural outcome predictions were substantially less accurate than audited symbolic predictions (1,502/13,032 word and 56/1,056 spatial). These are finite, synthetic, developer-authored tasks, not external AGI benchmarks. See [hybrid methods and results](docs/HYBRID.md) for protocol, control arms, reproducibility and limitations.
 
 ## Research contributions
 
@@ -15,9 +34,9 @@ IX-Zero investigates how a symbolic learner can acquire executable knowledge fro
 - **Grounded composition:** connect learned language, finite relational representations, numeric operations, and simulated actions through audited bindings.
 - **Evidence lifecycle:** validate within declared scope, quarantine contradicted knowledge, invalidate dependent capabilities, and replay learning journals.
 
-The current implementation integrates these mechanisms into a developmental coordinator, with IX policies directing bounded learning decisions. See [research design](docs/RESEARCH.md), [developmental architecture](docs/DEVELOPMENTAL.md), and [AEI](docs/EPISTEMIC.md) for the algorithms and their limits.
+The implementation retains these mechanisms in a developmental coordinator, with IX policies directing bounded learning decisions. See [research design](docs/RESEARCH.md), [developmental architecture](docs/DEVELOPMENTAL.md), and [AEI](docs/EPISTEMIC.md) for the algorithms and their limits.
 
-## Selected experimental results
+## Retained epistemic research results
 
 The AEI evaluation comprises two disjoint six-seed campaigns using the same developer-defined synthetic task families. The engine receives observations and unlabeled input pools, not the hidden target expressions.
 
@@ -47,9 +66,11 @@ python -m ix_zero
 
 On Windows, `py -3 -m ix_zero` or `Start-IX-Zero.cmd` can be used. Type `help` in the console. No API key, network connection, GPU, or installed package is required for the source-tree runtime.
 
-To inspect the integrated developmental curriculum and AEI evaluation:
+To run the hybrid evaluator, open its local JSON-lines interface, or inspect the retained developmental curriculum:
 
 ```sh
+python -m ix_zero.hybrid_experiment --trials 2 --check
+python -m ix_zero.hybrid_cli
 python -m ix_zero.developmental_cli --demo
 python -m ix_zero.epistemic_experiment --trials 2 --check
 python -m unittest discover -s tests -v
@@ -74,6 +95,15 @@ promote
 ```
 
 The console exposes bounded learning commands, not unrestricted natural-language conversation. This example uses the original finite-state learner; see the [AEI API](docs/EPISTEMIC.md) for cross-environment inquiry.
+
+## Reproduce the hybrid experiments
+
+```sh
+python -m ix_zero.hybrid_experiment --trials 6 --seed 410000 --check --output hybrid-primary.json
+python -m ix_zero.hybrid_experiment --trials 6 --seed 420000 --check --output hybrid-confirmation.json
+```
+
+Reference records: [primary](results/hybrid_primary.json), [confirmation](results/hybrid_confirmation.json). For the host protocol and raster input, see [hybrid API](docs/HYBRID.md).
 
 ## Reproduce the AEI experiments
 
@@ -100,6 +130,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 | Topic | Reference |
 |---|---|
+| Integrated neural-symbolic inquiry | [Hybrid architecture](docs/HYBRID.md) |
 | Epistemic inquiry and cross-environment learning | [AEI](docs/EPISTEMIC.md) |
 | Developmental scheduling and learned prerequisites | [Developmental curriculum](docs/DEVELOPMENTAL.md) |
 | Context and contradiction recovery | [Contextual cognition](docs/CONTEXTUAL.md) |
@@ -115,7 +146,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 ## Limitations
 
-The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
+The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. The hybrid runtime uses three small supervised networks and a finite symbolic grammar. It does not provide general-purpose perception, broad natural-language competence, a physical sensor driver, autonomous deployment, unrestricted continual learning, or a general neural world model. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
 
 ## License
 
