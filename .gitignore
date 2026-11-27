@@ -28,3 +28,6 @@ ix-zero-hybrid-state.json
 
 .ix-continual-*
 ix-zero-continual-state.json
+
+.ix-general-*
+ix-zero-general-state.json

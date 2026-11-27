@@ -4,6 +4,7 @@ The files in this directory are retained research records, including unsuccessfu
 
 | Research area | Records | Protocol |
 |---|---|---|
+| Integrated native reasoning, program induction and cross-engine composition | `general_primary.json`, `general_confirmation.json` | [Workspace](../docs/GENERAL.md) |
 | Three-level composition and bounded goal search | `stack_campaign.json` | [Continual](../docs/CONTINUAL.md#three-level-skill-composition-and-goal-search) |
 | Continual learning and cumulative skill acquisition | `continual_primary.json`, `continual_confirmation.json` | [Continual](../docs/CONTINUAL.md) |
 | Historical hybrid stress evaluation | `historical/hybrid_stress.json` | [Evaluator](../tools/hybrid_stress.py), [Continual](../docs/CONTINUAL.md) |

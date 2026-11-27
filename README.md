@@ -1,16 +1,43 @@
 # IX-Zero
 
-Experimental continual neural-symbolic cognitive architecture for cumulative executable skill acquisition, progressive neural representations, bounded recovery, and adaptive epistemic inquiry.
+Experimental continual neural-symbolic cognitive architecture integrating executable skill acquisition, adaptive inquiry, controlled-language reasoning, source-scoped evidence, exact mathematics and finite program induction.
 
-**Version 3.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
+**Version 4.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
 
 IX-Zero investigates how a neural-symbolic learner can acquire executable knowledge from observations, reuse that knowledge across tasks, recognize the limits of its current evidence, and request more informative experiments. The implementation operates over bounded, evaluator-defined domains. It is not demonstrated artificial general intelligence (AGI), a general-purpose language model, or a production decision system.
+
+## Integrated native reasoning
+
+The local reasoning workspace connects the retained continual neural-symbolic engine to controlled-language questions, source-scoped relational inference, exact rational arithmetic and affine equations, finite constraint search, executable sequence induction, and scoped goal planning. Acquired sequence programs can be composed with validated outputs from the existing engine; a contradiction in either source blocks dependent answers. The native workspace uses no pretrained language model or external API.
+
+Across two authored six-seed campaigns:
+
+| Evaluation | Result |
+|---|---:|
+| Sequence program acquisition, cumulative vs. reuse-disabled | 36/36 vs. 24/36 |
+| Held-out sequence predictions, cumulative vs. reuse-disabled | 1,296/1,296 vs. 864/1,296 (432 abstentions) |
+| Core-to-sequence composed predictions | 768/768 correct |
+| Evidence and exact equation questions | 312/312 correct |
+| Finite constraint problems | 216/216 matched exhaustive reference |
+| Scoped planning checks | 60/60 |
+| Workspace checkpoint replays | 36/36 |
+| Corrupted audits and out-of-grammar controls | 24/24 withheld promotion |
+
+These results are from authored, finite task families. They do not establish general language competence, broad software engineering, independent benchmark performance, or AGI. See [workspace methods and host protocol](docs/GENERAL.md) and [raw evidence](results/README.md).
+
+```sh
+python -m ix_zero.general_cli
+python -m ix_zero.general_experiment --trials 6 --seed 810000 --check --output general-primary.json
+python -m ix_zero.general_experiment --trials 6 --seed 820000 --check --output general-confirmation.json
+```
+
+The workspace accepts JSON-lines commands, for example `{"command":"ask","text":"Solve 3*(2*x-1)=x+4"}`. The original console and continual interfaces remain available.
 
 ## Continual cognitive development
 
 The continual coordinator maintains a flat, replay-verified learning history across successive inquiries. It preserves verified executable skills, composes them into new candidate programs, retains frozen neural experts, trains new recognition heads on prior hidden features, selects extra boundary measurements, and requests fresh evidence after contradictions. All acquired rules remain subject to independent validation and scoped prediction. The learner proposes experiments; the host supplies measurements and grants access.
 
-Across two authored campaigns, the following bounded results were observed:
+In the retained v3.0.0 continual campaigns, the following bounded results were observed:
 
 | Evaluation | Result |
 |---|---:|
@@ -161,6 +188,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 | Topic | Reference |
 |---|---|
+| Integrated native reasoning and program induction | [Workspace](docs/GENERAL.md) |
 | Continual cognition and progressive learning | [Continual architecture](docs/CONTINUAL.md) |
 | Integrated neural-symbolic inquiry | [Hybrid architecture](docs/HYBRID.md) |
 | Epistemic inquiry and cross-environment learning | [AEI](docs/EPISTEMIC.md) |
@@ -178,7 +206,7 @@ Reference records: [primary campaign](results/aei_epistemic_campaign.json) and [
 
 ## Limitations
 
-The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. The hybrid runtime uses three small supervised networks and a finite symbolic grammar. The continual runtime extends this with bounded frozen neural experts, lateral feature connections, skill reuse, recovery and flat checkpoint replay; it does not establish unbounded continual learning or superior neural performance. It does not provide general-purpose perception, broad natural-language competence, a physical sensor driver, autonomous deployment, unrestricted continual learning, or a general neural world model. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
+The hypothesis grammar, computational budgets, available representations, and environment interfaces are supplied by the implementation. The hybrid runtime uses three small supervised networks and a finite symbolic grammar. The continual runtime extends this with bounded frozen neural experts, lateral feature connections, skill reuse, recovery and flat checkpoint replay; it does not establish unbounded continual learning or superior neural performance. The integrated workspace adds controlled language, structured evidence and finite reasoning, but it does not provide general-purpose perception, broad natural-language competence, a physical sensor driver, autonomous deployment, unrestricted continual learning, or a general neural world model. AEI does not invent unrestricted environments, acquire general natural language, initiate arbitrary open-world objectives, or rewrite its architecture. Historical results may require the corresponding earlier engine for exact reproduction. Full independent benchmark evaluation, native donor comparisons, and general intelligence remain unestablished. No claim of universal correctness, research priority, consciousness, security certification, or production readiness is made.
 
 ## License
 
