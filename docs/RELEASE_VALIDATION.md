@@ -1,19 +1,22 @@
-# Release verification
+# Release verification — grounded v5.0.0 research candidate
 
-IX-Zero v4.0.0. Local verification: Linux, Python 3.13.5. The workflow commands were executed locally; the GitHub-hosted matrix is not represented as executed.
+Actual execution: Linux, Python 3.13.5. No GitHub push or hosted Windows/Ubuntu × Python 3.11/3.13 matrix execution. Local engineering success does not establish AGI, or completion of the research roadmap. The current claim boundary is in `RESEARCH_V5_GROUNDED.md`.
 
-| Check | Result |
+| Verification | Observed result |
 |---|---|
-| Unit tests (`python -m unittest discover -s tests -v`) | 286 passed, including 268 retained tests |
-| Commands in `.github/workflows/ci.yml` | 30 passed locally |
-| Native reasoning evaluation, seeds 810000 and 820000 | Both six-seed campaigns passed executable checks |
-| Same-seed reproductions | Both campaign JSON files reproduced byte for byte |
-| Offline wheel build and isolated installation | Passed |
-| Installed-package native reasoning evaluation and CLI | Passed |
-| Historical evidence from v3.0.0 | 80/80 JSON, TXT and TSV records byte-identical |
+| Parent expanded ZIP integrity | Passed |
+| Parent SHA-256 manifest | 303/303 verified against archive bytes |
+| Parent unit suite | 339 passed before changes |
+| New unit suite | 361/361 passed (339 retained, 22 added) |
+| Exact dependency-free workflow command lines | 35/35 passed in a separate checkout; all executable CI sources match final source |
+| Historical result files | 116/116 byte-identical to preceding build |
+| Grounded learning campaigns | Two 12-seed campaigns, failures and controls retained |
+| Semantic transfer/arity campaigns | Two 12-seed campaigns, failures and controls retained |
+| Deterministic reproduction | Primary action-learning and primary transfer campaign files reproduced byte-for-byte on final source |
+| Public ARC-AGI-1 diagnostic | 3/6 relational, 1/6 prior objects, 0/6 original; convenience sample and two repaired tasks previously exposed |
+| Actual Chromium semantic form | 64/64 held-out predictions, 2/2 goals, 260 actual button clicks; optional dependency, executed directly from packaging tree |
+| Offline wheel build and installed-package smoke test | Passed |
+| Live HTTPS | Attempted by Zero; DNS failed, no successful live retrieval |
+| Native Julia/Ada and external named synthesis comparisons | Not executed; toolchain/access prerequisites unavailable; no DreamCoder/PushGP result |
 
-The retained engine and its tests are unchanged except for version display metadata in the original package and console. The new workspace is additive; the original interfaces remain available. Historical results describe their original engines and protocols. See [workspace methods](GENERAL.md), [continual methods](CONTINUAL.md), [hybrid methods](HYBRID.md) and [evidence index](../results/README.md). The historical control's incorrect predictions are preserved. The new campaigns include abstentions in the reuse-disabled control, corrupted audits and unsupported tasks. No external AGI benchmark score is reported.
-
-The root manifest records SHA-256 hashes of distributed files, excluding the manifest itself. It is an integrity check, not a signature or proof of scientific correctness. From a pristine checkout on Linux, run `sha256sum -c MANIFEST.sha256` before experiments that write into the results directory. Experiments that generate result files should use a separate checkout or new output path.
-
-GitHub-hosted CI for this release, native Windows execution, Python 3.11 execution, independent expert evaluation, and broader benchmark competence remain unverified. No universal correctness, general-purpose language competence, execution-speed gain, security certification, or general intelligence is claimed.
+Full command output, parent check, source hashes, campaign data, and reproduction hashes are preserved in `results/v5_grounded/`. Prior release validation is preserved as `RELEASE_VALIDATION_V5_EXPANDED.md`, `RELEASE_VALIDATION_V5_INITIAL.md`, and `RELEASE_VALIDATION_V4.md`. `MANIFEST.sha256` covers all distributed files except itself and proves byte integrity, not scientific validity. No user credentials or paid services are required for the standard-library CI. The browser extra is optional and the local app is trusted. The release uses version 5.0.0, not a new published version.

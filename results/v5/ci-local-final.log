@@ -1,0 +1,62 @@
+1 python -m unittest discover -s tests -v
+exit=0
+2 python -m ix_zero.experiment --trials 2
+exit=0
+3 python -m ix_zero.validation --trials 2
+exit=0
+4 python -m ix_zero.challenges
+exit=0
+5 python -m ix_zero.discovery_experiment --trials 2
+exit=0
+6 python -m ix_zero.discovery_experiment --strict --seed 200 --trials 2
+exit=0
+7 python -m ix_zero.discovery_planning --trials 2
+exit=0
+8 python -m ix_zero.unified_experiment --trials 2
+exit=0
+9 python -m ix_zero.superiority_experiment --trials 2 --check
+exit=0
+10 python -m ix_zero.operator_experiment --trials 2 --seed 9400 --check
+exit=0
+11 python -m ix_zero.strategy_experiment --trials 1 --seed 67000 --mode exact --check
+exit=0
+12 python -m ix_zero.analogy_experiment --trials 2 --check
+exit=0
+13 python -m ix_zero.language_experiment --trials 2 --check
+exit=0
+14 python -m ix_zero.language_demo --check
+exit=0
+15 python -m ix_zero.acce_experiment --trials 2 --check
+exit=0
+16 python -m ix_zero.acce_demo --check
+exit=0
+17 python -m ix_zero.compositional_experiment --trials 2 --check
+exit=0
+18 python -m ix_zero.compositional_demo --check
+exit=0
+19 python -m ix_zero.representation_experiment --trials 2 --seed 185000 --novel --check
+exit=0
+20 python -m ix_zero.representation_demo --check
+exit=0
+21 python -m ix_zero.contextual_experiment --trials 2 --check
+exit=0
+22 python -m ix_zero.contextual_demo --check
+exit=0
+23 python -m ix_zero.developmental_experiment --trials 2 --check
+exit=0
+24 python -m ix_zero.developmental_cli --check
+exit=0
+25 python -m ix_zero.developmental_challenge --trials 2 --check
+exit=0
+26 python -m ix_zero.epistemic_experiment --trials 2 --check
+exit=0
+27 python -m ix_zero.hybrid_experiment --trials 2 --check
+exit=0
+28 python -m ix_zero.continual_experiment --trials 1 --episodes 8 --check
+exit=0
+29 python -m ix_zero.stack_experiment --trials 1 --check
+exit=0
+30 python -m ix_zero.general_experiment --trials 2 --check
+exit=0
+31 python -m ix_zero.research_experiment --trials 2 --check
+exit=0

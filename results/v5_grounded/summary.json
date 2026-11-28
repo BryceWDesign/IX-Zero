@@ -1,0 +1,891 @@
+{
+  "arc-diagnostic": {
+    "objects": {
+      "abstentions": 5,
+      "correct": 1,
+      "exact_tasks": 1,
+      "execution_errors": 0,
+      "tasks": 6,
+      "wrong": 0
+    },
+    "original": {
+      "abstentions": 6,
+      "correct": 0,
+      "exact_tasks": 0,
+      "execution_errors": 0,
+      "tasks": 6,
+      "wrong": 0
+    },
+    "relational": {
+      "abstentions": 3,
+      "correct": 3,
+      "exact_tasks": 3,
+      "execution_errors": 0,
+      "tasks": 6,
+      "wrong": 0
+    }
+  },
+  "browser-semantic": {
+    "abstained": 0,
+    "actual_button_clicks": 260,
+    "correct": 64,
+    "independent_reference_agreement": 64,
+    "plans_achieved": 2,
+    "trials": 2,
+    "wrong": 0
+  },
+  "confirmation": {
+    "active": {
+      "families": [
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 68,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 65,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 72,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 76,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 12
+    },
+    "no_conditional": {
+      "families": [
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 4,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 11,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 6,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 8640,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 12
+    },
+    "no_inquiry": {
+      "families": [
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 0
+    },
+    "no_memory_plans_achieved": 0,
+    "random": {
+      "families": [
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 352,
+          "audit_labels": 12,
+          "candidate_attempts": 15552,
+          "correct": 32,
+          "promoted": 1,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 352,
+          "audit_labels": 12,
+          "candidate_attempts": 15552,
+          "correct": 32,
+          "promoted": 1,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 0
+    }
+  },
+  "primary": {
+    "active": {
+      "families": [
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 71,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 63,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 82,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 15552,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 67,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 12
+    },
+    "no_conditional": {
+      "families": [
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 6,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 6,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 5,
+          "wrong": 0
+        },
+        {
+          "abstain": 0,
+          "audit_labels": 144,
+          "candidate_attempts": 8640,
+          "correct": 384,
+          "promoted": 12,
+          "queries": 5,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 8640,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 12
+    },
+    "no_inquiry": {
+      "families": [
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 0
+    },
+    "no_memory_plans_achieved": 0,
+    "random": {
+      "families": [
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 352,
+          "audit_labels": 12,
+          "candidate_attempts": 15552,
+          "correct": 32,
+          "promoted": 1,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 320,
+          "audit_labels": 24,
+          "candidate_attempts": 15552,
+          "correct": 64,
+          "promoted": 2,
+          "queries": 192,
+          "wrong": 0
+        },
+        {
+          "abstain": 384,
+          "audit_labels": 0,
+          "candidate_attempts": 15552,
+          "correct": 0,
+          "promoted": 0,
+          "queries": 0,
+          "wrong": 0
+        }
+      ],
+      "plans_achieved": 0
+    }
+  },
+  "transfer-confirmation": {
+    "arity": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 2952,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 10,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 52200,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 173,
+        "wrong": 0
+      }
+    ],
+    "empty_transfer": [
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      }
+    ],
+    "from_scratch": [
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 15804,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 16560,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 16056,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 15804,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      }
+    ],
+    "source": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 77,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 67,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 73,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 68,
+        "wrong": 0
+      }
+    ],
+    "transfer": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 192,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 240,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 288,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 16,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 336,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      }
+    ],
+    "withdrawals": [
+      [
+        "v14669779",
+        "v93368255"
+      ],
+      [
+        "v26656058",
+        "v47467635"
+      ],
+      [
+        "v68931324",
+        "v93029379"
+      ],
+      [
+        "v11954660",
+        "v64839640"
+      ],
+      [
+        "v35497058",
+        "v91672513"
+      ],
+      [
+        "v65912055",
+        "v80041155"
+      ],
+      [
+        "v03514492",
+        "v73144239"
+      ],
+      [
+        "v00224542",
+        "v98107703"
+      ],
+      [
+        "v30055255",
+        "v41195706"
+      ],
+      [
+        "v59073204",
+        "v90677026"
+      ],
+      [
+        "v00732683",
+        "v24651826"
+      ],
+      [
+        "v14600978",
+        "v20078907"
+      ]
+    ]
+  },
+  "transfer-primary": {
+    "arity": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 2952,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 9,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 52200,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 174,
+        "wrong": 0
+      }
+    ],
+    "empty_transfer": [
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 0,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 0,
+        "wrong": 0
+      }
+    ],
+    "from_scratch": [
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 15804,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 16056,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 15804,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      },
+      {
+        "abstain": 384,
+        "audit_labels": 0,
+        "candidate_attempts": 16056,
+        "correct": 0,
+        "promoted": 0,
+        "queries": 48,
+        "wrong": 0
+      }
+    ],
+    "source": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 71,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 66,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 78,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 15552,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 72,
+        "wrong": 0
+      }
+    ],
+    "transfer": [
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 192,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 240,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 288,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 15,
+        "wrong": 0
+      },
+      {
+        "abstain": 0,
+        "audit_labels": 144,
+        "candidate_attempts": 336,
+        "correct": 384,
+        "promoted": 12,
+        "queries": 0,
+        "wrong": 0
+      }
+    ],
+    "withdrawals": [
+      [
+        "v23134872",
+        "v71516739"
+      ],
+      [
+        "v21762249",
+        "v32383181"
+      ],
+      [
+        "v59383168",
+        "v61330818"
+      ],
+      [
+        "v68215340",
+        "v72158518"
+      ],
+      [
+        "v37988360",
+        "v41549065"
+      ],
+      [
+        "v78696684",
+        "v93972042"
+      ],
+      [
+        "v20050393",
+        "v25553781"
+      ],
+      [
+        "v40673545",
+        "v89711458"
+      ],
+      [
+        "v32402834",
+        "v67754057"
+      ],
+      [
+        "v24480100",
+        "v34446238"
+      ],
+      [
+        "v39976616",
+        "v86740924"
+      ],
+      [
+        "v45302061",
+        "v86648176"
+      ]
+    ]
+  }
+}

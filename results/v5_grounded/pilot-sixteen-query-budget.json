@@ -1,0 +1,203 @@
+{
+  "active": {
+    "families": [
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 20,
+        "audit_labels": 36,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 16,
+        "audit_labels": 36,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 20,
+        "audit_labels": 36,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 19,
+        "audit_labels": 36,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      }
+    ],
+    "plans_achieved": 3
+  },
+  "random": {
+    "families": [
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 48,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 48,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 48,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 48,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      }
+    ],
+    "plans_achieved": 0
+  },
+  "no_inquiry": {
+    "families": [
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 3888
+      }
+    ],
+    "plans_achieved": 0
+  },
+  "no_conditional": {
+    "families": [
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 1,
+        "audit_labels": 36,
+        "candidate_attempts": 2160
+      },
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 2,
+        "audit_labels": 36,
+        "candidate_attempts": 2160
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 2,
+        "audit_labels": 36,
+        "candidate_attempts": 2160
+      },
+      {
+        "promoted": 3,
+        "correct": 96,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 1,
+        "audit_labels": 36,
+        "candidate_attempts": 2160
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 96,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2160
+      }
+    ],
+    "plans_achieved": 3
+  },
+  "no_memory_plans_achieved": 0
+}

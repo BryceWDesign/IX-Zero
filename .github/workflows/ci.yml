@@ -46,3 +46,9 @@ jobs:
       - run: python -m ix_zero.continual_experiment --trials 1 --episodes 8 --check
       - run: python -m ix_zero.stack_experiment --trials 1 --check
       - run: python -m ix_zero.general_experiment --trials 2 --check
+      - run: python -m ix_zero.research_experiment --trials 2 --check
+      - run: python -m ix_zero.completion_experiment --trials 2 --seed 271100 --check
+      - run: python -m ix_zero.revision_experiment --trials 2 --seed 291100 --check
+
+      - run: python -m ix_zero.semantic_experiment --trials 2 --seed 351200 --check
+      - run: python -m ix_zero.semantic_transfer_experiment --trials 2 --seed 361100 --check

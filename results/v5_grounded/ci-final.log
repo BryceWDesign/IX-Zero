@@ -1,0 +1,4026 @@
+[1/35] python -m unittest discover -s tests -v
+test_ambiguous_programs_abstain (test_acce.CompositionTests.test_ambiguous_programs_abstain) ... ok
+test_audit_required_and_no_duplicate (test_acce.CompositionTests.test_audit_required_and_no_duplicate) ... ok
+test_catalog_freezes (test_acce.CompositionTests.test_catalog_freezes) ... ok
+test_cli_live_workspace (test_acce.CompositionTests.test_cli_live_workspace) ... ok
+test_comparison_regression (test_acce.CompositionTests.test_comparison_regression) ... ok
+test_contradiction_blocks_binding (test_acce.CompositionTests.test_contradiction_blocks_binding) ... ok
+test_inspect_zero_is_not_abstention (test_acce.CompositionTests.test_inspect_zero_is_not_abstention) ... ok
+test_invalid_missing_projection (test_acce.CompositionTests.test_invalid_missing_projection) ... ok
+test_label_rename_cannot_reuse_evidence (test_acce.CompositionTests.test_label_rename_cannot_reuse_evidence) ... ok
+test_policy_cannot_complete_unvalidated (test_acce.CompositionTests.test_policy_cannot_complete_unvalidated) ... ok
+test_renamed_operator (test_acce.CompositionTests.test_renamed_operator) ... ok
+test_scalar_and_relational (test_acce.CompositionTests.test_scalar_and_relational) ... ok
+test_source_replacement_blocks (test_acce.CompositionTests.test_source_replacement_blocks) ... ok
+test_source_retraction_blocks_numeric_and_relational (test_acce.CompositionTests.test_source_retraction_blocks_numeric_and_relational) ... ok
+test_unrecognized_language (test_acce.CompositionTests.test_unrecognized_language) ... ok
+test_ambiguous_predictions_abstain (test_analogy.AnalogicalTest.test_ambiguous_predictions_abstain) ... ok
+test_audits_are_not_training_and_are_fresh (test_analogy.AnalogicalTest.test_audits_are_not_training_and_are_fresh) ... ok
+test_checkpoint_replays_and_detects_corruption (test_analogy.AnalogicalTest.test_checkpoint_replays_and_detects_corruption) ... ok
+test_competing_sources_selected_by_target_evidence (test_analogy.AnalogicalTest.test_competing_sources_selected_by_target_evidence) ... ok
+test_console (test_analogy.AnalogicalTest.test_console) ... ok
+test_contradiction_quarantines_promoted_source (test_analogy.AnalogicalTest.test_contradiction_quarantines_promoted_source) ... ok
+test_four_independent_structures (test_analogy.AnalogicalTest.test_four_independent_structures) ... ok
+test_hidden_exception_feedback (test_analogy.AnalogicalTest.test_hidden_exception_feedback) ... ok
+test_mismatched_structure (test_analogy.AnalogicalTest.test_mismatched_structure) ... ok
+test_operator_bridge_and_invalidation (test_analogy.AnalogicalTest.test_operator_bridge_and_invalidation) ... ok
+test_policy_driven_acquisition (test_analogy.AnalogicalTest.test_policy_driven_acquisition) ... ok
+test_promotion_and_multilevel_quarantine (test_analogy.AnalogicalTest.test_promotion_and_multilevel_quarantine) ... ok
+test_relation_names_and_orders_ignored (test_analogy.AnalogicalTest.test_relation_names_and_orders_ignored) ... ok
+test_source_and_graph_validation (test_analogy.AnalogicalTest.test_source_and_graph_validation) ... ok
+test_unstructured_ablation (test_analogy.AnalogicalTest.test_unstructured_ablation) ... ok
+test_wrong_operation_not_assumed (test_analogy.AnalogicalTest.test_wrong_operation_not_assumed) ... ok
+test_budget (test_compositional.RecursiveLanguageTests.test_budget) ... ok
+test_conflicting_training_transaction (test_compositional.RecursiveLanguageTests.test_conflicting_training_transaction) ... ok
+test_console_integration (test_compositional.RecursiveLanguageTests.test_console_integration) ... ok
+test_dispatch_invalidation (test_compositional.RecursiveLanguageTests.test_dispatch_invalidation) ... ok
+test_infix (test_compositional.RecursiveLanguageTests.test_infix) ... ok
+test_longer_sentence (test_compositional.RecursiveLanguageTests.test_longer_sentence) ... ok
+test_mixed_signature (test_compositional.RecursiveLanguageTests.test_mixed_signature) ... ok
+test_nested (test_compositional.RecursiveLanguageTests.test_nested) ... ok
+test_nested_operator (test_compositional.RecursiveLanguageTests.test_nested_operator) ... ok
+test_no_execution_before_audit (test_compositional.RecursiveLanguageTests.test_no_execution_before_audit) ... ok
+test_relabel_does_not_manufacture_audit (test_compositional.RecursiveLanguageTests.test_relabel_does_not_manufacture_audit) ... ok
+test_shift_and_random_grammar (test_compositional.RecursiveLanguageTests.test_shift_and_random_grammar) ... ok
+test_source_invalidation (test_compositional.RecursiveLanguageTests.test_source_invalidation) ... ok
+test_unknown_and_ambiguous (test_compositional.RecursiveLanguageTests.test_unknown_and_ambiguous) ... ok
+test_unlearned_signature (test_compositional.RecursiveLanguageTests.test_unlearned_signature) ... ok
+test_actual_operator_retraction (test_contextual.ContextualTests.test_actual_operator_retraction) ... ok
+test_context_drift_removes_stale_history (test_contextual.ContextualTests.test_context_drift_removes_stale_history) ... ok
+test_contradiction_quarantines (test_contextual.ContextualTests.test_contradiction_quarantines) ... ok
+test_duplicate_training_rejected (test_contextual.ContextualTests.test_duplicate_training_rejected) ... ok
+test_invalid_input (test_contextual.ContextualTests.test_invalid_input) ... ok
+test_no_unaudited_execution (test_contextual.ContextualTests.test_no_unaudited_execution) ... ok
+test_question_discriminates (test_contextual.ContextualTests.test_question_discriminates) ... ok
+test_recovered_predictions (test_contextual.ContextualTests.test_recovered_predictions) ... ok
+test_recovery_replays_audits_as_training (test_contextual.ContextualTests.test_recovery_replays_audits_as_training) ... ok
+test_recovery_requires_contradiction (test_contextual.ContextualTests.test_recovery_requires_contradiction) ... ok
+test_recursive_language_recovered_representation (test_contextual.ContextualTests.test_recursive_language_recovered_representation) ... ok
+test_source_invalidation (test_contextual.ContextualTests.test_source_invalidation) ... ok
+test_training_frozen_after_audit (test_contextual.ContextualTests.test_training_frozen_after_audit) ... ok
+test_unsupported_context_pair_abstains (test_contextual.ContextualTests.test_unsupported_context_pair_abstains) ... ok
+test_automatic_depth_escalation (test_continual.ContinualTests.test_automatic_depth_escalation) ... ok
+test_boundary_probe_blocks_hidden_exception (test_continual.ContinualTests.test_boundary_probe_blocks_hidden_exception) ... ok
+test_calibration_partition_overlap_rejected (test_continual.ContinualTests.test_calibration_partition_overlap_rejected) ... ok
+test_checkpoint_rejects_rehashed_false_fingerprint (test_continual.ContinualTests.test_checkpoint_rejects_rehashed_false_fingerprint) ... ok
+test_denial_and_protocol (test_continual.ContinualTests.test_denial_and_protocol) ... ok
+test_dependent_invalidation_and_composed_plan (test_continual.ContinualTests.test_dependent_invalidation_and_composed_plan) ... ok
+test_lateral_features_really_enter_head (test_continual.ContinualTests.test_lateral_features_really_enter_head) ... ok
+test_multi_generation_and_macro (test_continual.ContinualTests.test_multi_generation_and_macro) ... ok
+test_progressive_training_preserves_parent (test_continual.ContinualTests.test_progressive_training_preserves_parent) ... ok
+test_recovery_and_invalidation (test_continual.ContinualTests.test_recovery_and_invalidation) ... ok
+test_synthesis_macro_ablation (test_continual.ContinualTests.test_synthesis_macro_ablation) ... ok
+test_abandon_does_not_promote (test_developmental.DevelopmentalTests.test_abandon_does_not_promote) ... ok
+test_audit_failure_not_promoted (test_developmental.DevelopmentalTests.test_audit_failure_not_promoted) ... ok
+test_broader_check_regression (test_developmental.DevelopmentalTests.test_broader_check_regression) ... ok
+test_checkpoint_corruption (test_developmental.DevelopmentalTests.test_checkpoint_corruption) ... ok
+test_checkpoint_pending (test_developmental.DevelopmentalTests.test_checkpoint_pending) ... ok
+test_complete_curriculum_and_replay (test_developmental.DevelopmentalTests.test_complete_curriculum_and_replay) ... ok
+test_cycle_rejected (test_developmental.DevelopmentalTests.test_cycle_rejected) ... ok
+test_duplicate_partition_rejected (test_developmental.DevelopmentalTests.test_duplicate_partition_rejected) ... ok
+test_no_pending_answer (test_developmental.DevelopmentalTests.test_no_pending_answer) ... ok
+test_offer_reports_missing_prerequisite (test_developmental.DevelopmentalTests.test_offer_reports_missing_prerequisite) ... ok
+test_pending_and_unvalidated (test_developmental.DevelopmentalTests.test_pending_and_unvalidated) ... ok
+test_replay_decision_mismatch_even_with_digest (test_developmental.DevelopmentalTests.test_replay_decision_mismatch_even_with_digest) ... ok
+test_replay_preserves_invalidation_and_independent_graph (test_developmental.DevelopmentalTests.test_replay_preserves_invalidation_and_independent_graph) ... ok
+test_reuse_ablation (test_developmental.DevelopmentalTests.test_reuse_ablation) ... ok
+test_teacher_not_in_schema (test_developmental.DevelopmentalTests.test_teacher_not_in_schema) ... ok
+test_unsupported_job_does_not_create_capability (test_developmental.DevelopmentalTests.test_unsupported_job_does_not_create_capability) ... ok
+test_wait_missing_dependency (test_developmental.DevelopmentalTests.test_wait_missing_dependency) ... ok
+test_audit_no_reuse_or_refit (test_discovery.DiscoveryTests.test_audit_no_reuse_or_refit) ... ok
+test_cli_replay (test_discovery.DiscoveryTests.test_cli_replay) ... ok
+test_discovery_planning_and_quarantine (test_discovery.DiscoveryTests.test_discovery_planning_and_quarantine) ... ok
+test_full_domain_semantic_dedup (test_discovery.DiscoveryTests.test_full_domain_semantic_dedup) ... ok
+test_ix_discovery_full_cycle (test_discovery.DiscoveryTests.test_ix_discovery_full_cycle) ... ok
+test_learning_expression (test_discovery.DiscoveryTests.test_learning_expression) ... ok
+test_no_prediction_before_evidence (test_discovery.DiscoveryTests.test_no_prediction_before_evidence) ... ok
+test_policy_is_executed_and_cannot_self_authorize (test_discovery.DiscoveryTests.test_policy_is_executed_and_cannot_self_authorize) ... ok
+test_projection_without_known_expression (test_discovery.DiscoveryTests.test_projection_without_known_expression) ... ok
+test_replay_and_tamper (test_discovery.DiscoveryTests.test_replay_and_tamper) ... ok
+test_strict_keeps_longer_rivals (test_discovery.DiscoveryTests.test_strict_keeps_longer_rivals) ... ok
+test_transfer_and_invalidation (test_discovery.DiscoveryTests.test_transfer_and_invalidation) ... ok
+test_wrong_audit_quarantines (test_discovery.DiscoveryTests.test_wrong_audit_quarantines) ... ok
+test_acquired_law_reused_and_dependency_invalidated (test_epistemic.EpistemicTests.test_acquired_law_reused_and_dependency_invalidated) ... ok
+test_contradiction_and_later_retraction (test_epistemic.EpistemicTests.test_contradiction_and_later_retraction) ... ok
+test_denied_environment_and_bad_grant (test_epistemic.EpistemicTests.test_denied_environment_and_bad_grant) ... ok
+test_incomplete_search_never_validates (test_epistemic.EpistemicTests.test_incomplete_search_never_validates) ... ok
+test_joint_pruning_retains_local_collision (test_epistemic.EpistemicTests.test_joint_pruning_retains_local_collision) ... ok
+test_late_exception_caught (test_epistemic.EpistemicTests.test_late_exception_caught) ... ok
+test_packed_against_scalar (test_epistemic.EpistemicTests.test_packed_against_scalar) ... ok
+test_scope_extension_and_checkpoint (test_epistemic.EpistemicTests.test_scope_extension_and_checkpoint) ... ok
+test_unapproved_environment_abstains (test_epistemic.EpistemicTests.test_unapproved_environment_abstains) ... ok
+test_width_bounds (test_epistemic.EpistemicTests.test_width_bounds) ... ok
+test_bad_document_is_atomic (test_general.GeneralTests.test_bad_document_is_atomic) ... ok
+test_conflict_and_nontransitive_relation (test_general.GeneralTests.test_conflict_and_nontransitive_relation) ... ok
+test_constraint_search_and_budget (test_general.GeneralTests.test_constraint_search_and_budget) ... ok
+test_core_bridge_and_invalidation (test_general.GeneralTests.test_core_bridge_and_invalidation) ... ok
+test_denied_measurement_releases_inquiry (test_general.GeneralTests.test_denied_measurement_releases_inquiry) ... ok
+test_evidence_scope_and_proof (test_general.GeneralTests.test_evidence_scope_and_proof) ... ok
+test_exact_arithmetic (test_general.GeneralTests.test_exact_arithmetic) ... ok
+test_failed_audit_blocks_promotion (test_general.GeneralTests.test_failed_audit_blocks_promotion) ... ok
+test_no_arbitrary_execution (test_general.GeneralTests.test_no_arbitrary_execution) ... ok
+test_no_mutation_through_request (test_general.GeneralTests.test_no_mutation_through_request) ... ok
+test_partition_validation (test_general.GeneralTests.test_partition_validation) ... ok
+test_pending_checkpoint_and_tamper (test_general.GeneralTests.test_pending_checkpoint_and_tamper) ... ok
+test_primitive_types_and_bounds (test_general.GeneralTests.test_primitive_types_and_bounds) ... ok
+test_program_chain_matched_control (test_general.GeneralTests.test_program_chain_matched_control) ... ok
+test_rejected_core_commands (test_general.GeneralTests.test_rejected_core_commands) ... ok
+test_scope_and_plan (test_general.GeneralTests.test_scope_and_plan) ... ok
+test_unknown_language_and_condition (test_general.GeneralTests.test_unknown_language_and_condition) ... ok
+test_unresolved_evidence_abstains (test_general.GeneralTests.test_unresolved_evidence_abstains) ... ok
+test_ambiguity_abstains (test_grid_relational.RelationalGridTests.test_ambiguity_abstains) ... ok
+test_budget_exhaustion_abstains (test_grid_relational.RelationalGridTests.test_budget_exhaustion_abstains) ... ok
+test_external_worker_and_workspace (test_grid_relational.RelationalGridTests.test_external_worker_and_workspace) ... ok
+test_invalid_and_geometry (test_grid_relational.RelationalGridTests.test_invalid_and_geometry) ... ok
+test_learned_area_rank_recolor (test_grid_relational.RelationalGridTests.test_learned_area_rank_recolor) ... ok
+test_two_coordinate_frames_learned (test_grid_relational.RelationalGridTests.test_two_coordinate_frames_learned) ... ok
+test_actual_plan_and_empty_control (test_grounded_semantics.GroundedTests.test_actual_plan_and_empty_control) ... ok
+test_audit_contradiction_rejects_candidate (test_grounded_semantics.GroundedTests.test_audit_contradiction_rejects_candidate) ... ok
+test_duplicate_lexeme_fails_before_observation (test_grounded_semantics.GroundedTests.test_duplicate_lexeme_fails_before_observation) ... ok
+test_invalid_typed_inputs (test_grounded_semantics.GroundedTests.test_invalid_typed_inputs) ... ok
+test_no_query_abstains_on_unresolved_ambiguity (test_grounded_semantics.GroundedTests.test_no_query_abstains_on_unresolved_ambiguity) ... ok
+test_nonlocal_effect_rejected (test_grounded_semantics.GroundedTests.test_nonlocal_effect_rejected) ... ok
+test_opaque_action_and_new_objects (test_grounded_semantics.GroundedTests.test_opaque_action_and_new_objects) ... ok
+test_overlapping_partitions (test_grounded_semantics.GroundedTests.test_overlapping_partitions) ... ok
+test_probe_generation_unique_unlabelled (test_grounded_semantics.GroundedTests.test_probe_generation_unique_unlabelled) ... ok
+test_self_generated_probes_expose_hidden_condition (test_grounded_semantics.GroundedTests.test_self_generated_probes_expose_hidden_condition) ... ok
+test_unknown_verb_and_schema_abstain (test_grounded_semantics.GroundedTests.test_unknown_verb_and_schema_abstain) ... ok
+test_unsupported_arithmetic_abstains (test_grounded_semantics.GroundedTests.test_unsupported_arithmetic_abstains) ... ok
+test_analogical_mapping_and_withdrawal (test_grounded_semantics.TransferTests.test_analogical_mapping_and_withdrawal) ... ok
+test_no_transfer_without_audited_source (test_grounded_semantics.TransferTests.test_no_transfer_without_audited_source) ... ok
+test_variable_arity (test_grounded_semantics.TransferTests.test_variable_arity) ... ok
+test_workspace_dispatch_checkpoint_and_challenge (test_grounded_semantics.TransferTests.test_workspace_dispatch_checkpoint_and_challenge) ... ok
+test_ambiguous_raster_not_a_measurement (test_hybrid.HybridTests.test_ambiguous_raster_not_a_measurement) ... ok
+test_audit_failure_and_denial (test_hybrid.HybridTests.test_audit_failure_and_denial) ... ok
+test_calibrated_non_neural_control (test_hybrid.HybridTests.test_calibrated_non_neural_control) ... ok
+test_campaign_gate (test_hybrid.HybridTests.test_campaign_gate) ... ok
+test_checkpoint_tamper_rejected_even_with_recomputed_digest (test_hybrid.HybridTests.test_checkpoint_tamper_rejected_even_with_recomputed_digest) ... ok
+test_heldout_disjoint (test_hybrid.HybridTests.test_heldout_disjoint) ... ok
+test_independent_sensor_training (test_hybrid.HybridTests.test_independent_sensor_training) ... ok
+test_invalid_spatial_partitions (test_hybrid.HybridTests.test_invalid_spatial_partitions) ... ok
+test_later_invalidation (test_hybrid.HybridTests.test_later_invalidation) ... ok
+test_no_false_predictions (test_hybrid.HybridTests.test_no_false_predictions) ... ok
+test_no_prediction_before_audit (test_hybrid.HybridTests.test_no_prediction_before_audit) ... ok
+test_pending_checkpoint (test_hybrid.HybridTests.test_pending_checkpoint) ... ok
+test_ppm_file_adapter (test_hybrid.HybridTests.test_ppm_file_adapter) ... ok
+test_spatial_plans (test_hybrid.HybridTests.test_spatial_plans) ... ok
+test_transfer_weights (test_hybrid.HybridTests.test_transfer_weights) ... ok
+test_gradient_matches_finite_difference (test_hybrid.NeuralTests.test_gradient_matches_finite_difference) ... ok
+test_invalid_values (test_hybrid.NeuralTests.test_invalid_values) ... ok
+test_training_learns_xor (test_hybrid.NeuralTests.test_training_learns_xor) ... ok
+test_actual_ix_trace (test_instructions.InstructionTests.test_actual_ix_trace) ... ok
+test_console_trace (test_instructions.InstructionTests.test_console_trace) ... ok
+test_failed_audit_routes_to_revision (test_instructions.InstructionTests.test_failed_audit_routes_to_revision) ... ok
+test_full_cycle (test_instructions.InstructionTests.test_full_cycle) ... ok
+test_policy_approval_not_self_granted (test_instructions.InstructionTests.test_policy_approval_not_self_granted) ... ok
+test_policy_cannot_promote_unverified (test_instructions.InstructionTests.test_policy_cannot_promote_unverified) ... ok
+test_policy_edit_changes_action_and_memory (test_instructions.InstructionTests.test_policy_edit_changes_action_and_memory) ... ok
+test_policy_edit_changes_trace (test_instructions.InstructionTests.test_policy_edit_changes_trace) ... ok
+test_policy_malformed (test_instructions.InstructionTests.test_policy_malformed) ... ok
+test_policy_multiple_actions (test_instructions.InstructionTests.test_policy_multiple_actions) ... ok
+test_policy_unknown_action (test_instructions.InstructionTests.test_policy_unknown_action) ... ok
+test_small_space_reserves_audits (test_instructions.InstructionTests.test_small_space_reserves_audits) ... ok
+test_ambiguity_and_missing_referent (test_language.GroundedLanguageTests.test_ambiguity_and_missing_referent) ... ok
+test_argument_order_matters (test_language.GroundedLanguageTests.test_argument_order_matters) ... ok
+test_audit_per_arity_and_freeze (test_language.GroundedLanguageTests.test_audit_per_arity_and_freeze) ... ok
+test_audits_not_label_fit (test_language.GroundedLanguageTests.test_audits_not_label_fit) ... ok
+test_case_punctuation_and_scene_order (test_language.GroundedLanguageTests.test_case_punctuation_and_scene_order) ... ok
+test_checkpoint_replay_and_corruption (test_language.GroundedLanguageTests.test_checkpoint_replay_and_corruption) ... ok
+test_console_context_save_reload (test_language.GroundedLanguageTests.test_console_context_save_reload) ... ok
+test_generate_and_roundtrip (test_language.GroundedLanguageTests.test_generate_and_roundtrip) ... ok
+test_invalid_inputs_and_no_mutation (test_language.GroundedLanguageTests.test_invalid_inputs_and_no_mutation) ... ok
+test_ix_inquiry_and_audits (test_language.GroundedLanguageTests.test_ix_inquiry_and_audits) ... ok
+test_learned_operator_and_relational_bridge (test_language.GroundedLanguageTests.test_learned_operator_and_relational_bridge) ... ok
+test_no_preloaded_lexicon (test_language.GroundedLanguageTests.test_no_preloaded_lexicon) ... ok
+test_symbolic_simulator_bridge (test_language.GroundedLanguageTests.test_symbolic_simulator_bridge) ... ok
+test_synonym_learned_from_grounded_demonstration (test_language.GroundedLanguageTests.test_synonym_learned_from_grounded_demonstration) ... ok
+test_training_contradiction (test_language.GroundedLanguageTests.test_training_contradiction) ... ok
+test_unseen_compositions_english_and_new_object_ids (test_language.GroundedLanguageTests.test_unseen_compositions_english_and_new_object_ids) ... ok
+test_unseen_words_and_grammar (test_language.GroundedLanguageTests.test_unseen_words_and_grammar) ... ok
+test_audit_freezes_observations_and_disallows_duplicates (test_operators.OperatorsTest.test_audit_freezes_observations_and_disallows_duplicates) ... ok
+test_cap_discards_incomplete_layer (test_operators.OperatorsTest.test_cap_discards_incomplete_layer) ... ok
+test_cli_and_checkpoint (test_operators.OperatorsTest.test_cli_and_checkpoint) ... ok
+test_domain_bounds_and_types (test_operators.OperatorsTest.test_domain_bounds_and_types) ... ok
+test_multilevel_dependency_retraction (test_operators.OperatorsTest.test_multilevel_dependency_retraction) ... ok
+test_no_premature_promotion (test_operators.OperatorsTest.test_no_premature_promotion) ... ok
+test_packed_matches_independent_scalar (test_operators.OperatorsTest.test_packed_matches_independent_scalar) ... ok
+test_policy_training_pool_restriction (test_operators.OperatorsTest.test_policy_training_pool_restriction) ... ok
+test_primitive_not_promotable (test_operators.OperatorsTest.test_primitive_not_promotable) ... ok
+test_replay_and_corruption (test_operators.OperatorsTest.test_replay_and_corruption) ... ok
+test_three_generation_composition (test_operators.OperatorsTest.test_three_generation_composition) ... ok
+test_transfer_reuses_operator_with_substituted_inputs (test_operators.OperatorsTest.test_transfer_reuses_operator_with_substituted_inputs) ... ok
+test_unrepresentable_random_mapping_abstains (test_operators.OperatorsTest.test_unrepresentable_random_mapping_abstains) ... ok
+test_xor_discovered_without_xor_primitive (test_operators.OperatorsTest.test_xor_discovered_without_xor_primitive) ... ok
+test_abstraction_novel_parameter (test_representation.RepresentationTests.test_abstraction_novel_parameter) ... ok
+test_abstraction_requires_distinct_validated_parents (test_representation.RepresentationTests.test_abstraction_requires_distinct_validated_parents) ... ok
+test_adaptive_fallback_needs_fresh_audits (test_representation.RepresentationTests.test_adaptive_fallback_needs_fresh_audits) ... ok
+test_adaptive_rejects_duplicate_labels (test_representation.RepresentationTests.test_adaptive_rejects_duplicate_labels) ... ok
+test_bijection (test_representation.RepresentationTests.test_bijection) ... ok
+test_campaign (test_representation.RepresentationTests.test_campaign) ... ok
+test_contradiction_blocks (test_representation.RepresentationTests.test_contradiction_blocks) ... ok
+test_correct_heldout (test_representation.RepresentationTests.test_correct_heldout) ... ok
+test_domain_validation (test_representation.RepresentationTests.test_domain_validation) ... ok
+test_fresh_evidence_only (test_representation.RepresentationTests.test_fresh_evidence_only) ... ok
+test_no_unvalidated_prediction (test_representation.RepresentationTests.test_no_unvalidated_prediction) ... ok
+test_raw_unavailable (test_representation.RepresentationTests.test_raw_unavailable) ... ok
+test_recursive_language_dispatch (test_representation.RepresentationTests.test_recursive_language_dispatch) ... ok
+test_retraction_blocks_capability (test_representation.RepresentationTests.test_retraction_blocks_capability) ... ok
+test_template_dependency_invalidation (test_representation.RepresentationTests.test_template_dependency_invalidation) ... ok
+test_template_mind_identity (test_representation.RepresentationTests.test_template_mind_identity) ... ok
+test_contradictory_transition (test_research_completion.BrowserTests.test_contradictory_transition) ... ok
+test_discovery_replay_and_restore (test_research_completion.BrowserTests.test_discovery_replay_and_restore) ... ok
+test_invalid_controls (test_research_completion.BrowserTests.test_invalid_controls) ... ok
+test_ambiguous_and_invalid (test_research_completion.GridTests.test_ambiguous_and_invalid) ... ok
+test_components_modes (test_research_completion.GridTests.test_components_modes) ... ok
+test_external_worker_and_scoring (test_research_completion.GridTests.test_external_worker_and_scoring) ... ok
+test_object_representation (test_research_completion.GridTests.test_object_representation) ... ok
+test_do_not_reuse_audit_after_failure (test_research_completion.IntegratedTests.test_do_not_reuse_audit_after_failure) ... ok
+test_program_checkpoint (test_research_completion.IntegratedTests.test_program_checkpoint) ... ok
+test_tool_fallback_and_replay (test_research_completion.IntegratedTests.test_tool_fallback_and_replay) ... ok
+test_composition_and_counterfactual (test_research_completion.ProgramTests.test_composition_and_counterfactual) ... ok
+test_iteration_and_expression_control (test_research_completion.ProgramTests.test_iteration_and_expression_control) ... ok
+test_nontermination_and_arithmetic_errors (test_research_completion.ProgramTests.test_nontermination_and_arithmetic_errors) ... ok
+test_program_audit_conflict_blocks (test_research_completion.ProgramTests.test_program_audit_conflict_blocks) ... ok
+test_revision_on_fresh_signed_observations (test_research_completion.ProgramTests.test_revision_on_fresh_signed_observations) ... ok
+test_scope_and_partition_rejection (test_research_completion.ProgramTests.test_scope_and_partition_rejection) ... ok
+test_search_control_unique_same_grammar (test_research_completion.ProgramTests.test_search_control_unique_same_grammar) ... ok
+test_unanimity_and_correlated_failure (test_research_completion.ProgramTests.test_unanimity_and_correlated_failure) ... ok
+test_unseen_ternary_expression (test_research_completion.ProgramTests.test_unseen_ternary_expression) ... ok
+test_actual_tool_selection (test_research_completion.ToolTests.test_actual_tool_selection) ... ok
+test_real_signature_discovery (test_research_completion.ToolTests.test_real_signature_discovery) ... ok
+test_active_query (test_research_v5.ExplorationTests.test_active_query) ... ok
+test_budget (test_research_v5.ExplorationTests.test_budget) ... ok
+test_consensus (test_research_v5.ExplorationTests.test_consensus) ... ok
+test_consensus_conflict (test_research_v5.ExplorationTests.test_consensus_conflict) ... ok
+test_consensus_mismatched_scope (test_research_v5.ExplorationTests.test_consensus_mismatched_scope) ... ok
+test_control_budget (test_research_v5.ExplorationTests.test_control_budget) ... ok
+test_experiment_negative_controls (test_research_v5.ExplorationTests.test_experiment_negative_controls) ... ok
+test_grammar (test_research_v5.ExplorationTests.test_grammar) ... ok
+test_grammar_duplicate (test_research_v5.ExplorationTests.test_grammar_duplicate) ... ok
+test_macro_and_invalidation (test_research_v5.ExplorationTests.test_macro_and_invalidation) ... ok
+test_no_overlapping_partitions (test_research_v5.ExplorationTests.test_no_overlapping_partitions) ... ok
+test_no_undefined_promotion (test_research_v5.ExplorationTests.test_no_undefined_promotion) ... ok
+test_observation_limits (test_research_v5.ExplorationTests.test_observation_limits) ... ok
+test_pair_routing (test_research_v5.ExplorationTests.test_pair_routing) ... ok
+test_pair_unsupported (test_research_v5.ExplorationTests.test_pair_unsupported) ... ok
+test_route (test_research_v5.ExplorationTests.test_route) ... ok
+test_unresolvable (test_research_v5.ExplorationTests.test_unresolvable) ... ok
+test_arc_format_and_negative (test_research_v5.ResearchTests.test_arc_format_and_negative) ... ok
+test_audit_no_majority_blocks (test_research_v5.ResearchTests.test_audit_no_majority_blocks) ... ok
+test_disagreement (test_research_v5.ResearchTests.test_disagreement) ... ok
+test_failed_network (test_research_v5.ResearchTests.test_failed_network) ... ok
+test_known_prefers_memory (test_research_v5.ResearchTests.test_known_prefers_memory) ... ok
+test_local_documents (test_research_v5.ResearchTests.test_local_documents) ... ok
+test_private_dns (test_research_v5.ResearchTests.test_private_dns) ... ok
+test_query_fetch_and_cache (test_research_v5.ResearchTests.test_query_fetch_and_cache) ... ok
+test_refresh_failure_invalidates_cache (test_research_v5.ResearchTests.test_refresh_failure_invalidates_cache) ... ok
+test_reject_urls (test_research_v5.ResearchTests.test_reject_urls) ... ok
+test_search_link_decode (test_research_v5.ResearchTests.test_search_link_decode) ... ok
+test_typed_route_and_real_constraint (test_research_v5.ResearchTests.test_typed_route_and_real_constraint) ... ok
+test_typed_task_and_pair_checkpoint (test_research_v5.ResearchTests.test_typed_task_and_pair_checkpoint) ... ok
+test_unknown_triggers_research (test_research_v5.ResearchTests.test_unknown_triggers_research) ... ok
+test_workspace_checkpoint (test_research_v5.ResearchTests.test_workspace_checkpoint) ... ok
+test_baseline_matches_original (test_strategy.StrategyTest.test_baseline_matches_original) ... ok
+test_frontier_counts_less_and_does_not_change_models (test_strategy.StrategyTest.test_frontier_counts_less_and_does_not_change_models) ... ok
+test_gate_rejects_wrong_or_reduced_coverage (test_strategy.StrategyTest.test_gate_rejects_wrong_or_reduced_coverage) ... ok
+test_packed_equivalence (test_strategy.StrategyTest.test_packed_equivalence) ... ok
+test_partition_overlap_and_duplicate_families (test_strategy.StrategyTest.test_partition_overlap_and_duplicate_families) ... ok
+test_policy_cannot_adopt_unconfirmed (test_strategy.StrategyTest.test_policy_cannot_adopt_unconfirmed) ... ok
+test_proposals_are_unique_and_bounded (test_strategy.StrategyTest.test_proposals_are_unique_and_bounded) ... ok
+test_replay_rollback_and_cli (test_strategy.StrategyTest.test_replay_rollback_and_cli) ... ok
+test_selection_confirms_only_one_challenger_and_refuses_regression (test_strategy.StrategyTest.test_selection_confirms_only_one_challenger_and_refuses_regression) ... ok
+test_strategy_cannot_bypass_host (test_strategy.StrategyTest.test_strategy_cannot_bypass_host) ... ok
+test_third_gate_rejects_regression (test_strategy.StrategyTest.test_third_gate_rejects_regression) ... ok
+test_audits_freeze_and_checkpoints_replay (test_superiority.CoupledTests.test_audits_freeze_and_checkpoints_replay) ... ok
+test_coupled_missing_audit_and_bad_space (test_superiority.CoupledTests.test_coupled_missing_audit_and_bad_space) ... ok
+test_duplicate_training_and_audit_rejected (test_superiority.CoupledTests.test_duplicate_training_and_audit_rejected) ... ok
+test_falsification_quarantine_and_new_epoch (test_superiority.CoupledTests.test_falsification_quarantine_and_new_epoch) ... ok
+test_learns_both_cross_channel_directions (test_superiority.CoupledTests.test_learns_both_cross_channel_directions) ... ok
+test_planner_replays_joint_effect (test_superiority.CoupledTests.test_planner_replays_joint_effect) ... ok
+test_previous_joint_failure_recovers (test_superiority.CoupledTests.test_previous_joint_failure_recovers) ... ok
+test_same_input_conflict (test_superiority.CoupledTests.test_same_input_conflict) ... ok
+test_sparse_combinations (test_superiority.CoupledTests.test_sparse_combinations) ... ok
+test_unsupported_arbitrary_transform_abstains (test_superiority.CoupledTests.test_unsupported_arbitrary_transform_abstains) ... ok
+test_gate_and_conflicting_feedback (test_superiority.ScalarTests.test_gate_and_conflicting_feedback) ... ok
+test_reject_malformed (test_superiority.ScalarTests.test_reject_malformed) ... ok
+test_scalar_duplicate_frozen_and_retraction (test_superiority.ScalarTests.test_scalar_duplicate_frozen_and_retraction) ... ok
+test_scalar_replay_and_cli (test_superiority.ScalarTests.test_scalar_replay_and_cli) ... ok
+test_signed_extrapolation (test_superiority.ScalarTests.test_signed_extrapolation) ... ok
+test_actual_sally_generated_goal_and_ix_policy (test_unified.UnifiedTests.test_actual_sally_generated_goal_and_ix_policy) ... ok
+test_analogy_grounded_in_source_audit (test_unified.UnifiedTests.test_analogy_grounded_in_source_audit) ... ok
+test_checkpoint_replay_and_tampering (test_unified.UnifiedTests.test_checkpoint_replay_and_tampering) ... ok
+test_cli_json_roundtrip (test_unified.UnifiedTests.test_cli_json_roundtrip) ... ok
+test_conflicting_grounded_observations_start_clean_epoch (test_unified.UnifiedTests.test_conflicting_grounded_observations_start_clean_epoch) ... ok
+test_duplicate_not_support_and_freeze (test_unified.UnifiedTests.test_duplicate_not_support_and_freeze) ... ok
+test_exact_conflict_quarantines (test_unified.UnifiedTests.test_exact_conflict_quarantines) ... ok
+test_goal_arbitration (test_unified.UnifiedTests.test_goal_arbitration) ... ok
+test_inert_validation (test_unified.UnifiedTests.test_inert_validation) ... ok
+test_ix_policy_cannot_force_unsupported_goal (test_unified.UnifiedTests.test_ix_policy_cannot_force_unsupported_goal) ... ok
+test_joint_checkpoint_replays_historical_audits_after_retraction (test_unified.UnifiedTests.test_joint_checkpoint_replays_historical_audits_after_retraction) ... ok
+test_joint_cross_modal_contradiction_quarantines_binding (test_unified.UnifiedTests.test_joint_cross_modal_contradiction_quarantines_binding) ... ok
+test_joint_plan_wraparound (test_unified.UnifiedTests.test_joint_plan_wraparound) ... ok
+test_joint_requires_numeric_binding_and_gate (test_unified.UnifiedTests.test_joint_requires_numeric_binding_and_gate) ... ok
+test_local_generalizes_external_distractor (test_unified.UnifiedTests.test_local_generalizes_external_distractor) ... ok
+test_meta_learning_changes_curriculum_on_failure (test_unified.UnifiedTests.test_meta_learning_changes_curriculum_on_failure) ... ok
+test_new_contradiction_blocks_audited_model (test_unified.UnifiedTests.test_new_contradiction_blocks_audited_model) ... ok
+test_nonlocal_counter (test_unified.UnifiedTests.test_nonlocal_counter) ... ok
+test_nonlocal_local_only_abstains (test_unified.UnifiedTests.test_nonlocal_local_only_abstains) ... ok
+test_procedure_requires_evidence_and_two_bindings (test_unified.UnifiedTests.test_procedure_requires_evidence_and_two_bindings) ... ok
+test_retraction_propagates_to_joint_plans (test_unified.UnifiedTests.test_retraction_propagates_to_joint_plans) ... ok
+test_symbolic_recovery_requires_new_evidence_and_audits (test_unified.UnifiedTests.test_symbolic_recovery_requires_new_evidence_and_audits) ... ok
+test_unseen_nonlocal_context_abstention (test_unified.UnifiedTests.test_unseen_nonlocal_context_abstention) ... ok
+test_untrained_abstention (test_unified.UnifiedTests.test_untrained_abstention) ... ok
+test_active_query_no_leak (test_zero.EngineTests.test_active_query_no_leak) ... ok
+test_audit_duplicate (test_zero.EngineTests.test_audit_duplicate) ... ok
+test_audit_freezes (test_zero.EngineTests.test_audit_freezes) ... ok
+test_audit_not_training (test_zero.EngineTests.test_audit_not_training) ... ok
+test_checkpoint_drift_replay (test_zero.EngineTests.test_checkpoint_drift_replay) ... ok
+test_checkpoint_failed_audit (test_zero.EngineTests.test_checkpoint_failed_audit) ... ok
+test_checkpoint_roundtrip (test_zero.EngineTests.test_checkpoint_roundtrip) ... ok
+test_checkpoint_tamper (test_zero.EngineTests.test_checkpoint_tamper) ... ok
+test_cli (test_zero.EngineTests.test_cli) ... ok
+test_cold_abstention (test_zero.EngineTests.test_cold_abstention) ... ok
+test_disagreement (test_zero.EngineTests.test_disagreement) ... ok
+test_drift (test_zero.EngineTests.test_drift) ... ok
+test_duplicate_task (test_zero.EngineTests.test_duplicate_task) ... ok
+test_execution_cap (test_zero.EngineTests.test_execution_cap) ... ok
+test_fit_and_audit (test_zero.EngineTests.test_fit_and_audit) ... ok
+test_grammar_cap (test_zero.EngineTests.test_grammar_cap) ... ok
+test_grammar_reuse (test_zero.EngineTests.test_grammar_reuse) ... ok
+test_holdout_separation (test_zero.EngineTests.test_holdout_separation) ... ok
+test_invalid_name (test_zero.EngineTests.test_invalid_name) ... ok
+test_invalid_op (test_zero.EngineTests.test_invalid_op) ... ok
+test_plan (test_zero.EngineTests.test_plan) ... ok
+test_plan_denies_unaudited (test_zero.EngineTests.test_plan_denies_unaudited) ... ok
+test_plan_noop (test_zero.EngineTests.test_plan_noop) ... ok
+test_plan_unreachable (test_zero.EngineTests.test_plan_unreachable) ... ok
+test_primitive_teacher_agreement (test_zero.EngineTests.test_primitive_teacher_agreement) ... ok
+test_promotion_and_drift (test_zero.EngineTests.test_promotion_and_drift) ... ok
+test_promotion_gate (test_zero.EngineTests.test_promotion_gate) ... ok
+test_unrepresentable (test_zero.EngineTests.test_unrepresentable) ... ok
+test_validated_prediction_gate (test_zero.EngineTests.test_validated_prediction_gate) ... ok
+test_validation (test_zero.EngineTests.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 361 tests in 39.285s
+
+OK
+EXIT 0 elapsed 40.849s
+[2/35] python -m ix_zero.experiment --trials 2
+{
+  "protocol": "synthetic-composition-transfer-v1",
+  "seeds": [
+    20261124,
+    20261125
+  ],
+  "arms": {
+    "reuse_active": {
+      "total": 24,
+      "correct": 24,
+      "wrong": 0,
+      "abstained": 0,
+      "observations": 6,
+      "perfect_tasks": 2
+    },
+    "cold_active": {
+      "total": 24,
+      "correct": 0,
+      "wrong": 0,
+      "abstained": 24,
+      "observations": 4,
+      "perfect_tasks": 0
+    },
+    "reuse_passive": {
+      "total": 24,
+      "correct": 22,
+      "wrong": 0,
+      "abstained": 2,
+      "observations": 16,
+      "perfect_tasks": 1
+    }
+  },
+  "seconds": 1.8974438999999848
+}
+EXIT 0 elapsed 2.970s
+[3/35] python -m ix_zero.validation --trials 2
+{
+  "protocol": "paired-calibration-v1",
+  "seeds": [
+    20261201,
+    20261202
+  ],
+  "arms": {
+    "reuse_active": {
+      "raw": {
+        "total": 24,
+        "correct": 24,
+        "wrong": 0,
+        "abstained": 0
+      },
+      "guarded": {
+        "total": 24,
+        "correct": 24,
+        "wrong": 0,
+        "abstained": 0
+      },
+      "training_labels": 5,
+      "calibration_labels": 6,
+      "source_labels_available": 33,
+      "initial_candidates_total": 3811
+    },
+    "cold_active": {
+      "raw": {
+        "total": 24,
+        "correct": 12,
+        "wrong": 0,
+        "abstained": 12
+      },
+      "guarded": {
+        "total": 24,
+        "correct": 12,
+        "wrong": 0,
+        "abstained": 12
+      },
+      "training_labels": 5,
+      "calibration_labels": 3,
+      "source_labels_available": 0,
+      "initial_candidates_total": 2222
+    },
+    "reuse_passive": {
+      "raw": {
+        "total": 24,
+        "correct": 24,
+        "wrong": 0,
+        "abstained": 0
+      },
+      "guarded": {
+        "total": 24,
+        "correct": 24,
+        "wrong": 0,
+        "abstained": 0
+      },
+      "training_labels": 10,
+      "calibration_labels": 6,
+      "source_labels_available": 33,
+      "initial_candidates_total": 3811
+    }
+  },
+  "seconds": 1.2952718639999148
+}
+EXIT 0 elapsed 2.693s
+[4/35] python -m ix_zero.challenges
+{
+  "trials": 12,
+  "unstructured_raw_correct": 0,
+  "unstructured_raw_wrong": 8,
+  "unstructured_gated_wrong": 0,
+  "unstructured_gated_abstentions": 96,
+  "old_fit": 12,
+  "shift_blocked": 12,
+  "fresh_fit": 12,
+  "fresh_exhaustive_correct": 300,
+  "fresh_total": 300,
+  "plans_attempted": 120,
+  "plans_successful": 120
+}
+EXIT 0 elapsed 3.675s
+[5/35] python -m ix_zero.discovery_experiment --trials 2
+{
+  "campaign": {
+    "legacy": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 366,
+      "episodes": 18
+    },
+    "symbolic": {
+      "correct": 245,
+      "incorrect": 0,
+      "abstained": 121,
+      "episodes": 18
+    },
+    "projection": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 344,
+      "episodes": 18
+    },
+    "adaptive": {
+      "correct": 267,
+      "incorrect": 0,
+      "abstained": 99,
+      "episodes": 18
+    }
+  },
+  "by_family": {
+    "legacy/cross/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/cross/random": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "projection/cross/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/cross/random": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "legacy/cross/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/cross/balanced": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "projection/cross/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/cross/balanced": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "legacy/conditional/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/conditional/random": {
+      "correct": 11,
+      "incorrect": 0,
+      "abstained": 11,
+      "episodes": 2
+    },
+    "projection/conditional/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/conditional/random": {
+      "correct": 11,
+      "incorrect": 0,
+      "abstained": 11,
+      "episodes": 2
+    },
+    "legacy/conditional/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/conditional/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "projection/conditional/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/conditional/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "legacy/projection/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/projection/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "projection/projection/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/projection/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "legacy/projection/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/projection/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "projection/projection/balanced": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "adaptive/projection/balanced": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "legacy/random/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/random/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "projection/random/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/random/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "legacy/random/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "symbolic/random/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "projection/random/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "adaptive/random/balanced": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "episodes": 2
+    },
+    "legacy/three/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 190,
+      "episodes": 2
+    },
+    "symbolic/three/random": {
+      "correct": 190,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    },
+    "projection/three/random": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 190,
+      "episodes": 2
+    },
+    "adaptive/three/random": {
+      "correct": 190,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    }
+  },
+  "transfer": {
+    "False": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 62,
+      "episodes": 2
+    },
+    "True": {
+      "correct": 62,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    }
+  },
+  "active": {
+    "False": {
+      "correct": 6,
+      "incorrect": 0,
+      "abstained": 6,
+      "episodes": 2
+    },
+    "True": {
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "episodes": 2
+    }
+  }
+}
+EXIT 0 elapsed 1.177s
+[6/35] python -m ix_zero.discovery_experiment --strict --seed 200 --trials 2
+{
+  "adaptive": {
+    "correct": 289,
+    "incorrect": 0,
+    "abstained": 77,
+    "episodes": 18
+  },
+  "strict": {
+    "correct": 289,
+    "incorrect": 0,
+    "abstained": 77,
+    "episodes": 18
+  }
+}
+EXIT 0 elapsed 1.374s
+[7/35] python -m ix_zero.discovery_planning --trials 2
+{"correct": 24, "incorrect": 0, "abstained": 0}
+EXIT 0 elapsed 1.081s
+[8/35] python -m ix_zero.unified_experiment --trials 2
+{
+  "seeds": [
+    100,
+    101
+  ],
+  "symbolic": {
+    "local": {
+      "local": {
+        "correct": 48,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 12,
+        "audits": 12
+      },
+      "counter": {
+        "correct": 24,
+        "incorrect": 0,
+        "abstained": 24,
+        "audit_passes": 12,
+        "audits": 12
+      },
+      "combined": {
+        "correct": 48,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 12,
+        "audits": 12
+      }
+    },
+    "nonlocal": {
+      "local": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstained": 48,
+        "audit_passes": 0,
+        "audits": 12
+      },
+      "counter": {
+        "correct": 48,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 12,
+        "audits": 12
+      },
+      "combined": {
+        "correct": 48,
+        "incorrect": 0,
+        "abstained": 0,
+        "audit_passes": 12,
+        "audits": 12
+      }
+    }
+  },
+  "joint": {
+    "cases": 16,
+    "arms": {
+      "joint": {
+        "success": 16,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 420
+      },
+      "joint_no_macros": {
+        "success": 16,
+        "wrong": 0,
+        "abstained": 0,
+        "expansions": 452
+      },
+      "relational_only": {
+        "success": 0,
+        "wrong": 16,
+        "abstained": 0,
+        "expansions": 32
+      },
+      "numeric_only": {
+        "success": 10,
+        "wrong": 6,
+        "abstained": 0,
+        "expansions": 0
+      }
+    },
+    "generated_goals": {
+      "generated": 16,
+      "replayed_success": 16,
+      "wrong": 0,
+      "abstained": 0
+    }
+  },
+  "analogy": {
+    "cases": 2,
+    "correct_role": 2,
+    "replayed_goal": 2,
+    "ambiguous_rejected": 2
+  },
+  "falsification": {
+    "hidden_symbolic_context": {
+      "cases": 2,
+      "wrong_before_feedback": 2,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 2,
+      "abstained_after_feedback": 2
+    },
+    "cross_modal_interaction": {
+      "cases": 2,
+      "wrong_before_feedback": 2,
+      "abstained_before_feedback": 0,
+      "quarantined_after_feedback": 2,
+      "abstained_after_feedback": 2
+    }
+  },
+  "recovery": {
+    "epochs": 2,
+    "recovered": 2,
+    "correct": 16,
+    "incorrect": 0,
+    "abstained": 0,
+    "heldout": 16,
+    "fresh_audit_passes": 8
+  }
+}
+EXIT 0 elapsed 1.410s
+[9/35] python -m ix_zero.superiority_experiment --trials 2 --check
+{
+  "seeds": [
+    900,
+    901
+  ],
+  "coupled": [
+    {
+      "seed": 900,
+      "kind": "gate",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "threshold",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 4,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "reset",
+      "modulus": 3,
+      "correct": 18,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 9,
+      "plan_success": 9,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          3
+        ],
+        "training": 18,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "gate",
+      "modulus": 5,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 25,
+      "plan_success": 25,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 50,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "threshold",
+      "modulus": 5,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 25,
+      "plan_success": 25,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 50,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "reset",
+      "modulus": 5,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0,
+      "plans": 25,
+      "plan_success": 25,
+      "plan_wrong": 0,
+      "plan_abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 50,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    }
+  ],
+  "sparse": [
+    {
+      "seed": 900,
+      "kind": "gate",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "threshold",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 900,
+      "kind": "reset",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "gate",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "threshold",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 2,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 0,
+            "truncated": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 901,
+      "kind": "reset",
+      "fit_combinations": 32,
+      "audit_combinations": 6,
+      "test_combinations": 12,
+      "correct": 12,
+      "incorrect": 0,
+      "abstained": 0,
+      "model": {
+        "space": [
+          2,
+          5
+        ],
+        "training": 32,
+        "audits": 6,
+        "passes": 6,
+        "blocked": false,
+        "models": {
+          "delta": {
+            "trees": 0,
+            "truncated": false
+          },
+          "absolute": {
+            "trees": 2,
+            "truncated": false
+          }
+        }
+      }
+    }
+  ],
+  "recovery": [
+    {
+      "seed": 900,
+      "wrong_before": true,
+      "blocked_before_recovery": true,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "wrong_before": true,
+      "blocked_before_recovery": true,
+      "correct": 50,
+      "incorrect": 0,
+      "abstained": 0
+    }
+  ],
+  "scalar": [
+    {
+      "seed": 900,
+      "world": "product",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "difference",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "composition",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "absolute",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "offset",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "scaled",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "remainder",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "division",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 900,
+      "world": "unstructured",
+      "arm": "IX-Zero",
+      "probes": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 32
+    },
+    {
+      "seed": 901,
+      "world": "product",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "difference",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "composition",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "absolute",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "offset",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "scaled",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "remainder",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "division",
+      "arm": "IX-Zero",
+      "probes": 10,
+      "correct": 32,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    {
+      "seed": 901,
+      "world": "unstructured",
+      "arm": "IX-Zero",
+      "probes": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 32
+    }
+  ],
+  "native_sally": false,
+  "native_julia": "not executed by this harness"
+}
+EXIT 0 elapsed 7.714s
+[10/35] python -m ix_zero.operator_experiment --trials 2 --seed 9400 --check
+{
+  "trials": 2,
+  "seed": 9400,
+  "totals": {
+    "discovery/and/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/or/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/xor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/xnor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/nor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/implication/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/shifted_intersection/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/addition/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/minimum/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/random_mapping/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/and/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/or/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/xor/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/xnor/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/nor/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/implication/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/shifted_intersection/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/addition/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 472,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/minimum/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 472,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "discovery/random_mapping/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 472,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "source/xor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "cold/shifted_xor/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "reuse/shifted_xor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "cold/nested_xor/3": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "reuse/nested_xor/3": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "cold/shifted_xor/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 472,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "reuse/shifted_xor/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "cold/nested_xor/4": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 472,
+      "training": 28,
+      "audits": 0,
+      "episodes": 2,
+      "truncated": 0
+    },
+    "reuse/nested_xor/4": {
+      "correct": 472,
+      "incorrect": 0,
+      "abstained": 0,
+      "training": 28,
+      "audits": 12,
+      "episodes": 2,
+      "truncated": 0
+    }
+  },
+  "active_totals": {
+    "episodes": 2,
+    "promoted": 2,
+    "correct": 88,
+    "incorrect": 0,
+    "abstained": 0,
+    "training": 12,
+    "audits": 6
+  }
+}
+EXIT 0 elapsed 2.730s
+[11/35] python -m ix_zero.strategy_experiment --trials 1 --seed 67000 --mode exact --check
+{
+  "incumbent": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "checked"
+  },
+  "selected": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "packed"
+  },
+  "challenger": {
+    "metric": "distinct",
+    "weighting": "all",
+    "tie": "high",
+    "kernel": "packed"
+  },
+  "decision": "adopt",
+  "confirmation_verdict": {
+    "eligible": true,
+    "nonregression": true,
+    "pareto": true,
+    "efficiency_tradeoff": false,
+    "candidate": {
+      "correct": 1160,
+      "incorrect": 0,
+      "abstained": 290,
+      "labels": 81,
+      "query_work": 588116,
+      "redundant_validation_work": 0
+    },
+    "incumbent": {
+      "correct": 1160,
+      "incorrect": 0,
+      "abstained": 290,
+      "labels": 81,
+      "query_work": 588116,
+      "redundant_validation_work": 588116
+    }
+  },
+  "challenge_verdict": {
+    "eligible": true,
+    "nonregression": true,
+    "pareto": true,
+    "efficiency_tradeoff": false,
+    "candidate": {
+      "correct": 290,
+      "incorrect": 0,
+      "abstained": 1160,
+      "labels": 59,
+      "query_work": 572179,
+      "redundant_validation_work": 0
+    },
+    "incumbent": {
+      "correct": 290,
+      "incorrect": 0,
+      "abstained": 1160,
+      "labels": 59,
+      "query_work": 572179,
+      "redundant_validation_work": 572179
+    }
+  }
+}
+[
+  {
+    "strategy": {
+      "metric": "distinct",
+      "weighting": "all",
+      "tie": "high",
+      "kernel": "packed"
+    },
+    "verdict": {
+      "eligible": true,
+      "nonregression": true,
+      "pareto": true,
+      "efficiency_tradeoff": false,
+      "candidate": {
+        "correct": 1209,
+        "incorrect": 0,
+        "abstained": 241,
+        "labels": 94,
+        "query_work": 573590,
+        "redundant_validation_work": 0
+      },
+      "incumbent": {
+        "correct": 1209,
+        "incorrect": 0,
+        "abstained": 241,
+        "labels": 94,
+        "query_work": 573590,
+        "redundant_validation_work": 573590
+      }
+    }
+  }
+]
+EXIT 0 elapsed 4.581s
+[12/35] python -m ix_zero.analogy_experiment --trials 2 --check
+{
+  "seed": 88000,
+  "trials": 2,
+  "totals": {
+    "rotation_phase/structural": {
+      "correct": 88,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 14,
+      "mappings": 14
+    },
+    "rotation_phase/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 1680,
+      "mappings": 10080
+    },
+    "rotation_phase/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 26,
+      "mappings": 0
+    },
+    "resource_signal/structural": {
+      "correct": 62,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 4,
+      "mappings": 4
+    },
+    "resource_signal/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 62,
+      "initial_models": 1440,
+      "mappings": 1440
+    },
+    "resource_signal/local": {
+      "correct": 16,
+      "incorrect": 15,
+      "abstained": 31,
+      "initial_models": 24,
+      "mappings": 0
+    },
+    "switch_membership/structural": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 8,
+      "mappings": 16
+    },
+    "switch_membership/unstructured": {
+      "correct": 22,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 8,
+      "mappings": 48
+    },
+    "switch_membership/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 22,
+      "initial_models": 20,
+      "mappings": 0
+    },
+    "permutation_tiles/structural": {
+      "correct": 62,
+      "incorrect": 0,
+      "abstained": 0,
+      "initial_models": 12,
+      "mappings": 12
+    },
+    "permutation_tiles/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 62,
+      "initial_models": 240,
+      "mappings": 1440
+    },
+    "permutation_tiles/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 62,
+      "initial_models": 24,
+      "mappings": 0
+    },
+    "wrong_operation/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 14,
+      "mappings": 14
+    },
+    "wrong_operation/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 1680,
+      "mappings": 10080
+    },
+    "wrong_operation/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 26,
+      "mappings": 0
+    },
+    "wrong_graph/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 0,
+      "mappings": 0
+    },
+    "wrong_graph/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 1680,
+      "mappings": 10080
+    },
+    "wrong_graph/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 22,
+      "mappings": 0
+    },
+    "random_target/structural": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 14,
+      "mappings": 14
+    },
+    "random_target/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 1680,
+      "mappings": 10080
+    },
+    "random_target/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 26,
+      "mappings": 0
+    },
+    "hidden_exception/structural": {
+      "correct": 43,
+      "incorrect": 1,
+      "abstained": 44,
+      "initial_models": 14,
+      "mappings": 14
+    },
+    "hidden_exception/unstructured": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 1680,
+      "mappings": 10080
+    },
+    "hidden_exception/local": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 88,
+      "initial_models": 26,
+      "mappings": 0
+    }
+  },
+  "autonomous_promotions": 8,
+  "autonomous_trials": 8,
+  "chain_promotions": 2,
+  "chain_quarantined": 2,
+  "chain_correct": 44,
+  "chain_predictions": 44
+}
+EXIT 0 elapsed 1.420s
+[13/35] python -m ix_zero.language_experiment --trials 2 --check
+{
+  "correct": 828,
+  "incorrect": 0,
+  "abstained": 0,
+  "generation_correct": 828,
+  "negative_checks": 96,
+  "negative_errors": 0,
+  "shift_quarantined": 4,
+  "auto_correct": 414,
+  "auto_total": 414,
+  "auto_incorrect": 0,
+  "auto_training": 10,
+  "passive_correct": 207,
+  "passive_incorrect": 0,
+  "bridge_correct": 32,
+  "bridge_total": 32,
+  "relational_correct": 32,
+  "relational_total": 32,
+  "operator_heldout_correct": 6,
+  "operator_heldout_total": 6,
+  "relational_heldout_correct": 22,
+  "relational_heldout_total": 22,
+  "bridge_success": 2,
+  "bridge_blocked": 2
+}
+EXIT 0 elapsed 1.270s
+[14/35] python -m ix_zero.language_demo --check
+Grounded language example | synthetic scene | no external model
+Scene: [["A", "cube", "red"], ["B", "cube", "green"], ["C", "sphere", "red"], ["D", "cone", "blue"]]
+Word values: {"A": 0, "B": 1, "C": 2, "D": 3}
+Learned vocabulary: {"blue": ["attr", "blue"], "compare": ["verb", "compare"], "cone": ["kind", "cone"], "cube": ["kind", "cube"], "green": ["attr", "green"], "inspect": ["verb", "inspect"], "red": ["attr", "red"], "rule": ["verb", "rule"], "sphere": ["kind", "sphere"]}
+Examples: inspect red cube / compare green cube blue cone / rule green cube red sphere
+inspect red cube {"intent": ["inspect", "A"]}
+rule green cube red sphere {"intent": ["rule", "B", "C"], "computed": {"intent": ["rule", "B", "C"], "value": 3}}
+inspect orange cube {"abstained": true}
+EXIT 0 elapsed 1.022s
+[15/35] python -m ix_zero.acce_experiment --trials 2 --check
+{
+  "composed": {
+    "total": 267,
+    "correct": 267,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "no_composition": {
+    "total": 267,
+    "correct": 9,
+    "incorrect": 0,
+    "abstained": 258
+  },
+  "exact_name_baseline": {
+    "total": 267,
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 267
+  },
+  "unsupported_total": 147,
+  "unsupported_abstained": 147,
+  "scalar": {
+    "total": 40,
+    "correct": 40,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "relational": {
+    "total": 22,
+    "correct": 22,
+    "incorrect": 0,
+    "abstained": 0
+  },
+  "hidden_errors": 2,
+  "quarantined": 2
+}
+EXIT 0 elapsed 1.273s
+[16/35] python -m ix_zero.acce_demo --check
+IX-Zero | grounded capability dispatch | synthetic scene
+Scene: [["A", "cube", "red"], ["B", "cube", "green"], ["C", "sphere", "red"], ["D", "cone", "blue"]]
+Values: {"A": 0, "B": 1, "C": 2, "D": 3}
+Comparison result: -1 first smaller, 0 equal, 1 first larger.
+compare red sphere green cube {"intent": ["compare", "C", "B"], "value": 1, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "ordering(value,value)", "origins": ["host primitive:ordering", "host primitive:value", "host primitive:value"]}]}}
+rule blue cone green cube {"intent": ["rule", "D", "B"], "value": 2, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "op_word7(value,value)", "origins": ["operator:word7", "host primitive:value", "host primitive:value"]}]}}
+inspect red cube {"intent": ["inspect", "A"], "value": 0, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "value(identity)", "origins": ["host primitive:value"]}]}}
+inspect orange sphere {"abstained": true, "reason": "unresolved linguistic meaning"}
+EXIT 0 elapsed 1.178s
+[17/35] python -m ix_zero.compositional_experiment --trials 2 --check
+{
+  "counts": {
+    "nested": {
+      "correct": 192
+    },
+    "shallow": {
+      "correct": 96
+    }
+  },
+  "depths": {
+    "1:correct": 96,
+    "2:correct": 48,
+    "3:correct": 48,
+    "4:correct": 48,
+    "5:correct": 48
+  },
+  "flat_grammar_ablation": {
+    "abstained": 192,
+    "correct": 96
+  },
+  "negative": {
+    "abstained": 6,
+    "quarantined": 2,
+    "shift_wrong_before": 2
+  },
+  "original_fixed_vocabulary": {
+    "abstained": 288
+  },
+  "seed": 180000,
+  "trials": 2
+}
+EXIT 0 elapsed 1.388s
+[18/35] python -m ix_zero.compositional_demo --check
+IX-Zero | recursive grounded objectives | synthetic scene
+Scene: [["A", "cube", "red"], ["B", "cube", "green"], ["C", "sphere", "red"], ["D", "cone", "blue"]]
+Values: {"A": 0, "B": 1, "C": 2, "D": 3}
+please compare the red sphere with the green cube {"meaning": ["compare", "C", "B"], "value": 1, "trace": [{"intent": "compare", "value": 1, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "ordering(value,value)", "origins": ["host primitive:ordering", "host primitive:value", "host primitive:value"]}]}}]}
+red sphere versus green cube {"meaning": ["compare", "C", "B"], "value": 1, "trace": [{"intent": "compare", "value": 1, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "ordering(value,value)", "origins": ["host primitive:ordering", "host primitive:value", "host primitive:value"]}]}}]}
+compare inspect red sphere rule green cube blue cone {"meaning": ["compare", ["inspect", "C"], ["rule", "B", "D"]], "value": 0, "trace": [{"intent": "inspect", "value": 2, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "value(identity)", "origins": ["host primitive:value"]}]}}, {"intent": "rule", "value": 2, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "op_word7(value,value)", "origins": ["operator:word7", "host primitive:value", "host primitive:value"]}]}}, {"intent": "compare", "value": 0, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "ordering(identity,identity)", "origins": ["host primitive:ordering"]}]}}]}
+combine inspect red sphere with rule green cube blue cone {"meaning": ["rule", ["inspect", "C"], ["rule", "B", "D"]], "value": 0, "trace": [{"intent": "inspect", "value": 2, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "value(identity)", "origins": ["host primitive:value"]}]}}, {"intent": "rule", "value": 2, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "op_word7(value,value)", "origins": ["operator:word7", "host primitive:value", "host primitive:value"]}]}}, {"intent": "rule", "value": 0, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "op_word7(identity,identity)", "origins": ["operator:word7"]}]}}]}
+inspect orange sphere {"abstained": true, "reason": "unresolved or unaudited construction"}
+what would you ask me about the world {"abstained": true, "reason": "unresolved or unaudited construction"}
+EXIT 0 elapsed 1.069s
+[19/35] python -m ix_zero.representation_experiment --trials 2 --seed 185000 --novel --check
+{
+  "full": {
+    "correct": 410,
+    "incorrect": 0,
+    "abstained": 0,
+    "candidate_programs": 1920
+  },
+  "abstract": {
+    "correct": 164,
+    "incorrect": 0,
+    "abstained": 246,
+    "candidate_programs": 80
+  },
+  "raw": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 410,
+    "candidate_programs": 0
+  },
+  "adaptive": {
+    "correct": 410,
+    "incorrect": 0,
+    "abstained": 0,
+    "candidate_programs": 1232
+  },
+  "scalar": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 410,
+    "candidate_programs": null
+  },
+  "negative": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 82
+  },
+  "hidden_exception": {
+    "errors": 2,
+    "quarantined": 2
+  },
+  "matched": {
+    "full": {
+      "correct": 164,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 768
+    },
+    "abstract": {
+      "correct": 164,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 32
+    },
+    "raw": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 164,
+      "candidate_programs": 0
+    },
+    "adaptive": {
+      "correct": 164,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 32
+    },
+    "scalar": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 164,
+      "candidate_programs": null
+    }
+  },
+  "other": {
+    "full": {
+      "correct": 246,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 1152
+    },
+    "abstract": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 246,
+      "candidate_programs": 48
+    },
+    "raw": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 246,
+      "candidate_programs": 0
+    },
+    "adaptive": {
+      "correct": 246,
+      "incorrect": 0,
+      "abstained": 0,
+      "candidate_programs": 1200
+    },
+    "scalar": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 246,
+      "candidate_programs": null
+    }
+  }
+}
+EXIT 0 elapsed 2.677s
+[20/35] python -m ix_zero.representation_demo --check
+IX-Zero | learned representation + recursive dispatch
+Scene: [["A", "cube", "red"], ["B", "cube", "green"], ["C", "sphere", "red"], ["D", "cone", "blue"]]
+Values: {"A": -15, "B": -12, "C": -9, "D": -6}
+Representation: {"attempts": 192, "syntax_count": 4, "behaviors": 1, "training": 6, "audits": 3, "blocked": false, "resolved": true, "syntax": [{"source": "word_a", "family": "ordinal", "multiplier": 3, "shift": 2}, {"source": "word_a", "family": "ordinal", "multiplier": 7, "shift": 2}, {"source": "word_a", "family": "gray", "multiplier": 3, "shift": 2}, {"source": "word_a", "family": "gray", "multiplier": 7, "shift": 2}]}
+rule green cube blue cone {"meaning": ["rule", "B", "D"], "value": -24, "trace": [{"intent": "rule", "value": -24, "evidence": {"training": 6, "audits": 3, "blocked": false, "programs": [{"name": "representation7(value,value)", "origins": ["representation:representation7", "host primitive:value", "host primitive:value"]}]}}]}
+compare inspect red sphere rule green cube blue cone {"meaning": ["compare", ["inspect", "C"], ["rule", "B", "D"]], "value": 1, "trace": [{"intent": "inspect", "value": -9, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "value(identity)", "origins": ["host primitive:value"]}]}}, {"intent": "rule", "value": -24, "evidence": {"training": 6, "audits": 3, "blocked": false, "programs": [{"name": "representation7(value,value)", "origins": ["representation:representation7", "host primitive:value", "host primitive:value"]}]}}, {"intent": "compare", "value": 1, "evidence": {"training": 3, "audits": 3, "blocked": false, "programs": [{"name": "ordering(identity,identity)", "origins": ["host primitive:ordering"]}]}}]}
+inspect orange sphere {"abstained": true, "reason": "unresolved or unaudited construction"}
+source retracted: {"meaning": ["rule", "B", "D"], "value": null, "trace": [{"intent": "rule", "abstained": true, "reason": "unvalidated, contradicted or ambiguous objective", "evidence": {"training": 6, "audits": 3, "blocked": true, "programs": [{"name": "representation7(value,value)", "origins": ["representation:representation7", "host primitive:value", "host primitive:value"]}]}}], "abstained": true, "reason": "unsupported or invalidated objective"}
+EXIT 0 elapsed 1.222s
+[21/35] python -m ix_zero.contextual_experiment --trials 2 --check
+{
+  "active": {
+    "correct": 956,
+    "incorrect": 0,
+    "abstained": 4
+  },
+  "passive": {
+    "correct": 586,
+    "incorrect": 0,
+    "abstained": 374
+  },
+  "families": {
+    "operation": {
+      "active": {
+        "correct": 240,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 240,
+        "incorrect": 0,
+        "abstained": 0
+      }
+    },
+    "ordering": {
+      "active": {
+        "correct": 240,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstained": 240
+      }
+    },
+    "coordinate": {
+      "active": {
+        "correct": 236,
+        "incorrect": 0,
+        "abstained": 4
+      },
+      "passive": {
+        "correct": 116,
+        "incorrect": 0,
+        "abstained": 124
+      }
+    },
+    "isolated": {
+      "active": {
+        "correct": 240,
+        "incorrect": 0,
+        "abstained": 0
+      },
+      "passive": {
+        "correct": 230,
+        "incorrect": 0,
+        "abstained": 10
+      }
+    }
+  },
+  "initial_errors": 8,
+  "quarantined": 8,
+  "questions": 23,
+  "informative_questions": 23,
+  "negative": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 226
+  }
+}
+EXIT 0 elapsed 2.444s
+[22/35] python -m ix_zero.contextual_demo --check
+IX-Zero | contextual recovery and recursive cognition
+Scene: [["A", "cube", "red"], ["B", "cube", "green"], ["C", "sphere", "red"], ["D", "cone", "blue"]]
+Values: {"A": -15, "B": -12, "C": -9, "D": -6}
+Contradiction: {"input": ["changed", -6, -21], "original": -9, "observed": -6}
+Diagnosis: contradicted_prediction
+Generated questions: [{"input": ["changed", -3, -21], "question": "In context changed, what outcome is observed for -3 and -21?", "possible_outcomes": {"-24": 3, "-21": 3, "-6": 3}, "disagreement": 54, "hypotheses": 9}, {"input": ["changed", -3, -3], "question": "In context changed, what outcome is observed for -3 and -3?", "possible_outcomes": {"-18": 2, "-3": 1}, "disagreement": 4, "hypotheses": 3}]
+Recovered: {"expanded": true, "generated": 1513, "remaining": 1, "training": 18, "audits": 10, "blocked": false, "diagnosis": "validated", "hypotheses": [{"context": "changed", "condition": ["always"], "alternative": "source2"}]}
+rule green cube blue cone {"meaning": ["rule", "B", "D"], "value": -6, "trace": [{"intent": "rule", "value": -6, "evidence": {"training": 8, "audits": 4, "blocked": false, "programs": [{"name": "context7(value,value)", "origins": ["contextual:context7", "host primitive:value", "host primitive:value"]}]}}]}
+compare inspect red sphere rule green cube blue cone {"meaning": ["compare", ["inspect", "C"], ["rule", "B", "D"]], "value": -1, "trace": [{"intent": "inspect", "value": -9, "evidence": {"training": 2, "audits": 3, "blocked": false, "programs": [{"name": "value(identity)", "origins": ["host primitive:value"]}]}}, {"intent": "rule", "value": -6, "evidence": {"training": 8, "audits": 4, "blocked": false, "programs": [{"name": "context7(value,value)", "origins": ["contextual:context7", "host primitive:value", "host primitive:value"]}]}}, {"intent": "compare", "value": -1, "evidence": {"training": 3, "audits": 3, "blocked": false, "programs": [{"name": "ordering(identity,identity)", "origins": ["host primitive:ordering"]}]}}]}
+inspect orange sphere {"abstained": true, "reason": "unresolved or unaudited construction"}
+EXIT 0 elapsed 1.269s
+[23/35] python -m ix_zero.developmental_experiment --trials 2 --check
+{
+  "reuse": {
+    "word-a": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "word-b": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "word-c": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "word-d": {
+      "correct": 6,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "graph": {
+      "correct": 16,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "parent-a": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "parent-b": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "target-base": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "target-alt": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "derived-domain": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "offered-domain": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "world": {
+      "correct": 98,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "lex": {
+      "correct": 414,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "recovery": {
+      "correct": 98,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "language": {
+      "correct": 64,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "graph_language": {
+      "correct": 6,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "replays": 2,
+    "dependency_blocks": 2,
+    "terminal_runs": 2,
+    "all_objectives_live_except_contradicted_world": 2,
+    "representation_candidates": 544
+  },
+  "no_reuse": {
+    "word-a": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "word-b": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "word-c": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 74
+    },
+    "word-d": {
+      "correct": 6,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "graph": {
+      "correct": 16,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "parent-a": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "parent-b": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "target-base": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "target-alt": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "derived-domain": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 74
+    },
+    "offered-domain": {
+      "correct": 74,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "world": {
+      "correct": 98,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "lex": {
+      "correct": 414,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "recovery": {
+      "correct": 98,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "language": {
+      "correct": 64,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "graph_language": {
+      "correct": 6,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "replays": 2,
+    "dependency_blocks": 2,
+    "terminal_runs": 2,
+    "all_objectives_live_except_contradicted_world": 0,
+    "representation_candidates": 512
+  }
+}
+EXIT 0 elapsed 7.440s
+[24/35] python -m ix_zero.developmental_cli --check
+Developmental console checkpoint smoke test passed.
+EXIT 0 elapsed 1.069s
+[25/35] python -m ix_zero.developmental_challenge --trials 2 --check
+{
+  "random": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 74
+  },
+  "two_context": {
+    "correct": 0,
+    "incorrect": 0,
+    "abstained": 228
+  },
+  "quarantined": 2,
+  "unsupported": 6
+}
+EXIT 0 elapsed 4.780s
+[26/35] python -m ix_zero.epistemic_experiment --trials 2 --check
+{
+  "python": "3.13.5",
+  "seed": 310000,
+  "trials": 2,
+  "passed": true,
+  "audit_summary": {
+    "control": {
+      "trials": 2,
+      "live": 2,
+      "correct": 306,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "early_exception": {
+      "trials": 2,
+      "live": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 304
+    },
+    "late_exception": {
+      "trials": 2,
+      "live": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 304
+    }
+  },
+  "environment_summary": {
+    "audit_contradiction": {
+      "trials": 2,
+      "live": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2044
+    },
+    "deny": {
+      "trials": 2,
+      "live": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 6
+    },
+    "later_contradiction": {
+      "trials": 2,
+      "live": 2,
+      "correct": 2044,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "shift2": {
+      "trials": 2,
+      "live": 2,
+      "correct": 2044,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "shift4": {
+      "trials": 2,
+      "live": 2,
+      "correct": 2044,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "zero": {
+      "trials": 2,
+      "live": 2,
+      "correct": 2044,
+      "incorrect": 0,
+      "abstained": 0
+    }
+  },
+  "transfer_summary": {
+    "True": {
+      "trials": 2,
+      "live": 2,
+      "correct": 2044,
+      "incorrect": 0,
+      "abstained": 0
+    },
+    "False": {
+      "trials": 2,
+      "live": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 2044
+    }
+  },
+  "unobservable_exception_counterfactual": [
+    {
+      "seed": 311000,
+      "input": [
+        5,
+        3,
+        1
+      ],
+      "predicted": 12,
+      "alternative_truth": 13,
+      "wrong": true
+    },
+    {
+      "seed": 311001,
+      "input": [
+        5,
+        29,
+        13
+      ],
+      "predicted": 20,
+      "alternative_truth": 21,
+      "wrong": true
+    }
+  ]
+}
+EXIT 0 elapsed 2.492s
+[27/35] python -m ix_zero.hybrid_experiment --trials 2 --check
+{
+  "word/hybrid": {
+    "promoted": 2,
+    "correct": 2172,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 273,
+    "queries": 50,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "word/unguided": {
+    "promoted": 2,
+    "correct": 2172,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 260,
+    "queries": 50,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "word/oracle": {
+    "promoted": 2,
+    "correct": 2172,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 96,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 107,
+    "queries": 50,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "word/centroid": {
+    "promoted": 2,
+    "correct": 2172,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 97,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 107,
+    "queries": 50,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "word/symbolic": {
+    "promoted": 1,
+    "correct": 1086,
+    "wrong": 0,
+    "abstain": 1086,
+    "recognition_before": 97,
+    "recognition_after": 97,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 107,
+    "queries": 35,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "word/frozen": {
+    "promoted": 0,
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 2172,
+    "recognition_before": 96,
+    "recognition_after": 96,
+    "calibration_holdout": 192,
+    "neural_before": 107,
+    "neural_after": 107,
+    "queries": 24,
+    "plans": 0,
+    "valid_plans": 0
+  },
+  "grid/hybrid": {
+    "promoted": 2,
+    "correct": 176,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 13,
+    "queries": 34,
+    "plans": 24,
+    "valid_plans": 24
+  },
+  "grid/unguided": {
+    "promoted": 2,
+    "correct": 176,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 10,
+    "queries": 34,
+    "plans": 24,
+    "valid_plans": 24
+  },
+  "grid/oracle": {
+    "promoted": 2,
+    "correct": 176,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 96,
+    "recognition_after": 96,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 0,
+    "queries": 34,
+    "plans": 24,
+    "valid_plans": 24
+  },
+  "grid/centroid": {
+    "promoted": 2,
+    "correct": 176,
+    "wrong": 0,
+    "abstain": 0,
+    "recognition_before": 97,
+    "recognition_after": 192,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 0,
+    "queries": 34,
+    "plans": 24,
+    "valid_plans": 24
+  },
+  "grid/symbolic": {
+    "promoted": 1,
+    "correct": 88,
+    "wrong": 0,
+    "abstain": 88,
+    "recognition_before": 97,
+    "recognition_after": 97,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 0,
+    "queries": 18,
+    "plans": 12,
+    "valid_plans": 12
+  },
+  "grid/frozen": {
+    "promoted": 0,
+    "correct": 0,
+    "wrong": 0,
+    "abstain": 176,
+    "recognition_before": 96,
+    "recognition_after": 96,
+    "calibration_holdout": 192,
+    "neural_before": 0,
+    "neural_after": 0,
+    "queries": 2,
+    "plans": 0,
+    "valid_plans": 0
+  }
+}
+hybrid evaluation: PASS
+EXIT 0 elapsed 6.349s
+[28/35] python -m ix_zero.continual_experiment --trials 1 --episodes 8 --check
+{
+  "reuse": {
+    "episodes": 5,
+    "validated": 5,
+    "correct": 4620,
+    "wrong": 0,
+    "abstained": 0,
+    "calibrations": 2,
+    "requests": 104
+  },
+  "no_reuse": {
+    "episodes": 5,
+    "validated": 2,
+    "correct": 1848,
+    "wrong": 0,
+    "abstained": 2335,
+    "calibrations": 11,
+    "requests": 177
+  },
+  "skill_disabled": {
+    "episodes": 5,
+    "validated": 2,
+    "correct": 1848,
+    "wrong": 0,
+    "abstained": 2529,
+    "calibrations": 7,
+    "requests": 156
+  },
+  "lateral_disabled": {
+    "episodes": 5,
+    "validated": 5,
+    "correct": 4620,
+    "wrong": 0,
+    "abstained": 0,
+    "calibrations": 2,
+    "requests": 104
+  },
+  "recovery": {
+    "episodes": 1,
+    "validated": 1,
+    "correct": 92,
+    "wrong": 0,
+    "abstained": 0,
+    "calibrations": 1,
+    "requests": 20
+  },
+  "boundary_detected": 1,
+  "boundary_trials": 1,
+  "boundary_promoted": 0,
+  "lifetime": {
+    "episodes": 8,
+    "validated": 8,
+    "correct": 4064,
+    "wrong": 0,
+    "abstained": 0,
+    "calibrations": 2,
+    "requests": 155
+  },
+  "retention_correct": 5184,
+  "retention_total": 5184,
+  "replayed": 6,
+  "replay_total": 6
+}
+EXIT 0 elapsed 8.905s
+[29/35] python -m ix_zero.stack_experiment --trials 1 --check
+{
+  "full_validated": 5,
+  "control_validated": 2,
+  "third_level_chains": 1,
+  "third_level_control_validated": 0,
+  "common_total": 4097,
+  "full_correct": 4097,
+  "control_correct": 1848,
+  "full_wrong": 0,
+  "control_wrong": 0,
+  "plans_correct": 1024,
+  "plans_total": 1024,
+  "reachable": 208,
+  "replays": 2,
+  "invalidated": 1
+}
+EXIT 0 elapsed 4.630s
+[30/35] python -m ix_zero.general_experiment --trials 2 --check
+{
+  "full": {
+    "acquisitions": 6,
+    "correct": 216,
+    "wrong": 0,
+    "abstained": 0,
+    "final": 2,
+    "replays": 2
+  },
+  "control": {
+    "acquisitions": 4,
+    "correct": 144,
+    "wrong": 0,
+    "abstained": 72,
+    "final": 0,
+    "replays": 2
+  },
+  "language_math_correct": 52,
+  "language_math_total": 52,
+  "integrated_correct": 128,
+  "integrated_total": 128,
+  "integration_replays": 2,
+  "conflicts_blocked": 2,
+  "conditional_correct": 2,
+  "unsupported_language": 2,
+  "contradiction_blocked": 2,
+  "negative_blocked": 2,
+  "unsupported_program_blocked": 2,
+  "dependent_invalidated": 2,
+  "constraint_correct": 36,
+  "constraint_total": 36,
+  "plans_correct": 10,
+  "plans_total": 10,
+  "math_bridge_correct": 2,
+  "document_list_correct": 2
+}
+EXIT 0 elapsed 3.227s
+[31/35] python -m ix_zero.research_experiment --trials 2 --check
+{
+  "active": {
+    "active": {
+      "correct": 36,
+      "wrong": 0,
+      "abstentions": 0,
+      "query_count": 6,
+      "audit_count": 18
+    },
+    "random": {
+      "correct": 12,
+      "wrong": 0,
+      "abstentions": 24,
+      "query_count": 6,
+      "audit_count": 18
+    },
+    "enumerative": {
+      "correct": 18,
+      "wrong": 0,
+      "abstentions": 18,
+      "query_count": 6,
+      "audit_count": 18
+    }
+  },
+  "macro_second": {
+    "True": {
+      "correct": 68,
+      "wrong": 0,
+      "abstentions": 0,
+      "query_count": 0,
+      "audit_count": 12
+    },
+    "False": {
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 68,
+      "query_count": 0,
+      "audit_count": 0
+    }
+  },
+  "external_grammar": {
+    "correct": 32,
+    "wrong": 0,
+    "abstentions": 0,
+    "query_count": 0,
+    "audit_count": 12
+  },
+  "noise": [
+    {
+      "percent": 0,
+      "targeted": false,
+      "trials": 4,
+      "promotions": 2,
+      "false_promotions": 0,
+      "clean_target_withheld": 0,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 0,
+      "targeted": true,
+      "trials": 4,
+      "promotions": 2,
+      "false_promotions": 0,
+      "clean_target_withheld": 0,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 1,
+      "targeted": false,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 1,
+      "targeted": true,
+      "trials": 4,
+      "promotions": 2,
+      "false_promotions": 2,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 5,
+      "targeted": false,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 5,
+      "targeted": true,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 10,
+      "targeted": false,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 10,
+      "targeted": true,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 20,
+      "targeted": false,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "percent": 20,
+      "targeted": true,
+      "trials": 4,
+      "promotions": 0,
+      "false_promotions": 0,
+      "clean_target_withheld": 2,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400,
+      "query_count": 0,
+      "audit_count": 400
+    }
+  ],
+  "consensus": [
+    {
+      "corrupted_sources": 1,
+      "trials": 4,
+      "false_promotions": 0,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "corrupted_sources": 2,
+      "trials": 4,
+      "false_promotions": 2,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    },
+    {
+      "corrupted_sources": 3,
+      "trials": 4,
+      "false_promotions": 2,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200,
+      "query_count": 0,
+      "audit_count": 400
+    }
+  ],
+  "cross_mechanism": {
+    "combined": {
+      "product_plus_two": {
+        "correct": 56,
+        "wrong": 0,
+        "abstentions": 0,
+        "query_count": 0,
+        "audit_count": 12
+      },
+      "nand": {
+        "correct": 56,
+        "wrong": 0,
+        "abstentions": 0,
+        "query_count": 0,
+        "audit_count": 12
+      },
+      "less_equal": {
+        "correct": 56,
+        "wrong": 0,
+        "abstentions": 0,
+        "query_count": 4,
+        "audit_count": 12
+      },
+      "gcd": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 56,
+        "query_count": 0,
+        "audit_count": 6
+      }
+    },
+    "scalar_only": {
+      "product_plus_two": {
+        "correct": 56,
+        "wrong": 0,
+        "abstentions": 0,
+        "query_count": 0,
+        "audit_count": 12
+      },
+      "nand": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 56,
+        "query_count": 0,
+        "audit_count": 0
+      },
+      "less_equal": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 56,
+        "query_count": 0,
+        "audit_count": 0
+      },
+      "gcd": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 56,
+        "query_count": 0,
+        "audit_count": 6
+      }
+    }
+  }
+}
+EXIT 0 elapsed 1.585s
+[32/35] python -m ix_zero.completion_experiment --trials 2 --seed 271100 --check
+{
+  "program": {
+    "native": {
+      "gcd": {
+        "correct": 232,
+        "wrong": 0,
+        "abstentions": 0,
+        "promotions": 2,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 80,
+          "wrong": 0,
+          "abstentions": 0
+        },
+        "boundary": {
+          "correct": 8,
+          "wrong": 4,
+          "abstentions": 0
+        }
+      },
+      "lcm": {
+        "correct": 232,
+        "wrong": 0,
+        "abstentions": 0,
+        "promotions": 2,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 80,
+          "wrong": 0,
+          "abstentions": 0
+        },
+        "boundary": {
+          "correct": 6,
+          "wrong": 4,
+          "abstentions": 2
+        }
+      }
+    },
+    "no_reuse": {
+      "gcd": {
+        "correct": 232,
+        "wrong": 0,
+        "abstentions": 0,
+        "promotions": 2,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 80,
+          "wrong": 0,
+          "abstentions": 0
+        },
+        "boundary": {
+          "correct": 8,
+          "wrong": 4,
+          "abstentions": 0
+        }
+      },
+      "lcm": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 232,
+        "promotions": 0,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 80
+        },
+        "boundary": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 12
+        }
+      }
+    },
+    "no_loop": {
+      "gcd": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 232,
+        "promotions": 0,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 80
+        },
+        "boundary": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 12
+        }
+      },
+      "lcm": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 232,
+        "promotions": 0,
+        "attempts": 24000,
+        "shifted": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 80
+        },
+        "boundary": {
+          "correct": 0,
+          "wrong": 0,
+          "abstentions": 12
+        }
+      }
+    }
+  },
+  "search": {
+    "enumerative": {
+      "correct": 232,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "attempts": 12000,
+      "queries": 0,
+      "audit_count": 40
+    },
+    "random": {
+      "correct": 232,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "attempts": 12000,
+      "queries": 0,
+      "audit_count": 40
+    },
+    "evolutionary": {
+      "correct": 232,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "attempts": 12000,
+      "queries": 0,
+      "audit_count": 40
+    }
+  },
+  "tool_assisted": {
+    "comb": {
+      "correct": 80,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "selected": [
+        "math.comb"
+      ]
+    },
+    "isqrt": {
+      "correct": 80,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "selected": [
+        "math.isqrt"
+      ]
+    },
+    "xor": {
+      "correct": 80,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "selected": [
+        "operator.xor"
+      ]
+    },
+    "gcd": {
+      "correct": 80,
+      "wrong": 0,
+      "abstentions": 0,
+      "promotions": 2,
+      "selected": [
+        "math.gcd"
+      ]
+    }
+  },
+  "grid": {
+    "all": {
+      "largest_crop": {
+        "correct": 8,
+        "wrong": 0,
+        "abstentions": 0,
+        "attempts": 8256
+      },
+      "smallest_mask": {
+        "correct": 7,
+        "wrong": 0,
+        "abstentions": 1,
+        "attempts": 8256
+      },
+      "scale": {
+        "correct": 8,
+        "wrong": 0,
+        "abstentions": 0,
+        "attempts": 8256
+      },
+      "translate_wrap": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 8,
+        "attempts": 8256
+      }
+    },
+    "pixels": {
+      "largest_crop": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 8,
+        "attempts": 384
+      },
+      "smallest_mask": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 8,
+        "attempts": 384
+      },
+      "scale": {
+        "correct": 8,
+        "wrong": 0,
+        "abstentions": 0,
+        "attempts": 384
+      },
+      "translate_wrap": {
+        "correct": 0,
+        "wrong": 0,
+        "abstentions": 8,
+        "attempts": 384
+      }
+    }
+  },
+  "reliability": [
+    {
+      "policy": "majority",
+      "corrupted_sources": 0,
+      "false_promotions": 0,
+      "clean_withheld": 0,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200
+    },
+    {
+      "policy": "majority",
+      "corrupted_sources": 1,
+      "false_promotions": 0,
+      "clean_withheld": 0,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200
+    },
+    {
+      "policy": "majority",
+      "corrupted_sources": 2,
+      "false_promotions": 2,
+      "clean_withheld": 2,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200
+    },
+    {
+      "policy": "majority",
+      "corrupted_sources": 3,
+      "false_promotions": 2,
+      "clean_withheld": 2,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200
+    },
+    {
+      "policy": "unanimous",
+      "corrupted_sources": 0,
+      "false_promotions": 0,
+      "clean_withheld": 0,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 200,
+      "wrong": 0,
+      "abstentions": 200
+    },
+    {
+      "policy": "unanimous",
+      "corrupted_sources": 1,
+      "false_promotions": 0,
+      "clean_withheld": 2,
+      "promotions": 0,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400
+    },
+    {
+      "policy": "unanimous",
+      "corrupted_sources": 2,
+      "false_promotions": 0,
+      "clean_withheld": 2,
+      "promotions": 0,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 400
+    },
+    {
+      "policy": "unanimous",
+      "corrupted_sources": 3,
+      "false_promotions": 2,
+      "clean_withheld": 2,
+      "promotions": 2,
+      "raw_audit_observations": 1200,
+      "correct": 0,
+      "wrong": 200,
+      "abstentions": 200
+    }
+  ]
+}
+EXIT 0 elapsed 5.291s
+[33/35] python -m ix_zero.revision_experiment --trials 2 --seed 291100 --check
+{
+  "gcd": {
+    "random_pool": {
+      "promotions": 1,
+      "unchanged": {
+        "correct": 73,
+        "wrong": 137,
+        "abstentions": 0
+      },
+      "revised": {
+        "correct": 105,
+        "wrong": 0,
+        "abstentions": 105
+      }
+    },
+    "stratified_pool": {
+      "promotions": 2,
+      "unchanged": {
+        "correct": 73,
+        "wrong": 137,
+        "abstentions": 0
+      },
+      "revised": {
+        "correct": 210,
+        "wrong": 0,
+        "abstentions": 0
+      }
+    }
+  },
+  "lcm": {
+    "random_pool": {
+      "promotions": 1,
+      "unchanged": {
+        "correct": 94,
+        "wrong": 116,
+        "abstentions": 0
+      },
+      "revised": {
+        "correct": 105,
+        "wrong": 0,
+        "abstentions": 105
+      }
+    },
+    "stratified_pool": {
+      "promotions": 2,
+      "unchanged": {
+        "correct": 94,
+        "wrong": 116,
+        "abstentions": 0
+      },
+      "revised": {
+        "correct": 210,
+        "wrong": 0,
+        "abstentions": 0
+      }
+    }
+  }
+}
+EXIT 0 elapsed 2.029s
+[34/35] python -m ix_zero.semantic_experiment --trials 2 --seed 351200 --check
+{
+  "active": {
+    "families": [
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 13,
+        "audit_labels": 24,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 10,
+        "audit_labels": 24,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 13,
+        "audit_labels": 24,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 12,
+        "audit_labels": 24,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      }
+    ],
+    "plans_achieved": 2
+  },
+  "random": {
+    "families": [
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 32,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 32,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 32,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 32,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      }
+    ],
+    "plans_achieved": 0
+  },
+  "no_inquiry": {
+    "families": [
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 2592
+      }
+    ],
+    "plans_achieved": 0
+  },
+  "no_conditional": {
+    "families": [
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 0,
+        "audit_labels": 24,
+        "candidate_attempts": 1440
+      },
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 1,
+        "audit_labels": 24,
+        "candidate_attempts": 1440
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 1,
+        "audit_labels": 24,
+        "candidate_attempts": 1440
+      },
+      {
+        "promoted": 2,
+        "correct": 64,
+        "wrong": 0,
+        "abstain": 0,
+        "queries": 1,
+        "audit_labels": 24,
+        "candidate_attempts": 1440
+      },
+      {
+        "promoted": 0,
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 64,
+        "queries": 0,
+        "audit_labels": 0,
+        "candidate_attempts": 1440
+      }
+    ],
+    "plans_achieved": 2
+  },
+  "no_memory_plans_achieved": 0
+}
+EXIT 0 elapsed 2.324s
+[35/35] python -m ix_zero.semantic_transfer_experiment --trials 2 --seed 361100 --check
+{
+  "source": [
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 11,
+      "audit_labels": 24,
+      "candidate_attempts": 2592
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 12,
+      "audit_labels": 24,
+      "candidate_attempts": 2592
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 12,
+      "audit_labels": 24,
+      "candidate_attempts": 2592
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 10,
+      "audit_labels": 24,
+      "candidate_attempts": 2592
+    }
+  ],
+  "transfer": [
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 0,
+      "audit_labels": 24,
+      "candidate_attempts": 32
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 0,
+      "audit_labels": 24,
+      "candidate_attempts": 40
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 3,
+      "audit_labels": 24,
+      "candidate_attempts": 48
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 0,
+      "audit_labels": 24,
+      "candidate_attempts": 56
+    }
+  ],
+  "from_scratch": [
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 8,
+      "audit_labels": 0,
+      "candidate_attempts": 3116
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 8,
+      "audit_labels": 0,
+      "candidate_attempts": 2592
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 8,
+      "audit_labels": 0,
+      "candidate_attempts": 2592
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 8,
+      "audit_labels": 0,
+      "candidate_attempts": 2592
+    }
+  ],
+  "empty_transfer": [
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 0,
+      "audit_labels": 0,
+      "candidate_attempts": 0
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 0,
+      "audit_labels": 0,
+      "candidate_attempts": 0
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 0,
+      "audit_labels": 0,
+      "candidate_attempts": 0
+    },
+    {
+      "promoted": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstain": 64,
+      "queries": 0,
+      "audit_labels": 0,
+      "candidate_attempts": 0
+    }
+  ],
+  "arity": [
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 2,
+      "audit_labels": 24,
+      "candidate_attempts": 492
+    },
+    {
+      "promoted": 2,
+      "correct": 64,
+      "wrong": 0,
+      "abstain": 0,
+      "queries": 31,
+      "audit_labels": 24,
+      "candidate_attempts": 8700
+    }
+  ],
+  "withdrawals": [
+    [
+      "v69964235",
+      "v70051169"
+    ],
+    [
+      "v55666095",
+      "v86447362"
+    ]
+  ]
+}
+EXIT 0 elapsed 2.023s
+PASS 35/35

@@ -23,3 +23,7 @@ The files in this directory are retained research records, including unsuccessfu
 Selected historical smoke-run and installed-package datasets are grouped in `regression/`. They should not be counted as independent confirmations. Summary text files accompany several datasets for readability. The release's current engineering checks are documented separately in [release verification](../docs/RELEASE_VALIDATION.md).
 
 To preserve the distributed reference evidence, run experiments that generate output in a separate checkout or direct their output to new filenames. `MANIFEST.sha256` at the repository root records the distributed file hashes.
+
+## Version 5 research candidate
+
+`v5/primary.json` and `v5/confirmation.json` contain raw authored experiment records, including failed predictions, abstentions, exact partitions, observer votes and actual candidate attempts. `v5/arc-public-spotcheck.json` is one external public task diagnostic, not a full benchmark. `v5/live-web-probe.json` records a failed live DNS attempt. `v5/local-document-probe.json` records local donor documentation retrieval. The pre-v5 evidence is retained unchanged. See `../docs/RESEARCH_V5.md`.

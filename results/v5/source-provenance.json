@@ -1,0 +1,53 @@
+{
+  "sources": {
+    "IX-Zero-v4.0.0-Public-Release(2).zip": {
+      "sha256": "6747f8a77258a1aa0c77d57950d73970813683026d59a444c34a1f4176c092ba",
+      "bytes": 20731184
+    },
+    "IX-AGI-main(3).zip": {
+      "sha256": "21d3f8c59420eda7acd4ada860ba9a14aaa95129715c26151e0f75b2d49068c0",
+      "bytes": 91402
+    },
+    "IX-BlackFox-AGI-main(5).zip": {
+      "sha256": "05a7de48199bcd8453e012226dc28b222d59e7e1d15734593d6b49304732fd81",
+      "bytes": 904053
+    },
+    "IX-Sally-main(20261127-155531).zip": {
+      "sha256": "a7190ca73334552a4f76a574615c4c0c89b3a23cf6f2a246bb6a9fab3fd9375f",
+      "bytes": 716649
+    },
+    "IX-Zero-v4-Mirror-Experiment.zip": {
+      "sha256": "3571ef05930c0439e121c9d567ba5a519515675e09dbdce43f40675e99430f09",
+      "bytes": 29419
+    },
+    "IX-Zero-v4-Multi-Architecture-Research.zip": {
+      "sha256": "bc1e8b36ce33b22cb193d9b6c8ab6f21691670f4e1775fe629460e5ad5568237",
+      "bytes": 38060
+    },
+    "IX-Zero-v4-Native-Dialogue.zip": {
+      "sha256": "b6e0d7eca8b9c83cd9ab38edc8e35f40b0c5a1008a1f9d82a014a8d30dcdc6d5",
+      "bytes": 6878
+    },
+    "nimbleinfo(1).py": {
+      "sha256": "2d665eb5cc107b5b59a4a83b7202a43e1e85c3902d604cc210012b595f64936a",
+      "bytes": 2255
+    },
+    "nimbleinfo(1).kv": {
+      "sha256": "851dc9c47e5548fa24e260b04e596196f4b41f70f53807dc574c9e5efe072f3c",
+      "bytes": 700
+    }
+  },
+  "manifest_verification": {
+    "v4": 248,
+    "IX-BlackFox-AGI": 79,
+    "IX-AGI": 59,
+    "IX-Sally": "no root manifest"
+  },
+  "donor_native_execution": {
+    "Sally": "8 selected original tests rerun; full suite not run",
+    "BlackFox-AGI": "Julia/Ada unavailable",
+    "IX-AGI": "Julia unavailable"
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

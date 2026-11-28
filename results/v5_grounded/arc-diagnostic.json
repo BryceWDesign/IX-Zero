@@ -1,0 +1,2581 @@
+{
+  "candidate_cap": 5000,
+  "selection": {
+    "available": 6,
+    "limit": null,
+    "seed": 0,
+    "task_ids": [
+      "00576224",
+      "007bbfb7",
+      "0520fde7",
+      "08ed6ac7",
+      "9172f3a0",
+      "d037b0a7"
+    ]
+  },
+  "summary": {
+    "original": {
+      "tasks": 6,
+      "exact_tasks": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 6,
+      "execution_errors": 0
+    },
+    "objects": {
+      "tasks": 6,
+      "exact_tasks": 1,
+      "correct": 1,
+      "wrong": 0,
+      "abstentions": 5,
+      "execution_errors": 0
+    },
+    "relational": {
+      "tasks": 6,
+      "exact_tasks": 3,
+      "correct": 3,
+      "wrong": 0,
+      "abstentions": 3,
+      "execution_errors": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "00576224",
+      "file_sha256": "054501e710952eb7daaacc4afcf74ed3ed84f5043594a5ca24e445e4056d9baa",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "00576224",
+      "file_sha256": "054501e710952eb7daaacc4afcf74ed3ed84f5043594a5ca24e445e4056d9baa",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "00576224",
+      "file_sha256": "054501e710952eb7daaacc4afcf74ed3ed84f5043594a5ca24e445e4056d9baa",
+      "mode": "relational",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "attempted": 163,
+        "geometry_classes": 1,
+        "minimum_cost": null,
+        "minimum_cost_models": 0,
+        "distinct_predictions": 0,
+        "selected_examples": [],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "4444507aad8c12d17447588ca3faf46a404806769c31208b639126028d78fb36",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "4444507aad8c12d17447588ca3faf46a404806769c31208b639126028d78fb36",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "4444507aad8c12d17447588ca3faf46a404806769c31208b639126028d78fb36",
+      "mode": "relational",
+      "exact_task": true,
+      "correct": 1,
+      "wrong": 0,
+      "abstentions": 0,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "candidate_report": {
+        "predictions": [
+          [
+            [
+              7,
+              0,
+              7,
+              0,
+              0,
+              0,
+              7,
+              0,
+              7
+            ],
+            [
+              7,
+              0,
+              7,
+              0,
+              0,
+              0,
+              7,
+              0,
+              7
+            ],
+            [
+              7,
+              7,
+              0,
+              0,
+              0,
+              0,
+              7,
+              7,
+              0
+            ],
+            [
+              7,
+              0,
+              7,
+              0,
+              0,
+              0,
+              7,
+              0,
+              7
+            ],
+            [
+              7,
+              0,
+              7,
+              0,
+              0,
+              0,
+              7,
+              0,
+              7
+            ],
+            [
+              7,
+              7,
+              0,
+              0,
+              0,
+              0,
+              7,
+              7,
+              0
+            ],
+            [
+              7,
+              0,
+              7,
+              7,
+              0,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              7,
+              7,
+              0,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              7,
+              7,
+              0,
+              7,
+              7,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "attempted": 216,
+        "geometry_classes": 1,
+        "minimum_cost": 3,
+        "minimum_cost_models": 4,
+        "distinct_predictions": 1,
+        "selected_examples": [
+          {
+            "geometry": [
+              "scale",
+              3,
+              3
+            ],
+            "program": [
+              "if_eq",
+              [
+                "color",
+                "local"
+              ],
+              0,
+              [
+                "color",
+                "local"
+              ],
+              [
+                "color",
+                "block"
+              ]
+            ],
+            "complexity": 3
+          }
+        ],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    },
+    {
+      "task": "0520fde7",
+      "file_sha256": "27df7497a354023b83189f1a95cf904747de1c065e1e27eb8923c6c3c07ff374",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "0520fde7",
+      "file_sha256": "27df7497a354023b83189f1a95cf904747de1c065e1e27eb8923c6c3c07ff374",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "0520fde7",
+      "file_sha256": "27df7497a354023b83189f1a95cf904747de1c065e1e27eb8923c6c3c07ff374",
+      "mode": "relational",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "attempted": 167,
+        "geometry_classes": 1,
+        "minimum_cost": null,
+        "minimum_cost_models": 0,
+        "distinct_predictions": 0,
+        "selected_examples": [],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "508fb8d5800303731dddd1b5f59f7020d3d5ba05ab30d1637886941e8cc16b8c",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "508fb8d5800303731dddd1b5f59f7020d3d5ba05ab30d1637886941e8cc16b8c",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "508fb8d5800303731dddd1b5f59f7020d3d5ba05ab30d1637886941e8cc16b8c",
+      "mode": "relational",
+      "exact_task": true,
+      "correct": 1,
+      "wrong": 0,
+      "abstentions": 0,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "candidate_report": {
+        "predictions": [
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              4,
+              0,
+              2,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              4,
+              0,
+              2,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              4,
+              0,
+              2,
+              0,
+              3,
+              0
+            ]
+          ]
+        ],
+        "attempted": 118,
+        "geometry_classes": 1,
+        "minimum_cost": 7,
+        "minimum_cost_models": 1,
+        "distinct_predictions": 1,
+        "selected_examples": [
+          {
+            "geometry": [
+              "same"
+            ],
+            "program": [
+              "map",
+              [
+                "area_rank",
+                "local"
+              ],
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  4,
+                  1
+                ]
+              ]
+            ],
+            "complexity": 7
+          }
+        ],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    },
+    {
+      "task": "9172f3a0",
+      "file_sha256": "72694ae92ee91160e6ebdeba0853a21e9a08b3c0cfcc4ba077219c25fc327f48",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "9172f3a0",
+      "file_sha256": "72694ae92ee91160e6ebdeba0853a21e9a08b3c0cfcc4ba077219c25fc327f48",
+      "mode": "objects",
+      "exact_task": true,
+      "correct": 1,
+      "wrong": 0,
+      "abstentions": 0,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "candidate_report": {
+        "predictions": [
+          [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "candidate_count": 1,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [
+          [
+            "scale",
+            3,
+            3
+          ]
+        ],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "9172f3a0",
+      "file_sha256": "72694ae92ee91160e6ebdeba0853a21e9a08b3c0cfcc4ba077219c25fc327f48",
+      "mode": "relational",
+      "exact_task": true,
+      "correct": 1,
+      "wrong": 0,
+      "abstentions": 0,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            6,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "candidate_report": {
+        "predictions": [
+          [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              6,
+              6
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              6,
+              6,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "attempted": 36,
+        "geometry_classes": 1,
+        "minimum_cost": 1,
+        "minimum_cost_models": 1,
+        "distinct_predictions": 1,
+        "selected_examples": [
+          {
+            "geometry": [
+              "scale",
+              3,
+              3
+            ],
+            "program": [
+              "direct",
+              [
+                "color",
+                "block"
+              ]
+            ],
+            "complexity": 1
+          }
+        ],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    },
+    {
+      "task": "d037b0a7",
+      "file_sha256": "2bb8713ad913dc77386254e7cf37895e46a821274342138dd4065e49d8dc195f",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "d037b0a7",
+      "file_sha256": "2bb8713ad913dc77386254e7cf37895e46a821274342138dd4065e49d8dc195f",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "d037b0a7",
+      "file_sha256": "2bb8713ad913dc77386254e7cf37895e46a821274342138dd4065e49d8dc195f",
+      "mode": "relational",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            0,
+            8
+          ],
+          [
+            4,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "attempted": 110,
+        "geometry_classes": 1,
+        "minimum_cost": null,
+        "minimum_cost_models": 0,
+        "distinct_predictions": 0,
+        "selected_examples": [],
+        "budget_exhausted": false,
+        "claim": "minimum-complexity consistency within authored relational feature grammar; not universal equivalence"
+      }
+    }
+  ],
+  "claim": "externally supplied ARC files, not an official score; candidate caps are equal but actual grammar sizes and evaluation cost differ"
+}

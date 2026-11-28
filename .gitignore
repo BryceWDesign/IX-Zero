@@ -31,3 +31,6 @@ ix-zero-continual-state.json
 
 .ix-general-*
 ix-zero-general-state.json
+
+.ix-research-*
+ix-zero-research-state.json

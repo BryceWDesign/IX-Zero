@@ -2,9 +2,82 @@
 
 Experimental continual neural-symbolic cognitive architecture integrating executable skill acquisition, adaptive inquiry, controlled-language reasoning, source-scoped evidence, exact mathematics and finite program induction.
 
-**Version 4.0.0** | Python 3.11+ | Source-available, noncommercial evaluation | No third-party runtime dependencies
+**Version 5.0.0 grounded research candidate** | Python 3.11+ | Source-available, noncommercial evaluation | No mandatory third-party runtime dependencies (optional browser extra)
 
 IX-Zero investigates how a neural-symbolic learner can acquire executable knowledge from observations, reuse that knowledge across tasks, recognize the limits of its current evidence, and request more informative experiments. The implementation operates over bounded, evaluator-defined domains. It is not demonstrated artificial general intelligence (AGI), a general-purpose language model, or a production decision system.
+
+## Grounded 5.0.0 research: learn action semantics, inquire and transfer
+
+New executable mechanisms learn role-relative action rules from changes in observed object states, generate diagnostic interventions, transfer acquired rules across renamed attributes and reordered entity roles, and plan with learned action models. A relational grid solver searches output geometries and generated coordinate/connected-component features. All core mechanisms run without pretrained models or external AI inference.
+
+| Executed diagnostic | Result |
+|---|---:|
+| Active action-language induction, four supported families | 3,072/3,072 vs random inquiry 160/3,072 |
+| Unseen triggering equality | 768/768 vs conditional-expression-disabled 0/768 (abstained) |
+| Executed plans using learned action models | 24/24 vs empty memory 0/24 |
+| Cross-vocabulary semantic transfer | 3,072/3,072 vs from-scratch 0/3,072 under the small target label cap |
+| Unary and ternary action learning | 1,536/1,536 shifted held-out transitions |
+| Actual trusted local Chromium form | 64/64 held-out transitions, 2/2 goals |
+| Six public ARC-AGI-1 diagnostic tasks | Relational 3/6, prior objects 1/6, original 0/6 |
+
+All action families and object schemas are authored; word order, identifiers, role-relative expressions and mappings are inferred. Transfer tasks are structurally analogous by design. Candidate/query caps and realized compute/labels are not equivalent across all controls. The unsupported multiplication action remains 0/768 (abstained). Two repaired ARC tasks were previously exposed training tasks; the only public evaluation task remains unsolved. The three newly selected training tasks yield the same single success for both the prior object and relational solvers. This small diagnostic is not an official or representative ARC score. Full native donor integration, general semantic representation invention, open-ended architecture improvement, successful live web research, general Windows desktop competence, DreamCoder/PushGP comparisons and independent third-party verification remain open.
+
+See [grounded research methods, reproduction and complete gap ledger](docs/RESEARCH_V5_GROUNDED.md), [raw evidence](results/v5_grounded/) and [release verification](docs/RELEASE_VALIDATION.md). The original v5 continuation and all previous evidence remain below for historical context.
+
+## Expanded 5.0.0 research: iterative programs, revision and tool learning
+
+The continuation adds generated state-transition programs, callable acquired programs, fresh-evidence program revision, object-centric grid induction, explicit standard-library tool discovery, conservative evidence auditing and actual local Chromium control learning. All 318 previous tests are retained; 339 total unit tests and 33 workflow commands passed locally on Python 3.13.5/Linux. GitHub-hosted matrix checks are still pending.
+
+| Executed diagnostic | Result |
+|---|---:|
+| Positive-domain GCD, iterative vs expression-only | 2,784/2,784 vs 0/2,784 (abstained) |
+| Positive-domain LCM, reuse vs disabled | 2,784/2,784 vs 0/2,784 (abstained) |
+| Larger positive inputs | 960/960 per acquired operation |
+| Signed/zero fresh-evidence GCD revision | 2,520/2,520 vs unchanged 881/2,520 |
+| Signed/zero fresh-evidence LCM revision | 2,520/2,520 vs unchanged 994/2,520 |
+| Independently implemented numerical tools | 3,840/3,840 correct, explicitly tool-assisted |
+| Local Chromium goal execution with learned graph | 8/8 vs 1/8 blind random, 0/8 no-memory lookup |
+| Public ARC diagnostic (3 tasks) | 0/3 solved; all abstained |
+
+The signed/zero repair uses experimenter-selected boundary strata and is not general architecture self-modification. Positive-domain baseline failures, public ARC failures, common-mode corruption, and browser training costs are preserved. The new object and pixel grammars have different actual search sizes. Full native donor interoperability, DreamCoder/PushGP execution, general language/representation discovery, successful live Internet research and Windows desktop operation remain unresolved. See [continuation methods and roadmap ledger](docs/RESEARCH_V5_CONTINUATION.md) and [raw evidence](results/v5_continuation/).
+
+The initial 5.0 research follows for historical context; it describes the preceding candidate, not the limits of the expanded build.
+
+## Experimental research workspace (v5)
+
+A new additive workspace unifies the retained native reasoning engine with executable finite-program exploration, disagreement-based active inquiry across multiple representations, lossless symbolic observations, independently scoped goal search, multi-observer audits, and direct read-only document/web retrieval. It runs without pretrained models or remote AI inference. The internet adapter is an actual HTTPS client, not a simulated API; successful live web retrieval has **not** been verified in the build environment. External tools do not establish intelligence by their existence.
+
+Two authored 12-seed campaigns (24 seeds total) produced:
+
+| Measure | Result |
+|---|---:|
+| Disagreement inquiry vs random inquiry, same candidate and label budgets | 432/432 vs 222/432 correct; 210 random-arm abstentions |
+| Disagreement inquiry vs fixed-order enumerative inquiry | 432/432 vs 216/432 correct; 216 fixed-order abstentions |
+| Second executable program, acquired macro reuse vs disabled | 816/816 vs 0/816 correct; 816 disabled-arm abstentions |
+| Combined scalar, NAND and order-predicate families | 2,016/2,016 correct; GCD 672/672 abstentions |
+| Scalar-only control across the same four families | 672/2,688 correct; 2,016 abstentions |
+| External finite transition-table interface (authored randomized grammars) | 384/384 held-out predictions |
+| Public ARC-AGI diagnostic | 0/1 exact tasks, one abstention |
+
+The combined cross-mechanism run is **not compute- or realized-label-matched** to its scalar-only control. The fixed-order and random controls in the first two rows are matched in candidate and query counts. The macro experiment matches candidate budgets, not identical elapsed time or audit counts. The grammar tasks are not independently authored. Seeds vary partitions/order and randomized tables; they do not create 24 unrelated domains.
+
+**Failure evidence:** with a targeted corruption of just one of 100 audit labels, the single-observer learner promoted an incorrect program in all 24 hidden-regime trials, producing 2,400 wrong held-out predictions. A three-observer majority protocol blocked that particular failure with one corrupted observer, but not with two or three correlated corruptions. It uses three times as many audit observations. All failures remain in the evidence. Majority is not ground truth, and source independence must be established by the experimenter.
+
+Start the research console:
+
+```sh
+python -m ix_zero.research_cli
+```
+
+Example JSON-lines commands (the CLI reads one JSON object per line):
+
+```json
+{"command":"task","text":"Calculate 3*(2+7)"}
+{"command":"research","subject":"Python","property_name":"pathlib documentation"}
+{"command":"self_model"}
+```
+
+See [research methods and limitations](docs/RESEARCH_V5.md), [release verification](docs/RELEASE_VALIDATION.md), and [v5 raw evidence](results/v5/). The external ARC-format evaluator accepts the official JSON task directory. DreamCoder and PushGP have **not** been run; full native donor integration, broad grammar discovery, autonomous desktop operation and general architectural self-modification remain unproven. The retained v4 workspace and historical evidence follow below.
 
 ## Integrated native reasoning
 

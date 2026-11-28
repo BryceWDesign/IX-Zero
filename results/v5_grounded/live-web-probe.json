@@ -1,0 +1,24 @@
+{
+  "distinct_hosts": 0,
+  "goal": {
+    "property": "standard library pathlib path methods",
+    "subject": "Python"
+  },
+  "observed_at_utc": "2026-11-28T03:58:44.901214+00:00",
+  "recalled": false,
+  "sources": [],
+  "status": "unavailable",
+  "trace": [
+    {
+      "action": "search",
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "query": "Python standard library pathlib path methods"
+    },
+    {
+      "action": "search",
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "query": "Python standard library pathlib path methods technical reference"
+    }
+  ],
+  "truth_verified": false
+}

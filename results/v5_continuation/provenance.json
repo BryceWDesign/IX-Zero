@@ -1,0 +1,19 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.57.0",
+  "parent_zip_sha256": "d67d769ab8fdce9e07b95cffaf632062f95b46cf36ba15efedd782d61e341eeb",
+  "source_hashes": {
+    "browser_experiment.py": "aa220f24abe9c9ef9f7f0e2346e282a2e004c164fed79d575325936b5abed397",
+    "external_eval.py": "7be892fac50057ef4daf262ed6db34980caa055d0a3253301367c00227499bc8",
+    "browser_learning.py": "7d743f7bf2b38af4ce471dfb75abd0d2f201f52cc3e9238a941af3ff0943e929",
+    "audit.py": "02a632d6ddb67ae49eb77ecf7ee476b2bd497c1b6c3febb3b47a3d7195d14004",
+    "object_induction.py": "e1ebc516d078cb692f4f270c30805279e979b0b9cdff2ac31559a8a2cdc7d521",
+    "revision_experiment.py": "ded26f3ea0c9d71ac4b45a07adbfedfaf02696f5299ba3820d20b65329f46f16",
+    "completion_experiment.py": "d676797ae02e7756050c86d07a1481bc3fbb8173f1330dd4c6ad76895254033f",
+    "tool_induction.py": "16432b0650aa91aae9a950292ed37acbf793956800622f260ca2846721562ea8",
+    "research_workspace.py": "df635161ba158c2bc0210421aeae067ca3c6032ae86d260a05d25564f6745ab4",
+    "program_induction.py": "005278afb18f68cdeb001399cc351288d74d7be289fce9829aba4c58c9e97765"
+  }
+}

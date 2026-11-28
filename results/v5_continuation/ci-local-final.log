@@ -1,0 +1,66 @@
+1 python -m unittest discover -s tests -v
+exit=0 (final source; see unit-tests-final.log)
+2 python -m ix_zero.experiment --trials 2
+exit=0 elapsed=1.574s
+3 python -m ix_zero.validation --trials 2
+exit=0 elapsed=1.378s
+4 python -m ix_zero.challenges
+exit=0 elapsed=2.606s
+5 python -m ix_zero.discovery_experiment --trials 2
+exit=0 elapsed=1.020s
+6 python -m ix_zero.discovery_experiment --strict --seed 200 --trials 2
+exit=0 elapsed=0.942s
+7 python -m ix_zero.discovery_planning --trials 2
+exit=0 elapsed=0.707s
+8 python -m ix_zero.unified_experiment --trials 2
+exit=0 elapsed=1.006s
+9 python -m ix_zero.superiority_experiment --trials 2 --check
+exit=0 elapsed=6.071s
+10 python -m ix_zero.operator_experiment --trials 2 --seed 9400 --check
+exit=0 elapsed=1.909s
+11 python -m ix_zero.strategy_experiment --trials 1 --seed 67000 --mode exact --check
+exit=0 elapsed=3.258s
+12 python -m ix_zero.analogy_experiment --trials 2 --check
+exit=0 elapsed=1.134s
+13 python -m ix_zero.language_experiment --trials 2 --check
+exit=0 elapsed=0.940s
+14 python -m ix_zero.language_demo --check
+exit=0 elapsed=0.718s
+15 python -m ix_zero.acce_experiment --trials 2 --check
+exit=0 elapsed=0.900s
+16 python -m ix_zero.acce_demo --check
+exit=0 elapsed=0.834s
+17 python -m ix_zero.compositional_experiment --trials 2 --check
+exit=0 elapsed=1.030s
+18 python -m ix_zero.compositional_demo --check
+exit=0 elapsed=0.880s
+19 python -m ix_zero.representation_experiment --trials 2 --seed 185000 --novel --check
+exit=0 elapsed=2.149s
+20 python -m ix_zero.representation_demo --check
+exit=0 elapsed=0.991s
+21 python -m ix_zero.contextual_experiment --trials 2 --check
+exit=0 elapsed=2.129s
+22 python -m ix_zero.contextual_demo --check
+exit=0 elapsed=1.040s
+23 python -m ix_zero.developmental_experiment --trials 2 --check
+exit=0 elapsed=5.712s
+24 python -m ix_zero.developmental_cli --check
+exit=0 elapsed=0.728s
+25 python -m ix_zero.developmental_challenge --trials 2 --check
+exit=0 elapsed=3.794s
+26 python -m ix_zero.epistemic_experiment --trials 2 --check
+exit=0 elapsed=1.961s
+27 python -m ix_zero.hybrid_experiment --trials 2 --check
+exit=0 elapsed=5.151s
+28 python -m ix_zero.continual_experiment --trials 1 --episodes 8 --check
+exit=0 elapsed=7.533s
+29 python -m ix_zero.stack_experiment --trials 1 --check
+exit=0 elapsed=3.662s
+30 python -m ix_zero.general_experiment --trials 2 --check
+exit=0 elapsed=2.720s
+31 python -m ix_zero.research_experiment --trials 2 --check
+exit=0 elapsed=1.038s
+32 python -m ix_zero.completion_experiment --trials 2 --seed 271100 --check
+exit=0 elapsed=3.843s
+33 python -m ix_zero.revision_experiment --trials 2 --seed 291100 --check
+exit=0 elapsed=1.364s

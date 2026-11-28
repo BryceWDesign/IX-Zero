@@ -1,0 +1,53 @@
+{
+  "dataset": "ARC-AGI-1, official public repository",
+  "license": "Apache-2.0",
+  "retrieval": "Evaluator used web source display after direct download failed. Integer grids manually transcribed; JSON serialization normalized. Local hashes are not claimed upstream hashes. Zero did not retrieve these sources.",
+  "selection": "Three previously exposed tasks from the prior diagnostic plus three compact training tasks from a web search for official task files, selected for feasible transcription, not sampled uniformly or selected after running the solver. Other displayed candidates were not included (ce602527 large, b27ca6d3 not fully shown; ARC-AGI-2 247ef758 and 291dc1e1 not transcribed). No edits to the relational solver after opening fresh task contents. The two previously exposed training tasks are not blind evidence.",
+  "solver_sha256_before_fresh_task_content": "cefd55363b90a91c845cfc3ada85c28fdd08e747e97ef9d1cc713b34fee56124",
+  "solver_sha256_final": "cefd55363b90a91c845cfc3ada85c28fdd08e747e97ef9d1cc713b34fee56124",
+  "source_repo": "https://github.com/fchollet/ARC-AGI",
+  "tasks": [
+    {
+      "id": "00576224",
+      "local_sha256": "054501e710952eb7daaacc4afcf74ed3ed84f5043594a5ca24e445e4056d9baa",
+      "previously_exposed": true,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/evaluation/00576224.json",
+      "split": "evaluation"
+    },
+    {
+      "id": "007bbfb7",
+      "local_sha256": "4444507aad8c12d17447588ca3faf46a404806769c31208b639126028d78fb36",
+      "previously_exposed": true,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/007bbfb7.json",
+      "split": "training"
+    },
+    {
+      "id": "08ed6ac7",
+      "local_sha256": "508fb8d5800303731dddd1b5f59f7020d3d5ba05ab30d1637886941e8cc16b8c",
+      "previously_exposed": true,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/08ed6ac7.json",
+      "split": "training"
+    },
+    {
+      "id": "0520fde7",
+      "local_sha256": "27df7497a354023b83189f1a95cf904747de1c065e1e27eb8923c6c3c07ff374",
+      "previously_exposed": false,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/0520fde7.json",
+      "split": "training"
+    },
+    {
+      "id": "9172f3a0",
+      "local_sha256": "72694ae92ee91160e6ebdeba0853a21e9a08b3c0cfcc4ba077219c25fc327f48",
+      "previously_exposed": false,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/9172f3a0.json",
+      "split": "training"
+    },
+    {
+      "id": "d037b0a7",
+      "local_sha256": "2bb8713ad913dc77386254e7cf37895e46a821274342138dd4065e49d8dc195f",
+      "previously_exposed": false,
+      "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/d037b0a7.json",
+      "split": "training"
+    }
+  ]
+}

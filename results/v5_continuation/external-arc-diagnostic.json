@@ -1,0 +1,1054 @@
+{
+  "candidate_cap": 5000,
+  "selection": {
+    "available": 3,
+    "limit": null,
+    "seed": 0,
+    "task_ids": [
+      "00576224",
+      "007bbfb7",
+      "08ed6ac7"
+    ]
+  },
+  "summary": {
+    "original": {
+      "tasks": 3,
+      "exact_tasks": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 3,
+      "execution_errors": 0
+    },
+    "objects": {
+      "tasks": 3,
+      "exact_tasks": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 3,
+      "execution_errors": 0
+    },
+    "pixels": {
+      "tasks": 3,
+      "exact_tasks": 0,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 3,
+      "execution_errors": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "00576224",
+      "file_sha256": "7ba34ffeebc522cccfe74ab4d7e06088ef6e057581b242cd8b5a7a01a77ac8eb",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "00576224",
+      "file_sha256": "7ba34ffeebc522cccfe74ab4d7e06088ef6e057581b242cd8b5a7a01a77ac8eb",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "00576224",
+      "file_sha256": "7ba34ffeebc522cccfe74ab4d7e06088ef6e057581b242cd8b5a7a01a77ac8eb",
+      "mode": "pixels",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ],
+          [
+            8,
+            7,
+            8,
+            7,
+            8,
+            7
+          ],
+          [
+            3,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            7,
+            8,
+            7,
+            8,
+            7,
+            8
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 192,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15
+        },
+        "selected_examples": [],
+        "representation": "pixels"
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "00a5348f2116165fc01d016dfbcaee025ec098ba91c62754e343dafaffc487da",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "00a5348f2116165fc01d016dfbcaee025ec098ba91c62754e343dafaffc487da",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "007bbfb7",
+      "file_sha256": "00a5348f2116165fc01d016dfbcaee025ec098ba91c62754e343dafaffc487da",
+      "mode": "pixels",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            7,
+            0,
+            7
+          ],
+          [
+            7,
+            7,
+            0,
+            0,
+            0,
+            0,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            7,
+            7,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            7,
+            0,
+            7,
+            7,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 192,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15
+        },
+        "selected_examples": [],
+        "representation": "pixels"
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "34471c812e93481a475fe2a6015695e0467d93c8d9024082f4963c2934e636f5",
+      "mode": "original",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidates": 0,
+        "attempted": 5000
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "34471c812e93481a475fe2a6015695e0467d93c8d9024082f4963c2934e636f5",
+      "mode": "objects",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 4128,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15,
+          "projection": 16,
+          "objects": 1744,
+          "compose": 2176
+        },
+        "selected_examples": [],
+        "representation": "all"
+      }
+    },
+    {
+      "task": "08ed6ac7",
+      "file_sha256": "34471c812e93481a475fe2a6015695e0467d93c8d9024082f4963c2934e636f5",
+      "mode": "pixels",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "error": null,
+      "expected": [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        ]
+      ],
+      "predictions": [
+        null
+      ],
+      "candidate_report": {
+        "predictions": [
+          null
+        ],
+        "candidate_count": 0,
+        "attempted": 192,
+        "attempted_by_kind": {
+          "raw": 162,
+          "scale": 15,
+          "tile": 15
+        },
+        "selected_examples": [],
+        "representation": "pixels"
+      }
+    }
+  ],
+  "claim": "externally supplied ARC files, not an official score; candidate caps are equal but actual grammar sizes and evaluation cost differ",
+  "provenance": {
+    "00576224": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/evaluation/00576224.json",
+    "007bbfb7": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/007bbfb7.json",
+    "08ed6ac7": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/training/08ed6ac7.json",
+    "local_files": "All numerical grids manually transcribed from upstream public raw text because direct network retrieval was unavailable. Local hashes are not upstream-byte hashes. The prior candidate had already examined 00576224; other two were inspected after object solver source was frozen. Small diagnostic convenience sample, not a benchmark-wide result. Public task labels were visible to the human evaluator, not to the subprocess. No direct network operation by Zero is asserted.",
+    "object_source_sha256_before_retrieval": "e1ebc516d078cb692f4f270c30805279e979b0b9cdff2ac31559a8a2cdc7d521"
+  }
+}

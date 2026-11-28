@@ -1,0 +1,9 @@
+{
+  "trials": 2,
+  "correct": 64,
+  "wrong": 0,
+  "abstained": 0,
+  "independent_reference_agreement": 64,
+  "plans_achieved": 2,
+  "actual_button_clicks": 260
+}

@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/ix5_work/IX-Zero
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: ix-zero
+  Building wheel for ix-zero (pyproject.toml): started
+  Building wheel for ix-zero (pyproject.toml): finished with status 'done'
+  Created wheel for ix-zero: filename=ix_zero-5.0.0-py3-none-any.whl size=282465 sha256=6c37637d666fcf45b3bd35c1daae11ab7d05438cd245af9aecc8a2fcd82b18e9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-cuzjko0l/wheels/92/74/3d/024a6685da3253c9796f5184221e8b58432ea7e5c1b6f84535
+Successfully built ix-zero

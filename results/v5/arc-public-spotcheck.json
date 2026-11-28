@@ -1,0 +1,27 @@
+{
+  "tasks": 1,
+  "exact_tasks": 0,
+  "correct_pairs": 0,
+  "wrong_pairs": 0,
+  "abstentions": 1,
+  "candidate_budget": 1000,
+  "depth": 2,
+  "rows": [
+    {
+      "id": "00576224",
+      "sha256": "7ba34ffeebc522cccfe74ab4d7e06088ef6e057581b242cd8b5a7a01a77ac8eb",
+      "exact_task": false,
+      "correct": 0,
+      "wrong": 0,
+      "abstentions": 1,
+      "predictions": [
+        null
+      ],
+      "candidates": 0,
+      "attempted": 1000
+    }
+  ],
+  "claim": "external-directory evaluation; not a private or official leaderboard score",
+  "source": "https://raw.githubusercontent.com/fchollet/ARC-AGI/master/data/evaluation/00576224.json",
+  "input_provenance": "Numeric grids manually transcribed from public source after direct archive download failed; SHA-256 is local transcription, not upstream file hash. Single-task diagnostic, not benchmark-wide estimate."
+}
